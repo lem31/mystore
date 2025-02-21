@@ -1,5 +1,10 @@
+import Cart from "../Cart/";
+import {Link} from "react-router-dom";
+
+
 function Header(){
   return(
+    <div>
    <header>
 
     <p>
@@ -9,25 +14,28 @@ function Header(){
     <ul>
       <li >
       </li>
-      <link to="/">Home</link>
+      <Link to="/">Home</Link>
       <li>
         <li>
-          <link to="/Sale">Sale</link>
+          <Link to="/Sale">Sale</Link>
     
         </li>
         <li>
-          <link to="/About">About</link>
+          <Link to="/About">About</Link>
         </li>
         <li>
-          <link to="/Contact">Contact</link>
+          <Link to="/Contact">Contact</Link>
         </li>
 
       </li>
 
       </ul>
    </nav>
+<Cart/>
+
    </header>
+   </div>
   )
 }
 
-export default <Header/>
+export default Header;
