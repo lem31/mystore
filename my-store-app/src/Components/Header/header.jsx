@@ -1,4 +1,4 @@
-import Cart from "../Cart/";
+import Cart from "../Cart/Cart";
 import {Link} from "react-router-dom";
 
 
@@ -14,8 +14,8 @@ function Header(){
     <ul>
       <li >
       </li>
-      <Link to="/">Home</Link>
-      <li>
+      <Link to="/Home">Home</Link>
+      
         <li>
           <Link to="/Sale">Sale</Link>
     
@@ -27,7 +27,7 @@ function Header(){
           <Link to="/Contact">Contact</Link>
         </li>
 
-      </li>
+      
 
       </ul>
    </nav>
