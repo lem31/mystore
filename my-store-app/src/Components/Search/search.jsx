@@ -1,6 +1,8 @@
 import SearchIcon from "../../Images/Search-Icon.png";
 import React, {useState} from 'react';
 import {useNavigate} from 'react-router-dom';
+import SearchInput from "./search_input";
+import SuggestionList from "./suggestion_list";
 
 
 
@@ -35,24 +37,21 @@ function Search(){
 
     navigate(`/product/${product.id}`);
     setShowSuggestions(false);
-    setSearchPhrase
-    ('');
+    setSearchPhrase('');
   };
+
+  const handleSubmit = (e) => { e.preventDefault(); };
 
   return(
     <div>
-      <form role="search">
-        <label htmlFor="search-input">Search</label>
+      <form role="search" onSubmit={{handleSubmit}}>
+       
         <img src={SearchIcon} alt="Search Icon"/>
-        <input type="search" placeholder="What are you looking for?" aria-label="Search" value={searchPhrase} onChange={handleChange}/>
-        <button type="submit" aria-label="Submit search">Search</button>
+       <SearchInput searchPhrase={searchPhrase} handleChange={handleChange}/>
+       <button type="submit" aria-label="Submit search">Search</button>
       </form>
       {showSuggestions && suggestions.length > 0 && (
-        <ul>
-          {suggestions.map((product)=>(
-            <li key={product.id} onClick={(e)=> { handleSelect(e, product); setSuggestions([]); }}>{product.title}</li>
-          ))}
-        </ul>
+        <SuggestionList suggestions={suggestions} handleSelect={handleSelect}/>
       )}
     </div>
   )

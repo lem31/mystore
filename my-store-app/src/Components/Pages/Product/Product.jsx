@@ -14,7 +14,7 @@ function Product(){
       {product?(
         <>
         <h1>{product.name}</h1>
-        <img src={product.image} alt={product.name}/>
+        <img src={product.image.url} alt={product.name}/>
         <p>{product.description}</p>
         <p>{product.price}</p>
         <button>Add to Cart</button>
