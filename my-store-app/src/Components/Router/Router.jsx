@@ -2,6 +2,7 @@ import {Routes, Route} from "react-router-dom";
 import Layout from "../Layout/layout";
 import Home from "../Pages/Home/Home"
 import Sale from "../Pages/Sale/Sale"
+import Product from "../Pages/Product/Product"
 
 
 
@@ -12,6 +13,7 @@ function Router(){
       <Route path="/" element={<Layout/>}>
       <Route index element={<Home/>}/>
       <Route path= "/Sale" element={<Sale/>}/>
+      <Route path= "/Product/:id" element ={<Product/>}/>
       {/* <Route path= "/Sale" element={}/>
       <Route path= "/About" element={}/>
       <Route path= "/Contact" element ={}/>

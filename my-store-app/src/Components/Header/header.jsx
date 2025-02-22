@@ -14,7 +14,7 @@ function Header(){
     <ul>
       <li >
       </li>
-      <Link to="/Home">Home</Link>
+      <Link to="/">Home</Link>
       
         <li>
           <Link to="/Sale">Sale</Link>
