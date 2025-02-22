@@ -17,7 +17,7 @@ function Search(){
   const [showSuggestions, setShowSuggestions] = useState(true);
   const navigate = useNavigate();
 
-  const handleChange = (e) => {
+  const handleChange = useCallback((e) => {
     const userInput = e.target.value;
     setSearchPhrase(userInput);
 
@@ -31,7 +31,7 @@ function Search(){
     }
 
     
-  };
+  }, [products]);
   const handleSelect = useCallback((e, product)=> {
     e.preventDefault();
 
