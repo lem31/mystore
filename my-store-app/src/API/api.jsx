@@ -1,18 +1,9 @@
 
 import { useEffect, useState } from "react";
+import DisplayProducts from "../Components/Product/display_products";
 
 
-function DisplayProducts({ product }) {
-  return (
-    <div>
-      <h2>{product.title}</h2>
-      <img src={product.image.url} alt={product.title} />
-      <p>{product.description}</p>
-      <p>{product.price}</p>
-      <button>View Product</button>
-    </div>
-  );
-}
+
 
 const url = "https://v2.api.noroff.dev/online-shop";
 
