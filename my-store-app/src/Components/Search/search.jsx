@@ -47,7 +47,7 @@ function Search(){
         <input type="search" placeholder="What are you looking for?" aria-label="Search" value={searchPhrase} onChange={handleChange}/>
         <button type="submit" aria-label="Submit search">Search</button>
       </form>
-      {suggestions.length > 0 && (
+      {showSuggestions && suggestions.length > 0 && (
         <ul>
           {suggestions.map((product)=>(
             <li key={product.id} onClick={(e)=> { handleSelect(e, product); setSuggestions([]); }}>{product.title}</li>
