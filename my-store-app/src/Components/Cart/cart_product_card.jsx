@@ -2,6 +2,7 @@ import React from 'react';
 import useMyStore from '../Store/zustand_store';
 import BinIcon from '../../Images/icons8-bin-50.png';
 import AddMoreProductsToCartButton from './add_more_products_to_cart_button';
+import RemoveProductsFromCartButton from './remove_products_from _cart_button';
 
 
 const CartProductCard = () => {
@@ -19,8 +20,9 @@ const CartProductCard = () => {
                 <p>{product.title}</p>
                 <p>{product.price}</p>
                 <div>
-                  <AddMoreProductsToCartButton product={product} />
+                  <RemoveProductsFromCartButton product={product} />
                 <p>{product.quantity}</p>
+                <AddMoreProductsToCartButton product={product} />
                 </div>
               </li>
             )
