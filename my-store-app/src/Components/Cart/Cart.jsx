@@ -5,10 +5,10 @@ import CartProductCard from './cart_product_card';
 import CartTotalBox from './cart_total_box';
 
 
+
 const Cart = () => {
 
   const setProducts = useMyStore((state) => state.setProducts);
-
 
 
 
@@ -18,10 +18,13 @@ const Cart = () => {
       setProducts(products);
     }
   }, [setProducts]);
+  const products = JSON.parse(localStorage.getItem('products')) || [];
+
   return (
     <div>
 
      <CartProductCard />
+
      <CartTotalBox />
    
 

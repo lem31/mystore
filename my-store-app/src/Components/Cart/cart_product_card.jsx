@@ -4,6 +4,8 @@ import useMyStore from '../Store/zustand_store';
 import AddMoreProductsToCartButton from './add_more_products_to_cart_button';
 import RemoveProductsFromCartButton from './remove_products_from _cart_button';
 import RemoveAllOfProductFromCartButton from './remove_all_of_product_from_cart_button';
+import DisplayProductSubtotal from './display_product_subtotal';
+
 
 
 const CartProductCard = () => {
@@ -25,13 +27,16 @@ const CartProductCard = () => {
                 <p>{product.quantity}</p>
                 <AddMoreProductsToCartButton product={product} />
                 </div>
+                <DisplayProductSubtotal product={product} />
               </li>
+             
             )
           ))}
         </ul>
       ) : (
         <p>Your cart is empty.</p>
       )}
+    
     </>
   );
 };
