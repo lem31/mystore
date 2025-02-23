@@ -1,4 +1,4 @@
-import Cart from "../Cart/Cart";
+import CartIcon from "../Cart/cart_icon";
 import {Link} from "react-router-dom";
 
 
@@ -31,7 +31,7 @@ function Header(){
 
       </ul>
    </nav>
-<Cart/>
+<CartIcon/>
 
    </header>
    </div>

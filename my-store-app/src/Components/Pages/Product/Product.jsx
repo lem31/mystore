@@ -1,5 +1,6 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
+import AddToCartButton from '../../Cart/add_to_cart_button';
 
 const products = JSON.parse(localStorage.getItem("products")) || [];
 
@@ -17,7 +18,7 @@ function Product(){
         <img src={product.image.url} alt={product.name}/>
         <p>{product.description}</p>
         <p>{product.price}</p>
-        <button>Add to Cart</button>
+       <AddToCartButton product={product}/>
         </>
       ):(
         <>
