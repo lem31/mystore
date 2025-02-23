@@ -34,6 +34,10 @@ import {create} from 'zustand';
     cartCount: (state) => state.cart.reduce((total, product) => total + product.quantity, 0),
     cartTotal: (state) => { const total = state.cart.reduce((total, product) => total + (product.price * product.quantity), 0);
     return total.toFixed(2) },
+    specificProductTotal: (state, productId) =>{
+      const product = state.cart.find((product) => product.id === productId);
+      return product ? (product.price * product.quantity).toFixed(2) : '0.00';
+    }
   }));
 
   export default useMyStore;
