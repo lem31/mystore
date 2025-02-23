@@ -7,7 +7,7 @@ import RemoveAllOfProductFromCartButton from './remove_all_of_product_from_cart_
 
 
 const CartProductCard = () => {
-  const removeProductFromCart = useMyStore((state) => state.removeProductFromCart);
+ 
   const cart = useMyStore((state) => state.cart);
   return (
     <>
