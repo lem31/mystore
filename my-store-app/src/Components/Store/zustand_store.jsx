@@ -38,7 +38,7 @@ import {persist} from 'zustand/middleware';
 specificProductTotal: (product) => {
   const state = get();
   const itemInCart = state.cart.find((item) => item.id === product.id);
-  return itemInCart ? (itemInCart.price * itemInCart.quantity).toFixed(2) : '0.00';
+  return itemInCart ? (itemInCart.discountedPrice * itemInCart.quantity).toFixed(2) : '0.00';
 },
   }),{
     name: 'my-store-cart',
