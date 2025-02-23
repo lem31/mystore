@@ -25,6 +25,10 @@ import {create} from 'zustand';
           cart: state.cart.filter((product) => product.id !== productId),
         };
         }),
+
+        removeAllOfProductFromCart: (productId) => set((state) => ({
+          cart: state.cart.filter((product) => product.id != productId),
+        })),
       
     clearCart: () => set({cart:[]}),
     cartCount: (state)=> state.cart.reduce((total, product) => total + product.quantity, 0),
