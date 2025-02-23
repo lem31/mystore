@@ -22,12 +22,12 @@ import {create} from 'zustand';
         };
         }
         return {
-          cart: state.cart.filter((product)=> product.id !== productId),
+          cart: state.cart.filter((product) => product.id !== productId),
         };
         }),
       
     clearCart: () => set({cart:[]}),
-    cartCount: (state)=> state.cart.length,
+    cartCount: (state)=> state.cart.reduce((total, product) => total + product.quantity, 0),
   }));
 
   export default useMyStore;
