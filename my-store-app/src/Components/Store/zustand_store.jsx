@@ -1,7 +1,8 @@
 import {create} from 'zustand';
+import {persist} from 'zustand/middleware';
 
 
-  const useMyStore = create((set, get)=>({
+  const useMyStore = create(persist((set, get) => ({
     products: [],
     cart: [],
     setProducts: (products) => set({  products }),
@@ -38,7 +39,12 @@ specificProductTotal: (product) => {
   const state = get();
   const itemInCart = state.cart.find((item) => item.id === product.id);
   return itemInCart ? (itemInCart.price * itemInCart.quantity).toFixed(2) : '0.00';
-}
+},
+  }),{
+    name: 'my-store-cart',
+    getStorage: () => localStorage,
   }));
+
+ 
 
   export default useMyStore;
