@@ -1,7 +1,10 @@
 import React from 'react';
 import useMyStore from '../Store/zustand_store';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
 
-const AddToCartButton = ({product})=>{
+
+const AddMoreProductsToCartButton = ({product})=>{
   const addProductToCart = useMyStore((state)=> state.addProductToCart);
 
   const handleClick =()=>{
@@ -11,11 +14,13 @@ const AddToCartButton = ({product})=>{
   };
 
   return (
+
+ 
     <button onClick={handleClick}>
-    Add To Cart</button>
+   <FontAwesomeIcon icon={faSquarePlus} /> </button>
   );
 
 
 };
 
-export default AddToCartButton;
+export default AddMoreProductsToCartButton;

@@ -1,6 +1,7 @@
 import React from 'react';
 import useMyStore from '../Store/zustand_store';
 import BinIcon from '../../Images/icons8-bin-50.png';
+import AddMoreProductsToCartButton from './add_more_products_to_cart_button';
 
 
 const CartProductCard = () => {
@@ -17,7 +18,10 @@ const CartProductCard = () => {
                 <img src={product.image.url} alt={product.title} />
                 <p>{product.title}</p>
                 <p>{product.price}</p>
+                <div>
+                  <AddMoreProductsToCartButton product={product} />
                 <p>{product.quantity}</p>
+                </div>
               </li>
             )
           ))}
