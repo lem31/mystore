@@ -2,12 +2,14 @@ import React from 'react';
 import useMyStore from '../Store/zustand_store';
 import {useEffect} from 'react';
 import CartProductCard from './cart_product_card';
+import CartTotalBox from './cart_total_box';
 
 
 const Cart = () => {
-  const cart=useMyStore((state)=> state.cart);
+
   const setProducts = useMyStore((state) => state.setProducts);
-  const removeProductFromCart = useMyStore((state)=> state.removeProductFromCart);
+
+
 
 
   useEffect(() => {
@@ -18,7 +20,13 @@ const Cart = () => {
   }, [setProducts]);
   return (
     <div>
+
      <CartProductCard />
+     <CartTotalBox />
+   
+
+ 
+
     </div>
   );
 };

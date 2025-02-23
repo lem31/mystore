@@ -31,8 +31,8 @@ import {create} from 'zustand';
         })),
       
     clearCart: () => set({cart:[]}),
-    cartCount: (state)=> state.cart.reduce((total, product) => total + product.quantity, 0),
-cartTotal: (state) => state.cart.reduce((total, product) => total + product.price * product.quantity, 0),
+    cartCount: (state) => state.cart.reduce((total, product) => total + product.quantity, 0),
+    cartTotal: (state) => state.cart.reduce((total, product) => total + (product.price * product.quantity), 0),
   }));
 
   export default useMyStore;
