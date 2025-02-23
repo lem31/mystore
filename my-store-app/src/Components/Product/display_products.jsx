@@ -3,6 +3,7 @@ import React from 'react';
 import useMyStore from '../Store/zustand_store'
 import DisplayDiscount from "./display_discount";
 
+
 const DisplayProducts = ({ product }) => {
   const { discountedPrice} = product;
 
@@ -15,6 +16,8 @@ return(
   <p>${discountedPrice.toFixed(2)}</p>
  
   <ViewProductButton id={product.id} />
+
+  
 </div>
 );};
 

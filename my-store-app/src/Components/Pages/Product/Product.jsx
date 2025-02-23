@@ -2,6 +2,7 @@ import React from 'react';
 import {useParams} from 'react-router-dom';
 import AddToCartButton from '../../Cart/add_to_cart_button';
 import DisplayDiscount from '../../Product/display_discount';
+import DisplayReviews from '../../Product/display_reviews';
 
 const products = JSON.parse(localStorage.getItem("products")) || [];
 
@@ -24,6 +25,8 @@ function Product(){
         <p>${discountedPrice.toFixed(2)}</p>
 
        <AddToCartButton product={product}/>
+        <DisplayReviews product={product}/>
+       
         </>
       ):(
         <>
