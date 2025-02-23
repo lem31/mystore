@@ -1,6 +1,7 @@
 import React from 'react';
 import {useParams} from 'react-router-dom';
 import AddToCartButton from '../../Cart/add_to_cart_button';
+import DisplayDiscount from '../../Product/display_discount';
 
 const products = JSON.parse(localStorage.getItem("products")) || [];
 
@@ -17,12 +18,11 @@ function Product(){
       {product?(
         <>
         <h1>{product.name}</h1>
+        <DisplayDiscount product={product}/>
         <img src={product.image.url} alt={product.name}/>
         <p>{product.description}</p>
         <p>${discountedPrice.toFixed(2)}</p>
-    {discount > 0 && (
-      <p> Discount: {discount.toFixed(2)}% off</p>
-    )}
+
        <AddToCartButton product={product}/>
         </>
       ):(
