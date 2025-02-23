@@ -13,25 +13,26 @@ function Header(){
    <nav className={styles.nav}>
     <ul>
       <li >
+      <Link className={styles.link} to="/">Home</Link>
       </li>
-      <Link to="/">Home</Link>
+    
       
         <li>
-          <Link to="/Sale">Sale</Link>
+          <Link className={styles.link} to="/Sale">Sale</Link>
     
         </li>
         <li>
-          <Link to="/About">About</Link>
+          <Link className={styles.link} to="/About">About</Link>
         </li>
         <li>
-          <Link to="/Contact">Contact</Link>
+          <Link className={styles.link} to="/Contact">Contact</Link>
         </li>
 
       
 
       </ul>
    </nav>
-   <div className={styles.shopping
+   <div className={styles.bag
    }>
 <CartIcon />
 </div>

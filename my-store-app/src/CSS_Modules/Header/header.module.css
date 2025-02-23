@@ -1,7 +1,6 @@
 .header {
   display: flex;
-  width: 100vw;
-  background-color: black;
+  max-width: 1200px;
 }
 
 .logo {
@@ -12,6 +11,45 @@
   flex: 2;
 }
 
+.nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style-type: none;
+}
+
+.link {
+  color: white;
+  cursor: pointer;
+}
+
 .shopping {
+  width: 20px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+.bag {
   flex: 1;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.span {
+  position: absolute;
+  color: white;
+
+  font-size: 8px;
+  background-color: black;
+  border-radius: 100%;
+  width: 12px;
+  height: 12px;
+}
+
+.div {
+  display: flex;
+  justify-content: right;
+  align-items: flex-start;
+  position: relative;
 }
