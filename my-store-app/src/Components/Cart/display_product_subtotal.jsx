@@ -2,9 +2,7 @@ import React, { useEffect, useState } from 'react';
 import useMyStore from '../Store/zustand_store';
 
 
-const calculateSubtotal = (product) => {
-  return product.reduce((total, product) => total + specificProductTotal(product), 0);
-};
+
 
 const DisplayProductSubtotal = ({ product }) => {
   const [subtotal, setSubtotal] = useState(0);

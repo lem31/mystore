@@ -4,6 +4,7 @@ import Home from "../Pages/Home/Home";
 import Sale from "../Pages/Sale/Sale";
 import Product from "../Pages/Product/Product";
 import MyCart from '../Cart/cart';
+import CheckoutPage from "../Pages/Checkout/Checkout_Page";
 
 
 
@@ -16,6 +17,7 @@ function Router(){
       <Route path= "/Sale" element={<Sale/>}/>
       <Route path= "/Product/:id" element ={<Product/>}/>
       <Route path= "/MyCart" element ={<MyCart/>}/>
+      <Route path= "/Checkout" element ={<CheckoutPage/>}/>
       {/* <Route path= "/Sale" element={}/>
       <Route path= "/About" element={}/>
       <Route path= "/Contact" element ={}/>

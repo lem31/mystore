@@ -1,7 +1,7 @@
 import React from 'react';
 import useMyStore from '../Store/zustand_store';
 
-
+import ProceedToCheckoutButton from '../Checkout/proceed_to_checkout_button';
 
 const CartTotalBox = () => {
 
@@ -15,7 +15,8 @@ const CartTotalBox = () => {
         <span>
           {cartTotal}
         </span>
-    
+
+    <ProceedToCheckoutButton />
         </>
       )}
    

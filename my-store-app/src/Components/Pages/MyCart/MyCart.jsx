@@ -1,10 +1,12 @@
 import Cart from '../../Cart/cart';
 
 
+
 function MyCart(){
   return(
     <>
 <Cart/>
+
 </>
   )
 };
