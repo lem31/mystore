@@ -13,7 +13,6 @@ return(
 
   <Header/>
   <Search/>
-
   <Outlet/>
   </div>
   <Footer/>
