@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import React from 'react';
-import Router from './Components/Router/router.jsx'
+import Router from './Components/Router'
 
 
 function App() {
