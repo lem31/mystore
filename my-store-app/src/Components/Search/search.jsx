@@ -3,6 +3,7 @@ import React, {useState, useCallback} from 'react';
 import {useNavigate} from 'react-router-dom';
 import SearchInput from "./search_input";
 import SuggestionList from "./suggestion_list";
+import styles from '../../CSS_Modules/Search/search.module.css';
 
 
 
@@ -44,10 +45,10 @@ function Search(){
    };
 
   return(
-    <div>
+    <div className={styles.search_div}>
       <form role="search" onSubmit={handleSubmit}>
        
-        <img src={SearchIcon} alt="Search Icon"/>
+       
        <SearchInput searchPhrase={searchPhrase} handleChange={handleChange}/>
        <button type="submit" aria-label="Submit search">Search</button>
       </form>

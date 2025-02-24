@@ -2,11 +2,13 @@ import CartIcon from "../Cart/cart_icon";
 import {Link} from "react-router-dom";
 import styles from "../../CSS_Modules/Header/header.module.css";
 
+
 function Header(){
   return(
     <div>
-   <header className={styles.header}>
+     
 
+   <header className={styles.header}>
     <p className={styles.logo} >
       EasyBuy
     </p>
