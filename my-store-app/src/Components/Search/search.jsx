@@ -57,10 +57,12 @@ function Search(){
     
       </div>
       <div className={styles.outer_suggestion_div}>
+        <div className={styles.suggestions_background}>
       <div className={styles.search_suggestion_div}>
       {showSuggestions && suggestions.length > 0 && (
         <SuggestionList suggestions={suggestions} handleSelect={handleSelect}/>
       )}
+    </div>
     </div>
     </div>
 
