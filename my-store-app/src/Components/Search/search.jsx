@@ -45,17 +45,29 @@ function Search(){
    };
 
   return(
-    <div className={styles.search_div}>
-      <form role="search" onSubmit={handleSubmit}>
-       
-       
+    <>
+    <div className={styles.search_div_form}>
+      <form className={styles.search_form} role="search" onSubmit={handleSubmit}>
+     
        <SearchInput searchPhrase={searchPhrase} handleChange={handleChange}/>
-       <button type="submit" aria-label="Submit search">Search</button>
+    
+       <button onSubmit= {handleSubmit} type="submit" aria-label="Submit search">Search</button>
+      
       </form>
+    
+      </div>
+      <div className={styles.outer_suggestion_div}>
+      <div className={styles.search_suggestion_div}>
       {showSuggestions && suggestions.length > 0 && (
         <SuggestionList suggestions={suggestions} handleSelect={handleSelect}/>
       )}
     </div>
+    </div>
+
+    
+
+     
+    </>
   )
 };
 
