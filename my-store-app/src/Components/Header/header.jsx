@@ -1,6 +1,7 @@
 import CartIcon from "../Cart/cart_icon";
 import {Link} from "react-router-dom";
 import styles from "../../CSS_Modules/Header/header.module.css";
+import logoStyles from '../../CSS_Modules/Logo/logo.module.css';
 
 
 function Header(){
@@ -9,8 +10,8 @@ function Header(){
      
 
    <header className={styles.header}>
-    <p className={styles.logo} >
-      EasyBuy
+    <p className={logoStyles.logo} >
+     <span className={logoStyles.logo_easy}>Easy</span> <span className={logoStyles.logo_buy}>Buy</span>
     </p>
    <nav className={styles.nav}>
     <ul>
