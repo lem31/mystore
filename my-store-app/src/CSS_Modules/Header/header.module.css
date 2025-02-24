@@ -7,15 +7,29 @@
 
 .logo {
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .nav {
-  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.nav_div {
+  flex: 5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 284px;
 }
 
 .nav ul {
   display: flex;
   justify-content: space-around;
+  gap: 20px;
   list-style-type: none;
 }
 
@@ -52,7 +66,27 @@
 
 .div {
   display: flex;
-  justify-content: right;
-  align-items: flex-start;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
   position: relative;
+}
+
+.logo_easy {
+  color: white;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "Lato", sans-serif;
+}
+
+.logo_buy {
+  color: red;
+  font-size: 24px;
+  font-weight: 400;
+  font-family: "PT Serif", sans-serif;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
 }
