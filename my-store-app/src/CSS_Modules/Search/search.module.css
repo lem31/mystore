@@ -46,7 +46,7 @@
   border-radius: 20px;
   padding-left: 60px;
   padding-right: 60px;
-  font-size: 16px;
+  font-size: var(--font-size-small);
   outline: none;
   background-color: black;
   color: white;
