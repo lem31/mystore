@@ -38,8 +38,11 @@
 }
 
 .link {
-  color: white;
+  color: var(--secondary-color);
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-1);
   cursor: pointer;
+  text-decoration: none;
 }
 
 .shopping {
@@ -51,7 +54,7 @@
 }
 
 .shopping_button {
-  background-color: black;
+  background-color: var(--primary-color);
   border: none;
   outline: none;
   box-shadow: none;
@@ -78,9 +81,9 @@
 
 .span {
   position: absolute;
-  color: white;
+  color: var(--secondary-color);
   font-size: var(--font-size-tiny);
-  background-color: black;
+  background-color: var(--primary-color);
   border-radius: 100%;
   width: 16px;
   height: 16px;
@@ -98,20 +101,31 @@
 }
 
 .logo_easy {
-  color: white;
+  color: var(--secondary-color);
   font-size: var(--font-size-small);
   font-weight: 400;
-  font-family: "Lato", sans-serif;
+  font-family: var(--font-family-1);
 }
 
 .logo_buy {
-  color: red;
+  color: var(--tertiary-color);
   font-size: var(--font-size-small);
   font-weight: 400;
-  font-family: "PT Serif", sans-serif;
+  font-family: var(--font-family-2);
 }
 
 .logo {
   display: flex;
   justify-content: center;
+}
+
+nav a.active-link {
+  color: red; /* Change this to your preferred active color */
+  font-weight: bold; /* Optional: add other styles for the active link */
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  padding: 10px;
 }

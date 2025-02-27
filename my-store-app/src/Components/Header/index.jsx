@@ -4,6 +4,7 @@ import styles from "../../CSS_Modules/Header/header.module.css";
 
 
 
+
 function Header(){
   return(
     <div>
@@ -16,7 +17,7 @@ function Header(){
     <div className={styles.nav_div}>
    <nav className={styles.nav} >
     <ul>
-      <li >
+      <li className = {styles.li}>
       <Link className={styles.link} to="/">Home</Link>
       </li>
     

@@ -19,7 +19,7 @@ function Home(){
 
       <div className={styles.external_container}>
       <div  className={styles.h3_div_home}>
-        <h3 >PURCHASE SOME OF OUR HOTTEST ITEMS BEFORE THEY SELL OUT!</h3>
+        <h2>PURCHASE SOME OF OUR HOTTEST ITEMS BEFORE THEY SELL OUT!</h2>
       </div>
         <FetchProducts />
       </div>
