@@ -4,6 +4,7 @@ import {useNavigate} from 'react-router-dom';
 import SearchInput from "../Search_Input";
 import SuggestionList from "../Suggestion_List";
 import styles from '../../../CSS_Modules/Search/search.module.css';
+import gStyles from "../../../CSS_Modules/Global_Styles/global_styles.module.css";
 
 
 
@@ -51,7 +52,7 @@ function Search(){
      
        <SearchInput searchPhrase={searchPhrase} handleChange={handleChange}/>
     
-       <button onSubmit= {handleSubmit} type="submit" aria-label="Submit search">Search</button>
+       <button className={gStyles.button} onSubmit= {handleSubmit} type="submit" aria-label="Submit search">Search</button>
       
       </form>
     

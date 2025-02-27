@@ -1,6 +1,7 @@
 import CartIcon from "../Cart/Cart_Icon";
 import {Link} from "react-router-dom";
 import styles from "../../CSS_Modules/Header/header.module.css";
+import gStyles from "../../CSS_Modules/Global_Styles/global_styles.module.css";
 
 
 
