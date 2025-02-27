@@ -16,9 +16,10 @@ const CartIcon = () => {
   }, [navigate]);
 
   return(
-    <div className={styles.div}>
+    <div className={styles.div} onClick={handleClick}>
+      <button className={styles.shopping_button}>
       <img className={styles.shopping
-   } src={CartImage} alt="Cart Icon" onClick={handleClick}/>
+   } src={CartImage} alt="Cart Icon" /> </button>
       {cartCount > 0 && (
  
         <span className={styles.span}>
