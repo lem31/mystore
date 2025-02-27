@@ -1,8 +1,8 @@
 
 import { useEffect, useState } from "react";
-import DisplayProducts from "../Components/Product/Display_Products";
-
-
+import DisplayProducts from "../Components/Product/display_products/index";
+import React from 'react';
+import styles from '../CSS_Modules/Home_Page_Body/home_page_body.module.css';
 
 
 const url = "https://v2.api.noroff.dev/online-shop";
@@ -40,7 +40,7 @@ function FetchProducts() {
     return <div>Error loading data</div>;
   }
   return (
-    <div>
+    <div className={styles.product_cards_container}>
       {products.map((product) => (
         <DisplayProducts key={product.id} product={product} />
       ))}

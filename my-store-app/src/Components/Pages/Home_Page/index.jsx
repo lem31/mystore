@@ -1,5 +1,6 @@
-
+import React from 'react';
 import FetchProducts from '../../../API/api';
+import styles from '../../../CSS_Modules/Home_Page_Body/home_page_body.module.css';
 
 
 function Home(){
@@ -12,9 +13,12 @@ function Home(){
 <h3>PURCHASE SOME OF OUR HOTTEST ITEMS BEFORE THEY SELL OUT!</h3>
 
 
-<FetchProducts/>
 
-<div></div>
+
+<div className={styles.external_container} >
+
+<FetchProducts/>
+</div>
     </div>
   )
 }

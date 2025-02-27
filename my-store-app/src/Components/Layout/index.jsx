@@ -14,11 +14,10 @@ return(
   <Header/>
   <Search/>
   <Outlet/>
-  </div>
   <Footer/>
   </div>
-)
-
+  </div>
+);
 }
 
 export default Layout;
