@@ -20,8 +20,11 @@ return(
 {/* <div>
   <p className={styles.product_description}>{product.description}</p>
   </div> */}
-  <div>
-  <p className={styles.product_price}>${discountedPrice.toFixed(2)}</p>
+  <div className={styles.price_div}>
+    {product.price !== discountedPrice && (
+      <p className={styles.product_price} style={{ textDecoration: 'line-through' }}>${product.price.toFixed(2)}</p>
+    )}
+    <p className={styles.discounted_price}>${discountedPrice.toFixed(2)}</p>
   </div>
 
   <ViewProductButton id={product.id} />

@@ -10,15 +10,16 @@
   justify-content: center;
   flex-direction: row;
   position: relative;
-  margin-top: 40px;
+  /* margin-top: 40px; */
 }
 .search_form {
   display: flex;
-
   justify-content: center;
   align-items: center;
   flex-direction: row;
   width: 676px;
+  height: 40px;
+  position: relative;
   gap: 16px;
 }
 
@@ -26,7 +27,6 @@
   width: 28px;
   height: 28px;
   position: absolute;
-
   z-index: 12;
 }
 
@@ -48,8 +48,8 @@
   padding-right: 60px;
   font-size: var(--font-size-small);
   outline: none;
-  background-color: black;
-  color: white;
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
 }
 
 .search_label {
@@ -60,12 +60,14 @@
   display: flex;
   flex: column;
   width: 550px;
+  height: auto;
   align-items: start;
   color: white;
 }
 .outer_suggestion_div {
   display: flex;
   width: 100vw;
+  height: auto;
   justify-content: center;
   position: relative;
 }
@@ -73,5 +75,6 @@
 .suggestions_background {
   background-color: rgba(0, 0, 0, 0.715);
   width: 420px;
+  height: auto;
   margin-left: -100px;
 }
