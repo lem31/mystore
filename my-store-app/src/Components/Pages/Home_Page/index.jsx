@@ -18,8 +18,8 @@ function Home(){
     
 
       <div className={styles.external_container}>
-      <div  className={styles.h3_div_home}>
-        <h2>PURCHASE SOME OF OUR HOTTEST ITEMS BEFORE THEY SELL OUT!</h2>
+      <div  className={styles.h2_div_home}>
+        <h2 className={styles.h2_home}>PURCHASE SOME OF OUR HOTTEST ITEMS BEFORE THEY SELL OUT!</h2>
       </div>
         <FetchProducts />
       </div>

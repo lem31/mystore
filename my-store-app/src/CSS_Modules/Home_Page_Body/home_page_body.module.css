@@ -12,7 +12,8 @@
 .products_cards_image {
   width: 200px;
   height: 200px;
-  margin-bottom: 0.5em;
+  object-fit: cover;
+  margin: auto;
 }
 
 .individual_card_container {
@@ -104,15 +105,19 @@
   flex-direction: column;
 }
 
-.h3_div_home {
+.h2_div_home {
   display: flex;
   align-items: center;
   flex-direction: column;
   position: relative;
   z-index: 2;
+}
+
+.h2_home {
   color: var(--tertiary-color);
   font-size: var(--font-size-medium);
   text-align: center;
+  width: 600px;
 }
 
 .container {
