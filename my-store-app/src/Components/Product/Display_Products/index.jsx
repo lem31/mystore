@@ -12,7 +12,7 @@ return(
   <div className={styles.individual_card_container}>
  
   <DisplayDiscount product={product}/>
- <div>
+ <div className={styles.product_image_div}>
   <img className={styles.products_cards_image} src={product.image.url} alt={product.title} />
   </div>
 
