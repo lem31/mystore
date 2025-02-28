@@ -36,10 +36,11 @@
 
 .product_title {
   font-size: var(--font-size-small);
+  font-family: var(--font-family-2);
+  color: var(--tertiary-color);
   font-weight: bold;
   width: 200px;
   height: 10px;
-
   text-align: left;
 }
 
@@ -67,14 +68,12 @@
   width: 200px;
   height: 20px;
   text-align: left;
-
   color: var(--tertiary-color);
 }
 
 .view_product_button_div {
   display: flex;
   justify-content: left;
-  margin-top: 0.5em;
 }
 
 .h1_div_home {
@@ -96,13 +95,14 @@
 .h1_home_inner_box {
   background-color: rgba(0, 0, 0, 0.715);
   width: 500px;
-  height: 462px;
+  height: auto;
   border: 2px solid var(--tertiary-color);
   border-radius: 48px;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
+  padding-bottom: 20px;
 }
 
 .h2_div_home {
@@ -111,12 +111,6 @@
   flex-direction: column;
   position: relative;
   z-index: 2;
-}
-
-.h2_home {
-  color: var(--tertiary-color);
-  font-size: var(--font-size-medium);
-  text-align: center;
   width: 600px;
 }
 
@@ -133,13 +127,56 @@
 
 .price_div {
   display: flex;
-
   flex-direction: row;
   width: 128px;
+  height: auto;
 }
 
 .discounted_price {
   font-size: var(--font-size-small);
   font-weight: bold;
   color: var(--secondary-color);
+}
+
+/* Media Queries */
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .product_cards_container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .container {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 425px) {
+  .h1_home_inner_box {
+    width: 280px;
+  }
+
+  .product_cards_container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .products_cards_image {
+    width: 180px;
+    height: 180px;
+  }
+
+  .h2_div_home {
+    width: 320px;
+  }
+
+  .container {
+    gap: 4px;
+  }
+
+  .h1_div_home {
+    height: 340px;
+  }
+
+  .discounted_price && .product_price && .product.title {
+    font-size: var(--font-size-tiny);
+  }
 }

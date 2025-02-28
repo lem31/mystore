@@ -10,7 +10,6 @@
   justify-content: center;
   flex-direction: row;
   position: relative;
-  /* margin-top: 40px; */
 }
 .search_form {
   display: flex;
@@ -77,4 +76,27 @@
   width: 420px;
   height: auto;
   margin-left: -100px;
+}
+
+@media (min-width: 426px) and (max-width: 768px) {
+  .search_form {
+    width: 276px;
+  }
+
+  .search_input {
+    width: 300px;
+  }
+}
+
+@media (max-width: 425px) {
+  .search_form {
+    width: 226px;
+  }
+
+  .search_input {
+    width: 200px;
+    font-size: var(--font-size-tiny);
+    text-align: center;
+    text-wrap: wrap;
+  }
 }

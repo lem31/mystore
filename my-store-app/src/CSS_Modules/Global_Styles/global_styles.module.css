@@ -31,6 +31,26 @@
   text-align: center;
 }
 
+.h2 {
+  color: var(--tertiary-color);
+  font-size: var(--font-size-medium);
+  font-family: var(--font-family-2);
+  font-weight: bold;
+  text-align: center;
+}
+
 body {
   background-color: var(--primary-color);
+}
+
+/* Media Queries */
+
+@media (max-width: 768px) {
+  .h1 {
+    font-size: var(--font-size-medium);
+  }
+
+  .h2 {
+    font-size: var(--font-size-small);
+  }
 }
