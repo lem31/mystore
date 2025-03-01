@@ -3,7 +3,7 @@
   grid-template-columns: repeat(4, 1fr);
   grid-auto-rows: 400px;
   align-items: center;
-  gap: 12px;
+  gap: 20px;
   row-gap: 0;
   max-width: 100vw;
   height: auto;
@@ -48,6 +48,7 @@
   width: 150px;
   height: 20px;
   text-align: left;
+  text-wrap: nowrap;
 }
 
 .product_discount {
@@ -154,7 +155,7 @@
   .product_cards_container {
     grid-template-columns: repeat(3, 1fr);
     grid-auto-rows: 280px;
-    gap: 16px;
+    gap: 20px;
   }
 
   .container {
@@ -178,6 +179,8 @@
     width: 140px;
   }
 }
+
+/* Media Queries */
 
 @media (max-width: 486px) {
   .h1_home_inner_box {
