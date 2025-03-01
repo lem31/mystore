@@ -1,5 +1,6 @@
 import {useNavigate} from 'react-router-dom';
 import React, { useCallback} from 'react';
+import styles from '../../../CSS_Modules/Global_Styles/global_styles.module.css';
 
 function ProceedToCheckoutButton(){
   const navigate = useNavigate();
@@ -7,7 +8,10 @@ function ProceedToCheckoutButton(){
     navigate(`/Checkout`);
   }, [navigate]);
   return(
-    <button onClick={handleClick}>PROCEED TO CHECKOUT</button>
+    <div>
+    <button className={styles.button} onClick={handleClick}>PROCEED TO CHECKOUT</button>
+
+    </div>
   );
 }
 
