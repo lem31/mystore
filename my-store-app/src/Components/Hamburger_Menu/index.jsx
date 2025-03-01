@@ -2,7 +2,6 @@ import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import menu from "../../Images/hamburger-menu-48.png";
-
 import styles from '../../CSS_Modules/Header/header.module.css';
 import { Link } from 'react-router-dom';
 
@@ -35,7 +34,7 @@ const HamburgerMenu = () => {
   return (
     <div>
       <button onClick={toggleMenu} className={`${styles.menu_button} ${isOpen ? styles.show_hamburger : ""}`}>
-        <img src={menu} alt="menu" />
+        <img className={styles.hamburger_img}src={menu} alt="menu" />
       </button>
       <div>
        { isOpen &&(
