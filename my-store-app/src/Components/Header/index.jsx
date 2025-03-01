@@ -1,6 +1,8 @@
 import CartIcon from "../Cart/Cart_Icon";
-import {Link} from "react-router-dom";
 import styles from "../../CSS_Modules/Header/header.module.css";
+import Nav from "../Nav";
+import React from 'react';
+import HamburgerMenu from '../Hamburger_Menu';
 
 
 
@@ -14,30 +16,8 @@ function Header(){
     <p className={styles.logo} >
      <span className={styles.logo_easy}>Easy</span> <span className={styles.logo_buy}>Buy</span>
     </p>
-    <div className={styles.nav_div}>
-   <nav className={styles.nav} >
-    <ul>
-      <li className = {styles.li}>
-      <Link className={styles.link} to="/">Home</Link>
-      </li>
-    
-      
-        <li>
-          <Link className={styles.link} to="/Sale">Sale</Link>
-    
-        </li>
-        <li>
-          <Link className={styles.link} to="/About">About</Link>
-        </li>
-        <li>
-          <Link className={styles.link} to="/Contact">Contact</Link>
-        </li>
-
-      
-
-      </ul>
-   </nav>
-   </div>
+   <HamburgerMenu/>
+   <Nav/>
    <div className={styles.bag
    }>
 <CartIcon />
