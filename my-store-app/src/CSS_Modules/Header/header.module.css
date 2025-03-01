@@ -140,6 +140,10 @@
 }
 
 @media (min-width: 487px) and (max-width: 768px) {
+  .nav_ul {
+    padding: 0;
+  }
+
   .menu_button {
     display: block;
     background: none;
@@ -166,6 +170,10 @@
     top: 0;
     left: 0;
   }
+
+  .hamburger_nav {
+    padding-top: 200px;
+  }
   .link_div {
     display: flex;
     flex-direction: column;
@@ -173,6 +181,7 @@
     align-items: center;
     border-bottom: 1px solid var(--tertiary-color);
     width: 100%;
+    margin-bottom: 16px;
   }
   .link {
     font-size: var(--font-size-medium);

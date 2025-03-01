@@ -1,8 +1,10 @@
 import React from "react";
 import { useState } from "react";
+import { useEffect } from "react";
 import menu from "../../Images/hamburger-menu-48.png";
-import HamburgerNav from '../Hamburger_Menu_Nav';
+
 import styles from '../../CSS_Modules/Header/header.module.css';
+import { Link } from 'react-router-dom';
 
 const HamburgerMenu = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,18 +15,71 @@ const HamburgerMenu = () => {
    
   };
 
+  const closeMenu = () => {
+    setIsOpen(false);
+  }
 
+  useEffect(() => {
+    if (isOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'auto';
+    }
+  
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
+  }, [isOpen]);
 
+ 
   return (
     <div>
       <button onClick={toggleMenu} className={`${styles.menu_button} ${isOpen ? styles.show_hamburger : ""}`}>
         <img src={menu} alt="menu" />
       </button>
       <div>
-      {isOpen && <HamburgerNav />}
+       { isOpen &&(
+      <div className={styles.hamburger_nav_div}>
+    <nav className={styles.hamburger_nav} >
+
+     
+   
+     <ul className={styles.nav_ul}>
+       <li className = {styles.li}>
+        <div className={styles.link_div}>
+       <Link className={styles.link} onClick={closeMenu} to="/">Home</Link>
+       </div>
+       </li>
+     
+       
+         <li>
+          <div className={styles.link_div}>
+           <Link className={styles.link} onClick={closeMenu}  to="/Sale">Sale</Link>
+           </div>
+     
+         </li>
+         <li>
+          <div className={styles.link_div}>
+           <Link className={styles.link} onClick={closeMenu}  to="/About">About</Link>
+           </div>
+         </li>
+         <li>
+          <div className={styles.link_div}>
+           <Link className={styles.link} onClick={closeMenu}  to="/Contact">Contact</Link>
+            </div>
+         </li>
+ 
+       
+ 
+       </ul>
+    </nav>
+    </div>)}
       </div>
     </div>
   );
 };
+
+
+
 
 export default HamburgerMenu;
