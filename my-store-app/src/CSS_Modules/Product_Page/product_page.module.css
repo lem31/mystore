@@ -24,8 +24,10 @@
   flex-direction: column;
   align-items: start;
   justify-content: start;
+
   width: 400px;
   padding-left: 16px;
+  gap: 8px;
 }
 
 .outer_product_div {
@@ -59,4 +61,12 @@
   width: 100vw;
   justify-content: center;
   padding-bottom: 40px;
+}
+
+.h2_div_product {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+  justify-content: start;
+  padding-left: 24px;
 }

@@ -43,9 +43,12 @@ function Product(){
         <h1>Product not found</h1>
         </>
       )}
+<div className={styles.h2_div_product}>
+<h2 className={gStyles.h2}>Related Products</h2>
+</div>
 
-<h2>Related Products</h2>
-<div  className={styles.related_products_div}>
+<div className={styles.related_products_div}>
+
   {products
     .filter((p) =>
       p.tags.some((tag) => product.tags.includes(tag)) && p.id !== product.id
