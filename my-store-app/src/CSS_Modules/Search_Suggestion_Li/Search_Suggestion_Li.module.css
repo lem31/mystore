@@ -12,7 +12,8 @@
   background-color: rgba(0, 0, 0, 0.715);
   width: 420px;
   height: auto;
-  padding-top: 20px;
+  padding-top: 16px;
+  padding-bottom: 20px;
 }
 
 @media (min-width: 426px) and (max-width: 768px) {
