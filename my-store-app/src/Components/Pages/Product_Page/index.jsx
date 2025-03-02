@@ -5,7 +5,7 @@ import DisplayDiscount from '../../Product/Display_Discount';
 import DisplayReviews from '../../Product/Display_Reviews';
 import styles from '../../../CSS_Modules/Product_Page/product_page.module.css';
 import gStyles from '../../../CSS_Modules/Global_Styles/global_styles.module.css';
-
+import homeStyles from '../../../CSS_Modules/Home_Page_Body/home_page_body.module.css';
 const products = JSON.parse(localStorage.getItem("products")) || [];
 
 function Product(){
@@ -45,18 +45,29 @@ function Product(){
       )}
 
 <h2>Related Products</h2>
-<div className="related-products">
+<div  className={styles.related_products_div}>
   {products
     .filter((p) =>
       p.tags.some((tag) => product.tags.includes(tag)) && p.id !== product.id
     )
     .slice(0, 4)
     .map((relatedProduct) => (
-      <div key={relatedProduct.id} className="related-product">
-        <h3>{relatedProduct.name}</h3>
-        <img src={relatedProduct.image.url} alt={relatedProduct.name} />
-        <p>${relatedProduct.discountedPrice.toFixed(2)}</p>
+      <div className={styles.related_products_inner_div}  key={relatedProduct.id} >
+        <div>
+
+        <div className={homeStyles.product_image_div}>
+        <img className={homeStyles.products_cards_image} src={relatedProduct.image.url} alt={relatedProduct.name} />
+        </div>
+        <h3 className={homeStyles.product_title}>{relatedProduct.title}</h3>
+         <div className={homeStyles.price_div}>
+           {relatedProduct.price !== relatedProduct.discountedPrice && (
+             <p className={homeStyles.product_price} style={{ textDecoration: 'line-through' }}>${relatedProduct.price.toFixed(2)}</p>
+           )}
+           <p className={homeStyles.discounted_price}>${discountedPrice.toFixed(2)}</p>
+         </div>
+        </div>
       </div>
+
     ))}
 </div>
     </div>

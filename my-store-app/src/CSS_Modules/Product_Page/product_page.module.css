@@ -22,6 +22,10 @@
 .product_text_div {
   display: flex;
   flex-direction: column;
+  align-items: start;
+  justify-content: start;
+  width: 400px;
+  padding-left: 16px;
 }
 
 .outer_product_div {
@@ -30,6 +34,7 @@
   justify-content: center;
   width: 100vw;
   padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .product_text {
@@ -40,4 +45,18 @@
 
 .stars {
   color: var(--tertiary-color);
+}
+
+.related_products_inner_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.related_products_div {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100vw;
+  justify-content: center;
+  padding-bottom: 40px;
 }
