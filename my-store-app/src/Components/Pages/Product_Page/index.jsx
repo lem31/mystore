@@ -11,7 +11,8 @@ const products = JSON.parse(localStorage.getItem("products")) || [];
 function Product(){
   const {id} = useParams();
   const product = products.find((p) => p.id === id);
-  const {price, discountedPrice} = product;
+  const price = product?.price || 0;
+  const discountedPrice = product?.discountedPrice || 0;
   const discount = price > discountedPrice ? ((price - discountedPrice)/price) * 100 : 0;
 
   console.log('ID from URL:', id);
