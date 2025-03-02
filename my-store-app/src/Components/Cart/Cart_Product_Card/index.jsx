@@ -13,6 +13,13 @@ const CartProductCard = () => {
   const cart = useMyStore((state) => state.cart);
   return (
     <>
+
+    <div >
+      <p>product</p>
+      <p>price</p>
+      <p>quantity</p>
+      <p>subtotal</p>
+    </div>
       {cart.length > 0 ? (
         <ul>
           {cart.map((product) => (
