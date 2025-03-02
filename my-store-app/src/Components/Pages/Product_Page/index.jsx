@@ -29,9 +29,14 @@ function Product(){
         <img className={styles.product_img} src={product.image.url} alt={product.name}/>
         </div>
         <div className={styles.product_text_div}>
-        <h1 className={gStyles.h1}>{product.title}</h1>
+        <h1 className={`${gStyles.h1} ${styles.h1_product}`}>{product.title}</h1>
         <p className={styles.product_text}>{product.description}</p>
+        <div className={styles.price_div}>
+        {product.price !== product.discountedPrice && (
+             <p className={styles.related_product_price} style={{ textDecoration: 'line-through' }}>${product.price.toFixed(2)}</p>
+           )}
         <p className={styles.product_text}>${discountedPrice.toFixed(2)}</p>
+        </div>
 
        <AddToCartButton product={product}/>
         <DisplayReviews product={product}/>
@@ -71,7 +76,7 @@ function Product(){
         <h3 className={styles.product_title}>{relatedProduct.title}</h3>
          <div className={styles.price_div}>
            {relatedProduct.price !== relatedProduct.discountedPrice && (
-             <p className={styles.product_price} style={{ textDecoration: 'line-through' }}>${relatedProduct.price.toFixed(2)}</p>
+             <p className={styles.related_product_price} style={{ textDecoration: 'line-through' }}>${relatedProduct.price.toFixed(2)}</p>
            )}
            <p className={styles.discounted_price}>${discountedPrice.toFixed(2)}</p>
          </div>
