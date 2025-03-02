@@ -1,0 +1,43 @@
+.product_div {
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(0, 0, 0, 0.715);
+  border: 1px solid var(--tertiary-color);
+  border-radius: 48px;
+}
+
+.product_img {
+  width: 400px;
+  height: 400px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 48px;
+}
+
+.product_img_div {
+  width: 400px;
+  height: 400px;
+}
+
+.product_text_div {
+  display: flex;
+  flex-direction: column;
+}
+
+.outer_product_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100vw;
+  padding-top: 40px;
+}
+
+.product_text {
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-1);
+  color: var(--secondary-color);
+}
+
+.stars {
+  color: var(--tertiary-color);
+}
