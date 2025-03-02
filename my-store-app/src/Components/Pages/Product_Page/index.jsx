@@ -51,7 +51,7 @@ function Product(){
 </div>
 </div>
 
-
+<div className={styles.outer_related_products_div} >
 <div className={styles.related_products_div}>
 
   {products
@@ -79,7 +79,7 @@ function Product(){
 
     ))}
     </div>
-  
+    </div>
 
     </div>
   );}
