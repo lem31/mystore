@@ -46,6 +46,19 @@ body {
 /* Media Queries */
 
 @media (max-width: 768px) {
+}
+
+@media (min-width: 487px) and (max-width: 768px) {
+  .h1 {
+    font-size: var(--font-size-medium);
+  }
+
+  .h2 {
+    font-size: var(--font-size-small);
+  }
+}
+
+@media (max-width: 486px) {
   .h1 {
     font-size: var(--font-size-medium);
   }

@@ -17,7 +17,7 @@ function Product(){
   console.log('ID from URL:', id);
    console.log('Product found:', product);
   return(
-    <div >
+    <div className={styles.outer_div} >
       {product?(
         <>
         <div className={styles.outer_product_div}>
@@ -43,9 +43,13 @@ function Product(){
         <h1>Product not found</h1>
         </>
       )}
+      <div className={styles.h2__outer_div_product}>
 <div className={styles.h2_div_product}>
-<h2 className={gStyles.h2}>Related Products</h2>
+ 
+<h2 className={styles.h2_product}>Related Products</h2>
 </div>
+</div>
+
 
 <div className={styles.related_products_div}>
 
@@ -55,24 +59,27 @@ function Product(){
     )
     .slice(0, 4)
     .map((relatedProduct) => (
+     
       <div className={styles.related_products_inner_div}  key={relatedProduct.id} >
-        <div>
 
-        <div className={homeStyles.product_image_div}>
-        <img className={homeStyles.products_cards_image} src={relatedProduct.image.url} alt={relatedProduct.name} />
+
+      <div className={styles.related_product_img_div }>
+        <img className={styles.related_product_img} src={relatedProduct.image.url} alt={relatedProduct.name} />
         </div>
-        <h3 className={homeStyles.product_title}>{relatedProduct.title}</h3>
+        <h3 className={styles.product_title}>{relatedProduct.title}</h3>
          <div className={homeStyles.price_div}>
            {relatedProduct.price !== relatedProduct.discountedPrice && (
              <p className={homeStyles.product_price} style={{ textDecoration: 'line-through' }}>${relatedProduct.price.toFixed(2)}</p>
            )}
            <p className={homeStyles.discounted_price}>${discountedPrice.toFixed(2)}</p>
          </div>
-        </div>
+       
       </div>
 
     ))}
-</div>
+    </div>
+  
+
     </div>
   );}
 
