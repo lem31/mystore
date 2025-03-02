@@ -3,7 +3,7 @@ import styles from '../../../CSS_Modules/Search_Suggestion_Li/Search_Suggestion_
 
 function SuggestionList({suggestions, handleSelect}){
   return(
-    <ul>
+    <ul className={styles.search_suggestion_ul}>
       {suggestions.map((product)=>(
         <li key={product.id} className={styles.suggestion} onClick={(e)=> { handleSelect(e, product); }} >
           {product.title}
