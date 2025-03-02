@@ -53,6 +53,10 @@
   color: var(--tertiary-color);
 }
 
+.link:focus {
+  color: var(--tertiary-color);
+}
+
 .menu {
   display: none;
 }
