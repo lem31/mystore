@@ -2,6 +2,9 @@
   cursor: pointer;
   list-style: none;
   padding-top: 16px;
+  font-size: var(--font-size-small);
+  color: var(--secondary-color);
+  font-family: var(--font-family-1);
 }
 
 .search_suggestion_ul {
@@ -20,6 +23,6 @@
 
 @media (max-width: 425px) {
   .search_suggestion_ul {
-    width: 242px;
+    width: 142px;
   }
 }

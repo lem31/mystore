@@ -105,4 +105,8 @@
     text-align: center;
     text-wrap: wrap;
   }
+
+  .suggestions_background {
+    width: 280px;
+  }
 }
