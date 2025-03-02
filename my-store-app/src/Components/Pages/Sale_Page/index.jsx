@@ -1,8 +1,15 @@
+import React from 'react';
+
+import styles from '../../../CSS_Modules/Home_Page_Body/home_page_body.module.css';
+
 function Sale(){
   return(
-    <div>
+    <div className={styles.container}>
       <h1>SALE</h1>
       <p>SALES</p>
+
+     
+
     </div>
   )
 }

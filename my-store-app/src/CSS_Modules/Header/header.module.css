@@ -57,6 +57,10 @@
   color: var(--tertiary-color);
 }
 
+.link.active {
+  color: var(--tertiary-color);
+}
+
 .menu {
   display: none;
 }
