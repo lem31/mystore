@@ -33,6 +33,22 @@ function Product(){
         <h1>Product not found</h1>
         </>
       )}
+
+<h2>Related Products</h2>
+<div className="related-products">
+  {products
+    .filter((p) =>
+      p.tags.some((tag) => product.tags.includes(tag)) && p.id !== product.id
+    )
+    .slice(0, 4)
+    .map((relatedProduct) => (
+      <div key={relatedProduct.id} className="related-product">
+        <h3>{relatedProduct.name}</h3>
+        <img src={relatedProduct.image.url} alt={relatedProduct.name} />
+        <p>${relatedProduct.discountedPrice.toFixed(2)}</p>
+      </div>
+    ))}
+</div>
     </div>
   );}
 
