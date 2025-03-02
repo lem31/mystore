@@ -67,12 +67,14 @@ function Product(){
       <div className={styles.related_product_img_div }>
         <img className={styles.related_product_img} src={relatedProduct.image.url} alt={relatedProduct.name} />
         </div>
+        <div className={styles.related_product_text}> 
         <h3 className={styles.product_title}>{relatedProduct.title}</h3>
-         <div className={homeStyles.price_div}>
+         <div className={styles.price_div}>
            {relatedProduct.price !== relatedProduct.discountedPrice && (
-             <p className={homeStyles.product_price} style={{ textDecoration: 'line-through' }}>${relatedProduct.price.toFixed(2)}</p>
+             <p className={styles.product_price} style={{ textDecoration: 'line-through' }}>${relatedProduct.price.toFixed(2)}</p>
            )}
-           <p className={homeStyles.discounted_price}>${discountedPrice.toFixed(2)}</p>
+           <p className={styles.discounted_price}>${discountedPrice.toFixed(2)}</p>
+         </div>
          </div>
        
       </div>
