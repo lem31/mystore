@@ -13,6 +13,9 @@ const CartProductCard = () => {
   const cart = useMyStore((state) => state.cart);
   return (
     <>
+<div className={styles.h1_div_cart}>
+    <h1 className={styles.h1_cart}>MY CART</h1>
+    </div>
     <div className={styles.outer_cart_box}>
     
 <div className={styles.cart_card}>
