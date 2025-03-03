@@ -25,7 +25,9 @@ const CartProductCard = () => {
       <p className={styles.subtotal_title}>Subtotal</p>
     </div>
       {cart.length > 0 ? (
-        <ul>
+       
+        <ul >
+           
           {cart.map((product) => (
             product && (
              
@@ -46,7 +48,9 @@ const CartProductCard = () => {
         
             )
           ))}
+          
         </ul>
+       
       ) : (
         <p>Your cart is empty.</p>
       )}
