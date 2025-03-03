@@ -1,6 +1,5 @@
 import React from 'react';
 import useMyStore from '../../Store';
-
 import ProceedToCheckoutButton from '../../Checkout/Proceed_To_Checkout/index';
 import styles from '../../../CSS_Modules/Cart_Page/cart.module.css';
 

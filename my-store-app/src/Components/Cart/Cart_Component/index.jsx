@@ -20,7 +20,7 @@ const Cart = () => {
       setProducts(products);
     }
   }, [setProducts]);
-  const products = JSON.parse(localStorage.getItem('products')) || [];
+  
 
   return (
     <div className={styles.container}>

@@ -1,6 +1,5 @@
 import React from 'react';
 import useMyStore from '../../Store';
-
 import AddMoreProductsToCartButton from '../Add_More_Products';
 import RemoveProductsFromCartButton from '../Remove_Products';
 import RemoveAllOfProductFromCartButton from '../Remove_All_Of_Product';
@@ -18,12 +17,12 @@ const CartProductCard = () => {
     
 <div className={styles.cart_card}>
 
-    {/* <div className={styles.cart_card_titles} >
+    <div className={styles.cart_card_titles} >
       <p className={styles.product_card_title}>Product</p>
       <p className={styles.price_title}>Price</p>
       <p className={styles.quantity_title}>Quantity</p>
       <p className={styles.subtotal_title}>Subtotal</p>
-    </div> */}
+    </div>
       {cart.length > 0 ? (
        
         <ul >
@@ -32,7 +31,7 @@ const CartProductCard = () => {
             product && (
              
               <li key={product.id} className={styles.product_items} >
-<RemoveAllOfProductFromCartButton product={product} />
+
 
 
 <div className={styles.title_div_small}>
@@ -42,6 +41,7 @@ const CartProductCard = () => {
                 <p className={styles.title_small}>Subtotal</p>
                 </div>
                 <div className={styles.products_in_cart_div}>
+                <RemoveAllOfProductFromCartButton product={product} />
                 <div className={styles.image_div}>
                 <img className={styles.product_image} src={product.image.url} alt={product.title} />
                 </div>
