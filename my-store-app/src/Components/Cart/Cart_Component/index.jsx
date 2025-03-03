@@ -23,7 +23,7 @@ const Cart = () => {
   
 
   return (
-    <div> 
+    <div className={styles.cart_page}> 
     <div className={styles.h1_div_cart}>
         <h1 className={styles.h1_cart}>MY CART</h1>
         </div>

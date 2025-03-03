@@ -12,12 +12,13 @@ return(
    
   <Header/>
  
-  {/* <Search/> */}
+
   <div  className={styles.background_image}>
-  </div>
+  
   <Outlet/>
   
   <Footer/>
+  </div>
   </div>
  
 );

@@ -56,9 +56,9 @@ function Product(){
 <div className={styles.outer_related_products_div} >
 
  
+
+
 <h2 className={styles.h2_product}>Related Products</h2>
-
-
   
 <div className={styles.related_products_div}>
 
