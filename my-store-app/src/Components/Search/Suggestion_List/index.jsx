@@ -3,6 +3,7 @@ import styles from '../../../CSS_Modules/Search_Suggestion_Li/Search_Suggestion_
 
 function SuggestionList({suggestions, handleSelect}){
   return(
+    <div className={styles.search_suggestion_box}>
     <ul className={styles.search_suggestion_ul}>
       {suggestions.map((product)=>(
         <li key={product.id} className={styles.suggestion} onClick={(e)=> { handleSelect(e, product); }} >
@@ -10,6 +11,7 @@ function SuggestionList({suggestions, handleSelect}){
         </li>
       ))}
     </ul>
+    </div>
   )
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import useMyStore from '../../Store';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSquarePlus } from '@fortawesome/free-solid-svg-icons';
+import styles from '../../../CSS_Modules/Cart_Page/cart.module.css'
 
 
 const AddMoreProductsToCartButton = ({product})=>{
@@ -16,8 +17,8 @@ const AddMoreProductsToCartButton = ({product})=>{
   return (
 
  
-    <button onClick={handleClick}>
-   <FontAwesomeIcon icon={faSquarePlus} /> </button>
+    <button className={styles.add_button} onClick={handleClick}>
+  + </button>
   );
 
 

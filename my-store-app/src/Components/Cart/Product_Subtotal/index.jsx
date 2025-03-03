@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import useMyStore from '../../Store';
+import styles from '../../../CSS_Modules/Cart_Page/cart.module.css';
 
 
 
@@ -14,7 +15,7 @@ const DisplayProductSubtotal = ({ product }) => {
 
   return (
     <div>
-      <h2>Subtotal: {subtotal}</h2>
+      <h2 className={styles.subtotal}> {subtotal}</h2>
     </div>
   );
 };

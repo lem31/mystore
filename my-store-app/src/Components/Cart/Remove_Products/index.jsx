@@ -1,7 +1,7 @@
 import React from 'react';
 import useMyStore from '../../Store';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faSquareMinus } from '@fortawesome/free-solid-svg-icons';
+import styles from '../../../CSS_Modules/Cart_Page/cart.module.css'
+
 
 const RemoveProductsFromCartButton = ({product}) => {
   const removeProductFromCart = useMyStore((state) => state.removeProductFromCart);
@@ -9,7 +9,7 @@ const RemoveProductsFromCartButton = ({product}) => {
   return (
     <>
     
-     <button onClick={() => removeProductFromCart(product.id)}><FontAwesomeIcon icon={faSquareMinus} /></button>
+     <button className={styles.minus_button} onClick={() => removeProductFromCart(product.id)}>-</button>
     
     </>
   );

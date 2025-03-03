@@ -33,8 +33,11 @@ import {persist} from 'zustand/middleware';
       
     clearCart: () => set({cart:[]}),
     cartCount: (state) => state.cart.reduce((total, product) => total + product.quantity, 0),
-    cartTotal: (state) => { const total = state.cart.reduce((total, product) => total + (product.price * product.quantity), 0);
-    return total.toFixed(2) },
+   cartTotal:()=>{
+    const state = get();
+    const total =state.cart.reduce((total, product)=> total +(product.price*product.quantity),0);
+    return total.toFixed(2);
+   },
   
 specificProductTotal: (product) => {
   const state = get();

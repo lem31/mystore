@@ -1,13 +1,15 @@
 import Cart from '../../../Components/Cart/Cart_Component';
 import React from 'react';
+import styles from '../../../CSS_Modules/Home_Page_Body/home_page_body.module.css';
 
 
 
 function MyCart(){
   return(
     <>
+    <div className={styles.container}>
 <Cart/>
-
+</div>
 </>
   )
 };
