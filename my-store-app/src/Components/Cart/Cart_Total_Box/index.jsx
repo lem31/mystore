@@ -10,6 +10,7 @@ const CartTotalBox = () => {
 
 
   return (
+    <div className={styles.cart_total_position}>
     <div className={styles.cart_total_outer}>
       {cartTotal > 0 && (
         <>
@@ -27,6 +28,7 @@ const CartTotalBox = () => {
 <div className={styles.proceed_button_div}>
 <ProceedToCheckoutButton />
 </div>
+    </div>
     </div>
   );
 };

@@ -19,7 +19,6 @@
 
 .h1_cart {
   color: var(--tertiary-color);
-
   margin-bottom: 40px;
   background-color: rgba(0, 0, 0, 0.66);
 }
@@ -156,13 +155,20 @@
   grid-column: 6;
 }
 
+.cart_total_position {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  height: 640px;
+}
+
 .cart_total_outer {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   gap: 16px;
-  width: 220px;
+  width: 320px;
   height: 130px;
   border: 1px solid var(--tertiary-color);
   background-color: rgba(0, 0, 0, 0.822);
@@ -247,5 +253,18 @@
     cursor: pointer;
     grid-column: 2;
     grid-row: 1;
+  }
+
+  .cart_total_outer {
+    gap: 16px;
+    width: 320px;
+    height: 130px;
+  }
+
+  .cart_total_position {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 200px;
   }
 }
