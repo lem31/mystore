@@ -7,13 +7,14 @@ import MyCart from '../Pages/MyCart_Page';
 import CheckoutPage from "../Pages/Checkout_Page";
 import CheckoutSuccess from "../Pages/CheckoutSuccess_Page";
 import Contact from "../Pages/Contact_Page";
+import styles from  '../../CSS_Modules/Global_Styles/global_styles.module.css';
 
 
 
 function Router(){
   return(
     <>
-    <Routes>
+    <Routes className={styles.rooter}>
       <Route path="/" element={<Layout/>}>
       <Route index element={<Home/>}/>
       <Route path= "/Sale" element={<Sale/>}/>

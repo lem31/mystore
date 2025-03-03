@@ -2,24 +2,22 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
-  align-items: center;
-  max-width: 100vw;
+  width: 100vw;
   height: auto;
-  margin-top: 40px;
-  gap: 16px;
 }
 
 .h1_div_cart {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  max-width: 100vw;
+  margin-top: 40px;
+  position: relative;
 }
 
 .h1_cart {
   color: var(--tertiary-color);
-  margin-bottom: 40px;
+  margin-bottom: 20px;
   background-color: rgba(0, 0, 0, 0.66);
 }
 
@@ -64,6 +62,10 @@
   margin-top: 8px;
   justify-items: center;
   align-items: center;
+}
+
+.title_div_small {
+  display: none;
 }
 
 .product_image {
@@ -159,7 +161,7 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  height: 640px;
+  height: 240px;
 }
 
 .cart_total_outer {
@@ -189,6 +191,87 @@
 }
 
 @media (min-width: 487px) and (max-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    max-width: 100vw;
+    height: auto;
+    margin-top: 40px;
+    gap: 16px;
+  }
+
+  .cart_card {
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(0, 0, 0, 0.822);
+    border: 1px solid var(--tertiary-color);
+    border-radius: 52px;
+    justify-content: center;
+    width: 100%;
+    max-width: 550px;
+    height: auto;
+    padding-top: 16px;
+  }
+
+  .product_items {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: 400px;
+    width: 300px;
+  }
+
+  .products_in_cart_div {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .title_small {
+    color: var(--secondary-color);
+    border-bottom: 1px solid var(--tertiary-color);
+    width: 100%;
+    display: flex;
+  }
+
+  .cart_card_titles {
+    display: none;
+  }
+
+  .title_div_small {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: end;
+    height: 316px;
+  }
+
+  .bin_button {
+    background: none;
+    cursor: pointer;
+    grid-column: 2;
+    grid-row: 1;
+  }
+
+  .cart_total_outer {
+    gap: 16px;
+    width: 320px;
+    height: 130px;
+  }
+
+  .cart_total_position {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 200px;
+  }
+}
+
+@media (max-width: 486px) {
   .container {
     display: flex;
     flex-direction: column;

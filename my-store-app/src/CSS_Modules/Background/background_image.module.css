@@ -3,8 +3,10 @@
   background-image: url("../../Images/Easy.png");
   background-size: contain;
   background-repeat: no-repeat;
-  justify-content: center;
-  align-items: center;
+  background-attachment: fixed;
+  background-position: center;
   width: 100vw;
-  height: auto;
+
+  height: 100vh;
+  z-index: 1000;
 }

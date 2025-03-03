@@ -3,6 +3,7 @@ import styles from "../../CSS_Modules/Header/header.module.css";
 import Nav from "../Nav";
 import React from 'react';
 import HamburgerMenu from '../Hamburger_Menu';
+import Search from '../Search/Search_Component/index';
 
 
 
@@ -24,7 +25,10 @@ function Header(){
 </div>
 
    </header>
+
+    <Search/>
    </div>
+
   )
 }
 

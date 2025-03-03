@@ -23,8 +23,13 @@ const Cart = () => {
   
 
   return (
+    <div> 
+    <div className={styles.h1_div_cart}>
+        <h1 className={styles.h1_cart}>MY CART</h1>
+        </div>
     <div className={styles.container}>
    <div className={styles.inner_container}>
+
 
      <CartProductCard />
      </div>
@@ -34,6 +39,7 @@ const Cart = () => {
 
 
 
+    </div>
     </div>
   );
 };

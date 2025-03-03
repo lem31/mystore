@@ -1,6 +1,5 @@
 import ViewProductButton from "../View_Product_Btn";
 import React from 'react';
-import useMyStore from '../../Store/'
 import DisplayDiscount from "../Display_Discount";
 import styles from '../../../CSS_Modules/Home_Page_Body/home_page_body.module.css';
 
