@@ -5,7 +5,8 @@ import DisplayDiscount from '../../Product/Display_Discount';
 import DisplayReviews from '../../Product/Display_Reviews';
 import styles from '../../../CSS_Modules/Product_Page/product_page.module.css';
 import gStyles from '../../../CSS_Modules/Global_Styles/global_styles.module.css';
-import homeStyles from '../../../CSS_Modules/Home_Page_Body/home_page_body.module.css';
+import ViewProductButton from "../../../Components/Product/View_Product_Btn";
+
 const products = JSON.parse(localStorage.getItem("products")) || [];
 
 function Product(){
@@ -36,6 +37,7 @@ function Product(){
              <p className={styles.related_product_price} style={{ textDecoration: 'line-through' }}>${product.price.toFixed(2)}</p>
            )}
         <p className={styles.product_text}>${discountedPrice.toFixed(2)}</p>
+       
         </div>
 
        <AddToCartButton product={product}/>
@@ -49,15 +51,18 @@ function Product(){
         <h1>Product not found</h1>
         </>
       )}
-      <div className={styles.h2__outer_div_product}>
-<div className={styles.h2_div_product}>
+  
+<div className = {styles.product_title_layout}>
+<div className={styles.outer_related_products_div} >
+
  
 <h2 className={styles.h2_product}>Related Products</h2>
-</div>
-</div>
 
-<div className={styles.outer_related_products_div} >
+
+  
 <div className={styles.related_products_div}>
+
+
 
   {products
     .filter((p) =>
@@ -79,7 +84,10 @@ function Product(){
              <p className={styles.related_product_price} style={{ textDecoration: 'line-through' }}>${relatedProduct.price.toFixed(2)}</p>
            )}
            <p className={styles.discounted_price}>${discountedPrice.toFixed(2)}</p>
+         
+         
          </div>
+         <ViewProductButton id={relatedProduct.id} />
          </div>
        
       </div>
@@ -87,7 +95,7 @@ function Product(){
     ))}
     </div>
     </div>
-
+    </div>
     </div>
   );}
 
