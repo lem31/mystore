@@ -14,7 +14,7 @@ return(
  <div className={styles.product_image_div}>
   <img className={styles.products_cards_image} src={product.image.url} alt={product.title} />
   </div>
-
+<div className={styles.product_info_div}>
   <h2 className={styles.product_title}>{product.title}</h2>
 {/* <div>
   <p className={styles.product_description}>{product.description}</p>
@@ -27,7 +27,7 @@ return(
   </div>
 
   <ViewProductButton id={product.id} />
-
+  </div>
   
 </div>
 );};
