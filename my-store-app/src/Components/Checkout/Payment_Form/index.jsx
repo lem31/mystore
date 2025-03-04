@@ -11,7 +11,7 @@ import Klarna from '../../../Images/klarna-pink-square-logo-24364.png';
 import Vipps from '../../../Images/Vipps.png';
 import styles from '../../../CSS_Modules/Checkout_Page/checkout.module.css';
 import gStyles from '../../../CSS_Modules/Global_Styles/global_styles.module.css';
-
+import checkoutStyles from '../../../CSS_Modules/Checkout_Page/checkout.module.css';
 function PaymentForm() {
   const navigate = useNavigate();
   const clearCart = useMyStore((state)=> state.clearCart);
@@ -21,51 +21,51 @@ function PaymentForm() {
   
   }, [navigate, clearCart]);
   return (
-    <div className={styles.payment_form_box}>
-      <form className={styles.payment_form} onSubmit={(e) => { e.preventDefault(); handleClick(); }}>
+    <div className={checkoutStyles.payment_form_box}>
+      <form className={checkoutStyles.payment_form} onSubmit={(e) => { e.preventDefault(); handleClick(); }}>
         <h1 className={gStyles.h2}>Billing Details</h1>
         <div className={styles.row_div}>
-          <div className={styles.label_input_div} >
-        <label className={styles.checkout_label} htmlFor="name">Name</label>
-        <input type="text" id="first-name" name="first-name" placeholder="First Name"/>
+          <div className={checkoutStyles.label_input_div} >
+        <label className={checkoutStyles.checkout_label} htmlFor="name">Name</label>
+        <input className={checkoutStyles.checkout_input} type="text" id="first-name" name="first-name" placeholder="First Name"/>
         </div>
-        <div className={styles.label_input_div}>
-        <label className={styles.checkout_label} htmlFor="last-name">Last Name</label>
+        <div className={checkoutStyles.label_input_div}>
+        <label className={checkoutStyles.checkout_label} htmlFor="last-name">Last Name</label>
         <input type="text" id="last-name" name="last-name" placeholder="Last Name"/>
         </div>
         </div>
-        <label className={styles.checkout_label}htmlFor="company">Company</label>
+        <label className={checkoutStyles.checkout_label}htmlFor="company">Company</label>
         <input type="text" id="company" name="company" placeholder="company"/>
-        <label className={styles.checkout_label} htmlFor="country">Country</label>
+        <label className={checkoutStyles.checkout_label} htmlFor="country">Country</label>
         <input type="text" id="country" name="country" placeholder="country"/>
-        <div className={styles.row_div}>
-          <div className={styles.label_input_div}>
-        <label className={styles.checkout_label}htmlFor="house-number-and-street-name">House Number And Street Name</label>
+        <div className={checkoutStyles.row_div}>
+          <div className={checkoutStyles.label_input_div}>
+        <label className={checkoutStyles.checkout_label}htmlFor="house-number-and-street-name">House Number And Street Name</label>
         <input type="text" id="house-number-and-street-name" name="house-number-and-street-name" placeholder="House Number And Street Name"/>
         </div>
-        <div className={styles.label_input_div}>
-        <label className={styles.checkout_label} htmlFor="apartment-building-number">Apartment, Building Number, etc.</label>
+        <div className={checkoutStyles.label_input_div}>
+        <label className={checkoutStyles.checkout_label} htmlFor="apartment-building-number">Apartment, Building Number, etc.</label>
         <input type="text" id="apartment-building-number" name="apartment-building-number" placeholder="Apartment, Building Number, etc."/>
         </div>
         </div>
-        <div className={styles.row_div}>
-          <div className={styles.label_input_div}>
-        <label className={styles.checkout_label} htmlFor="town-city">Town/City</label>
-        <input type="text" id="town-city" name="town-city" placeholder="Town/City"/>
+        <div className={checkoutStyles.row_div}>
+          <div className={checkoutStyles.label_input_div}>
+        <label className={checkoutStyles.checkout_label} htmlFor="town-city">Town/City</label>
+        <input className={checkoutStyles.input_town_zip_state} type="text" id="town-city" name="town-city" placeholder="Town/City"/>
         </div>
-        <div className={styles.label_input_div}>
-        <label className={styles.checkout_label} htmlFor="state">State</label>
-        <input type="text" id="state" name="state" placeholder="State"/>
+        <div className={checkoutStyles.label_input_div}>
+        <label className={checkoutStyles.checkout_label} htmlFor="state">State</label>
+        <input className={checkoutStyles.input_town_zip_state} type="text" id="state" name="state" placeholder="State"/>
         </div>
-        <div className={styles.label_input_div}>
-        <label className={styles.checkout_label} htmlFor="zip-code">Zip Code</label>
-        <input type="text" id="zip-code" name="zip-code" placeholder="Zip Code"/>
+        <div className={checkoutStyles.label_input_div}>
+        <label className={checkoutStyles.checkout_label} htmlFor="zip-code">Zip Code</label>
+        <input className={checkoutStyles.input_town_zip_state}type="text" id="zip-code" name="zip-code" placeholder="Zip Code"/>
         </div>
         </div>
-        <label className={styles.checkout_label} htmlFor="phone">Phone</label>
+        <label className={checkoutStyles.checkout_label} htmlFor="phone">Phone</label>
         <input type="number" id="phone" name="phone" placeholder="Phone"/>
         <h2 className={gStyles.h2}>Additional Information</h2>
-        <label className={styles.checkout_label} htmlFor="additional-info">Additional Information</label>
+        <label className={checkoutStyles.checkout_label} htmlFor="additional-info">Additional Information</label>
         <input type="text" id="additional-info" name="additional-info" placeholder="Additional details about your order. E.G. specific info about delivery"/>
        
        
@@ -73,22 +73,22 @@ function PaymentForm() {
         <ul >
    
           <li >
-          <div className={styles.row_div}>
+          <div className={checkoutStyles.row_div}>
           <label htmlFor="option1"> 
-          <div className={styles.row_div}>
+          <div className={checkoutStyles.option_one_row_div}>
             <input type="radio" id="option1" name="payment-options" value="option1"/> 
           
            
            
               <img src={CreditCard} alt="Option 1"/>
 
-              <p className={styles.card_payment_p}>Card Payments</p>
+              <p className={checkoutStyles.card_payment_p}>Card Payments</p>
              
-            <div className={styles.card_payment_img_div}>
-              <img src={MasterCard} alt="Option1"/>
-              <img src={Amex} alt="Option1"/>
-              <img src={Visa} alt="Option1"/>
-              <img src={Mæstro} alt="Option1"/>
+            <div className={checkoutStyles.card_payment_img_div}>
+              <img className={checkoutStyles.card_img} src={MasterCard} alt="Option1"/>
+              <img className={checkoutStyles.card_img} src={Amex} alt="Option1"/>
+              <img className={checkoutStyles.card_img} src={Visa} alt="Option1"/>
+              <img className={checkoutStyles.card_img} src={Mæstro} alt="Option1"/>
               </div>
               </div>
            
@@ -99,40 +99,40 @@ function PaymentForm() {
         
           
 <div className={styles.card_payment_form_div}>
-          <label className={styles.checkout_label} htmlFor="card-number">Card Number</label>
+          <label className={checkoutStyles.checkout_label} htmlFor="card-number">Card Number</label>
           <input type="number" id="card-number" name="card-number" placeholder="Card Number"/>
-          <div className={styles.row_div}>
-          <div className={styles.label_input_div}>
-          <label className={styles.checkout_label} htmlFor="expiry-date">Expiry Date</label>
+          <div className={checkoutStyles.row_div}>
+          <div className={checkoutStyles.label_input_div}>
+          <label className={checkoutStyles.checkout_label} htmlFor="expiry-date">Expiry Date</label>
           <input type="text" id="expiry-date" name="expiry-date" placeholder="Expiry Date"/>
         </div>
-        <div className={styles.label_input_div}>
-          <label className={styles.checkout_label} htmlFor="cvc-cvv">Cvc/Cvv</label>
+        <div className={checkoutStyles.label_input_div}>
+          <label className={checkoutStyles.checkout_label} htmlFor="cvc-cvv">Cvc/Cvv</label>
           <input type="number" id="cvc-cvv" name="cvc-cvv" placeholder="CVC/CVV"/>
         </div>
           </div>
-          <label className={styles.checkout_label} htmlFor="name-on-card">Name On Card</label>
+          <label className={checkoutStyles.checkout_label} htmlFor="name-on-card">Name On Card</label>
           <input type="text" id="name-on-card" name="name-on-card" placeholder="Name On Card"/>
 
           <button className={gStyles.button} type="submit">PAY</button>
           </div>
           <li>
-          <div className={`${styles.row_div} ${styles.klarna_div}`}>
+          <div className={`${checkoutStyles.row_div} ${checkoutStyles.klarna_div}`}>
             <input type="radio" id="option2" name="payment-options" value="option2"/>
             <label htmlFor="option2"> 
-            <div className={styles.img_p_div}>
-              <img className={styles.klarna_img} src={Klarna} alt="Option 2"/>
-              <p className={styles.klarna_p}>Klarna</p>
+            <div className={checkoutStyles.img_p_div}>
+              <img className={checkoutStyles.klarna_img} src={Klarna} alt="Option 2"/>
+              <p className={checkoutStyles.klarna_p}>Klarna</p>
               </div>
             </label>
             </div>
           </li>
 
           <li>
-            <div className={`${styles.row_div} ${styles.vipps_div}`}>
+            <div className={`${checkoutStyles.row_div} ${checkoutStyles.vipps_div}`}>
             <input type="radio" id="option3" name="payment-options" value="option3"/>
             <label htmlFor="option3"> 
-              <img className={styles.vipps_img} src={Vipps} alt="Option 3"/>
+              <img className={checkoutStyles.vipps_img} src={Vipps} alt="Option 3"/>
               <span>Vipps</span>
             </label>
             </div>

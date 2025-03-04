@@ -1,34 +1,35 @@
 .container_checkout {
   display: flex;
   flex-direction: column;
-
+  align-items: center;
   max-width: 100vw;
   height: auto;
   margin-top: 40px;
   margin-bottom: 40px;
-  gap: 16px;
 }
 
 .inner_container_checkout {
   display: flex;
   flex-direction: row;
-  max-width: 100vw;
-}
 
+  justify-items: center;
+  gap: 20px;
+  max-width: 800px;
+}
+/* 
 .payment_form_box {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
   align-items: center;
+  justify-content: center;
   gap: 16px;
-  width: 100%;
+  width: 500px;
   background-color: rgba(0, 0, 0, 0.486);
-}
+} */
 .payment_form {
   display: flex;
   flex-direction: column;
-  gap: 12px;
+  gap: 8px;
   width: 400px;
   border: 1px solid var(--tertiary-color);
   border-radius: 8px;
@@ -46,7 +47,8 @@
   width: 100%;
 }
 
-.row_div {
+.row_div,
+.option_one_row_div {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -89,7 +91,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  width: 100%;
+  width: 300px;
 }
 
 .klarna_img,
@@ -106,14 +108,117 @@
   align-items: center;
 }
 
-.your_order_titles,
-.your_product_items {
+.your_order_titles {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
   color: var(--secondary-color);
   max-width: 800px;
   margin-top: 8px;
   justify-items: center;
   align-items: center;
+}
+
+.your_cart_card {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(0, 0, 0, 0.822);
+  border: 1px solid var(--tertiary-color);
+  border-radius: 52px;
+  width: 100%;
+  width: 300px;
+  height: auto;
+  padding-bottom: 16px;
+}
+
+.your_product_title {
+  grid-column: 2;
+  grid-row: 1;
+  color: var(--secondary-color);
+}
+
+.your_subtotal_title {
+  grid-column: 3;
+  grid-row: 1;
+  color: var(--secondary-color);
+}
+
+.your_products_in_cart_div {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 100px;
+  align-items: center;
+  max-width: 800px;
+  height: auto;
+  gap: 12px;
+}
+
+.your_image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  margin: auto;
+  border-radius: 38px;
+  grid-column: 1;
+}
+
+.your_image_div {
+  width: 100px;
+  height: 100px;
+  grid-column: 1;
+}
+
+.input_town_zip_state {
+  width: 100px;
+}
+
+.card_img {
+  width: 32px;
+  height: 32px;
+}
+
+@media (min-width: 487px) and (max-width: 768px) {
+  .inner_container_checkout {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 486px) {
+  .inner_container_checkout {
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+  }
+
+  .payment_form {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 300px;
+    border: 1px solid var(--tertiary-color);
+    border-radius: 8px;
+  }
+
+  .card_img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .card_payment_img_div {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: end;
+    width: 100%;
+  }
+
+  .option_one_row_div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+    width: 100%;
+  }
 }
