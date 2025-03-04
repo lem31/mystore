@@ -9,7 +9,7 @@ import Visa from '../../../Images/icons8-visa-48.png';
 import Mæstro from '../../../Images/icons8-maestro-48.png';
 import Klarna from '../../../Images/klarna-pink-square-logo-24364.png';
 import Vipps from '../../../Images/Vipps.png';
-
+import styles from '../../../CSS_Modules/Checkout_Page/checkout.module.css';
 
 function PaymentForm() {
   const navigate = useNavigate();
@@ -20,8 +20,8 @@ function PaymentForm() {
   
   }, [navigate, clearCart]);
   return (
-    <div>
-      <form onSubmit={(e) => { e.preventDefault(); handleClick(); }}>
+    <div className={styles.payment_form_box}>
+      <form className={styles.payment_form} onSubmit={(e) => { e.preventDefault(); handleClick(); }}>
         <h1>Billing Details</h1>
         <label htmlFor="name">Name</label>
         <input type="text" id="first-name" name="first-name" placeholder="First Name"/>
