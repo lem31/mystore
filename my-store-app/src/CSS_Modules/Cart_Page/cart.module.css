@@ -190,6 +190,12 @@
   font-size: var(--font-size-small);
 }
 
+.cart_empty_msg {
+  color: var(--tertiary-color);
+  font-size: var(--font-size-medium);
+  text-align: center;
+}
+
 @media (min-width: 487px) and (max-width: 768px) {
   .container {
     display: flex;

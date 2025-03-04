@@ -23,7 +23,7 @@ const CartProductCard = () => {
       <p className={styles.price_title}>Price</p>
       <p className={styles.quantity_title}>Quantity</p>
       <p className={styles.subtotal_title}>Subtotal</p>
-    </div>
+    </div> 
       {cart.length > 0 ? (
        
         <ul >
@@ -84,7 +84,7 @@ const CartProductCard = () => {
         </ul>
        
       ) : (
-        <p>Your cart is empty.</p>
+        <p className={styles.cart_empty_msg}>Your cart is empty.</p>
       )}
     </div>
     </div>
