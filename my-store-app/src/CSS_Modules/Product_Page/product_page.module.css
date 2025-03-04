@@ -56,6 +56,10 @@
   color: var(--tertiary-color);
 }
 
+.view_related_product_button {
+  padding-top: 16px;
+}
+
 .discounted_price {
   font-size: var(--font-size-small);
   font-family: var(--font-family-1);
@@ -101,6 +105,7 @@
 
 .related_product_text {
   width: 152px;
+  background-color: rgba(0, 0, 0, 0.895);
 }
 
 .h2_product {
@@ -192,6 +197,7 @@
 
   .related_product_text {
     width: 120px;
+    background-color: rgba(0, 0, 0, 0.895);
   }
 
   .product_price {
@@ -311,6 +317,8 @@
 
   .related_product_text {
     width: 120px;
+    background-color: rgba(0, 0, 0, 0.895);
+    gap: 16px;
   }
 
   .price_div {

@@ -161,8 +161,7 @@
 .cart_total_position {
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
-  height: 240px;
+  justify-content: flex-start;
 }
 
 .cart_total_outer {

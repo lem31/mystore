@@ -5,16 +5,17 @@ import styles from '../../../CSS_Modules/Cart_Page/cart.module.css';
 
 const CartTotalBox = () => {
 
-  const cartTotal = useMyStore((state) => state.cartTotal);
+  const cartTotal = useMyStore((state) => state.cartTotal() || 0);
 
 
 
   return (
     <div className={styles.cart_total_position}>
     <div className={styles.cart_total_outer}>
+    <h3 className={styles.cart_total_h3}>Cart Total</h3>
       {cartTotal > 0 && (
         <>
-        <h3 className={styles.cart_total_h3}>Cart Total</h3>
+       
         <div className={styles.cart_total_inner}>
           
         <p className={styles.cart_total_p} >Total</p> 

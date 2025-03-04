@@ -87,7 +87,9 @@ function Product(){
          
          
          </div>
+         <div className={styles.view_related_product_button}>
          <ViewProductButton id={relatedProduct.id} />
+         </div>
          </div>
        
       </div>
