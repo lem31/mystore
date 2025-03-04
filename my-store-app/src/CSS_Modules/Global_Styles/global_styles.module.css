@@ -39,6 +39,14 @@
   text-align: center;
 }
 
+.h3 {
+  color: var(--tertiary-color);
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-2);
+  font-weight: bold;
+  text-align: center;
+}
+
 body {
   margin: 0;
   min-height: 100vh;

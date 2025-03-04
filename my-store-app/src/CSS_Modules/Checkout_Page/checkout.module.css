@@ -1,9 +1,6 @@
 .container_checkout {
   display: flex;
   flex-direction: column;
-  /* justify-content: center;
-  align-content: center;
-  align-items: center; */
   max-width: 100vw;
   height: auto;
   margin-top: 40px;
@@ -25,13 +22,51 @@
   align-items: center;
   gap: 16px;
   width: 100%;
+  background-color: rgba(0, 0, 0, 0.486);
 }
 .payment_form {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-content: center;
+  gap: 12px;
+  width: 100%;
+}
+
+.checkout_label {
+  font-size: var(--font-size-small);
+  color: var(--secondary-color);
+}
+
+.label_input_div {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 100%;
+}
+
+.row_div {
+  display: flex;
+  flex-direction: row;
+  gap: 16px;
+  width: 100%;
+}
+
+.card_payment_div {
+  display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 16px;
+  width: 100%;
+}
+
+.card_payment_p {
+  font-size: var(--font-size-small);
+  color: var(--secondary-color);
+  text-wrap: nowrap;
+}
+
+.card_payment_img_div {
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
   width: 100%;
 }
