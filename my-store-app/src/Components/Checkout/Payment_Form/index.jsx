@@ -70,13 +70,20 @@ function PaymentForm() {
        
        
         <h2 className={gStyles.h2}>Payment</h2>
-        <ul>
-          <li>
-            <input type="radio" id="option1" name="payment-options" value="option1"/>
-            <label htmlFor="option1">
-              <div className={styles.card_payment_div}>
+        <ul >
+   
+          <li >
+          <div className={styles.row_div}>
+          <label htmlFor="option1"> 
+          <div className={styles.row_div}>
+            <input type="radio" id="option1" name="payment-options" value="option1"/> 
+          
+           
+           
               <img src={CreditCard} alt="Option 1"/>
+
               <p className={styles.card_payment_p}>Card Payments</p>
+             
             <div className={styles.card_payment_img_div}>
               <img src={MasterCard} alt="Option1"/>
               <img src={Amex} alt="Option1"/>
@@ -84,34 +91,51 @@ function PaymentForm() {
               <img src={Mæstro} alt="Option1"/>
               </div>
               </div>
+           
+           
             </label>
+            </div>
           </li>
-
-          <label htmlFor="card-number"/>
+        
+          
+<div className={styles.card_payment_form_div}>
+          <label className={styles.checkout_label} htmlFor="card-number">Card Number</label>
           <input type="number" id="card-number" name="card-number" placeholder="Card Number"/>
-          <label htmlFor="expiry-date"/>
+          <div className={styles.row_div}>
+          <div className={styles.label_input_div}>
+          <label className={styles.checkout_label} htmlFor="expiry-date">Expiry Date</label>
           <input type="text" id="expiry-date" name="expiry-date" placeholder="Expiry Date"/>
-          <label htmlFor="cvc-cvv"/>
+        </div>
+        <div className={styles.label_input_div}>
+          <label className={styles.checkout_label} htmlFor="cvc-cvv">Cvc/Cvv</label>
           <input type="number" id="cvc-cvv" name="cvc-cvv" placeholder="CVC/CVV"/>
-          <label htmlFor="name-on-card"/>
+        </div>
+          </div>
+          <label className={styles.checkout_label} htmlFor="name-on-card">Name On Card</label>
           <input type="text" id="name-on-card" name="name-on-card" placeholder="Name On Card"/>
 
-          <button type="submit">PAY</button>
-
+          <button className={gStyles.button} type="submit">PAY</button>
+          </div>
           <li>
+          <div className={`${styles.row_div} ${styles.klarna_div}`}>
             <input type="radio" id="option2" name="payment-options" value="option2"/>
             <label htmlFor="option2"> 
-              <img src={Klarna} alt="Option 2"/>
-              <span>Klarna</span>
+            <div className={styles.img_p_div}>
+              <img className={styles.klarna_img} src={Klarna} alt="Option 2"/>
+              <p className={styles.klarna_p}>Klarna</p>
+              </div>
             </label>
+            </div>
           </li>
 
           <li>
+            <div className={`${styles.row_div} ${styles.vipps_div}`}>
             <input type="radio" id="option3" name="payment-options" value="option3"/>
             <label htmlFor="option3"> 
-              <img src={Vipps} alt="Option 3"/>
+              <img className={styles.vipps_img} src={Vipps} alt="Option 3"/>
               <span>Vipps</span>
             </label>
+            </div>
           </li>
         </ul>
 

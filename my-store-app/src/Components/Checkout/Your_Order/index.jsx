@@ -9,7 +9,7 @@ const YourOrder = () => {
     <>
       <div className={styles.outer_cart_box}>
         <div className={styles.cart_card}>
-          <div className={styles.cart_card_titles}>
+          <div className={styles.your_order_titles}>
             <p className={styles.product_card_title}>Product</p>
             <p className={styles.subtotal_title}>Subtotal</p>
           </div>
@@ -17,7 +17,7 @@ const YourOrder = () => {
             <ul>
               {cart.map((product) => (
                 product && (
-                  <li key={product.id} className={styles.product_items}>
+                  <li key={product.id} className={styles.your_product_items}>
                     <div className={styles.products_in_cart_div}>
                       <div className={styles.image_div}>
                         <img className={styles.product_image} src={product.image.url} alt={product.title} />

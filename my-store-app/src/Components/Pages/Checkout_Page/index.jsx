@@ -8,7 +8,9 @@ function CheckoutPage() {
     <div className={styles.container_checkout}>
       <h1 className={gStyles.h1}>CHECKOUT</h1>
        <div className={styles.inner_container_checkout}>
+      
       <PaymentForm/>
+     
       <YourOrder/>
       </div>
     </div>
