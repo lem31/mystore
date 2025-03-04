@@ -6,16 +6,20 @@ import checkoutStyles from '../../../CSS_Modules/Checkout_Page/checkout.module.c
 
 const YourOrder = () => {
   const cart = useMyStore((state) => state.cart);
+  const cartTotal = Number(useMyStore((state) => state.cartTotal())) || 0;
   return (
     <>
       <div className={checkoutStyles.outer_cart_box}>
         <div className={checkoutStyles.your_cart_card}>
+          <div className={checkoutStyles.your_order_border_bottom}>
           <div className={checkoutStyles.your_order_titles}>
+            
             <p className={checkoutStyles.your_product_title}>Product</p>
             <p className={checkoutStyles.your_subtotal_title}>Subtotal</p>
           </div>
+          </div>
           {cart.length > 0 ? (
-            <ul>
+            <ul className={checkoutStyles.your_product_ul}>
               {cart.map((product) => (
                 product && (
                   <li key={product.id} className={checkoutStyles.your_product_items}>
@@ -25,12 +29,12 @@ const YourOrder = () => {
                       </div>
                       <div>
      
-                      <p className={styles.product_title}>{product.title}</p>
+                      <p className={checkoutStyles.product_title}>{product.title}</p>
                       </div>
                    
-                   
+                   <DisplayProductSubtotal product={product} />
             
-                      <DisplayProductSubtotal product={product} />
+                    
                    
                     </div>
                   </li>
@@ -40,7 +44,18 @@ const YourOrder = () => {
           ) : (
             <p className={styles.empty_cart_message}>Your cart is empty.</p>
           )}
-
+  {cartTotal > 0 && (
+   
+  
+       
+        <div className={styles.cart_total_inner}>
+          <p className={styles.cart_total_p}>Total</p>
+          <span className={styles.cart_total_span}>${cartTotal.toFixed(2)}</span>
+        </div>
+       
+    
+   
+  )}
 
         </div>
       </div>

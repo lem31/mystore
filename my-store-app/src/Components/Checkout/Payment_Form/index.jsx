@@ -27,25 +27,25 @@ function PaymentForm() {
         <div className={styles.row_div}>
           <div className={checkoutStyles.label_input_div} >
         <label className={checkoutStyles.checkout_label} htmlFor="name">Name</label>
-        <input className={checkoutStyles.checkout_input} type="text" id="first-name" name="first-name" placeholder="First Name"/>
+        <input className={checkoutStyles.checkout_first_name} type="text" id="first-name" name="first-name" placeholder="First Name"/>
         </div>
         <div className={checkoutStyles.label_input_div}>
         <label className={checkoutStyles.checkout_label} htmlFor="last-name">Last Name</label>
-        <input type="text" id="last-name" name="last-name" placeholder="Last Name"/>
+        <input className={checkoutStyles.checkout_last_name} type="text" id="last-name" name="last-name" placeholder="Last Name"/>
         </div>
         </div>
         <label className={checkoutStyles.checkout_label}htmlFor="company">Company</label>
-        <input type="text" id="company" name="company" placeholder="company"/>
+        <input className={checkoutStyles.checkout_input} type="text" id="company" name="company" placeholder="company"/>
         <label className={checkoutStyles.checkout_label} htmlFor="country">Country</label>
-        <input type="text" id="country" name="country" placeholder="country"/>
+        <input className={checkoutStyles.checkout_input} type="text" id="country" name="country" placeholder="country"/>
         <div className={checkoutStyles.row_div}>
           <div className={checkoutStyles.label_input_div}>
         <label className={checkoutStyles.checkout_label}htmlFor="house-number-and-street-name">House Number And Street Name</label>
-        <input type="text" id="house-number-and-street-name" name="house-number-and-street-name" placeholder="House Number And Street Name"/>
+        <input className={checkoutStyles.checkout_house_no} type="text" id="house-number-and-street-name" name="house-number-and-street-name" placeholder="House Number And Street Name"/>
         </div>
         <div className={checkoutStyles.label_input_div}>
         <label className={checkoutStyles.checkout_label} htmlFor="apartment-building-number">Apartment, Building Number, etc.</label>
-        <input type="text" id="apartment-building-number" name="apartment-building-number" placeholder="Apartment, Building Number, etc."/>
+        <input className={checkoutStyles.checkout_building}type="text" id="apartment-building-number" name="apartment-building-number" placeholder="Apartment, Building Number, etc."/>
         </div>
         </div>
         <div className={checkoutStyles.row_div}>
@@ -63,10 +63,10 @@ function PaymentForm() {
         </div>
         </div>
         <label className={checkoutStyles.checkout_label} htmlFor="phone">Phone</label>
-        <input type="number" id="phone" name="phone" placeholder="Phone"/>
+        <input className={checkoutStyles.checkout_input} type="number" id="phone" name="phone" placeholder="Phone"/>
         <h2 className={gStyles.h2}>Additional Information</h2>
         <label className={checkoutStyles.checkout_label} htmlFor="additional-info">Additional Information</label>
-        <input type="text" id="additional-info" name="additional-info" placeholder="Additional details about your order. E.G. specific info about delivery"/>
+        <input className={checkoutStyles.checkout_input} type="text" id="additional-info" name="additional-info" placeholder="Additional details about your order. E.G. specific info about delivery"/>
        
        
         <h2 className={gStyles.h2}>Payment</h2>
@@ -100,21 +100,22 @@ function PaymentForm() {
           
 <div className={styles.card_payment_form_div}>
           <label className={checkoutStyles.checkout_label} htmlFor="card-number">Card Number</label>
-          <input type="number" id="card-number" name="card-number" placeholder="Card Number"/>
+          <input className={checkoutStyles.checkout_card_no} type="number" id="card-number" name="card-number" placeholder="Card Number"/>
           <div className={checkoutStyles.row_div}>
           <div className={checkoutStyles.label_input_div}>
           <label className={checkoutStyles.checkout_label} htmlFor="expiry-date">Expiry Date</label>
-          <input type="text" id="expiry-date" name="expiry-date" placeholder="Expiry Date"/>
+          <input className={checkoutStyles.checkout_expiry} type="text" id="expiry-date" name="expiry-date" placeholder="Expiry Date"/>
         </div>
         <div className={checkoutStyles.label_input_div}>
           <label className={checkoutStyles.checkout_label} htmlFor="cvc-cvv">Cvc/Cvv</label>
-          <input type="number" id="cvc-cvv" name="cvc-cvv" placeholder="CVC/CVV"/>
+          <input className={checkoutStyles.checkout_cvc} type="number" id="cvc-cvv" name="cvc-cvv" placeholder="CVC/CVV"/>
         </div>
           </div>
           <label className={checkoutStyles.checkout_label} htmlFor="name-on-card">Name On Card</label>
-          <input type="text" id="name-on-card" name="name-on-card" placeholder="Name On Card"/>
-
+          <input className={checkoutStyles.checkout_name_on_card} type="text" id="name-on-card" name="name-on-card" placeholder="Name On Card"/>
+<div className={checkoutStyles.button_div}>
           <button className={gStyles.button} type="submit">PAY</button>
+          </div>
           </div>
           <li>
           <div className={`${checkoutStyles.row_div} ${checkoutStyles.klarna_div}`}>
