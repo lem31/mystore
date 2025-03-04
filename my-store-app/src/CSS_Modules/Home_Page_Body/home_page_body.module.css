@@ -39,6 +39,8 @@
   position: relative;
   z-index: 1;
   padding-bottom: 40px;
+  background: none;
+  background-color: transparent;
 }
 
 .product_title {
@@ -130,8 +132,9 @@
   gap: 40px;
   min-height: 100vh;
   position: relative;
-
   padding-bottom: 40px;
+  background: none;
+  background-color: transparent;
 }
 
 .price_div {

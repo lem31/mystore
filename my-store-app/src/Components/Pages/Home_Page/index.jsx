@@ -16,12 +16,13 @@ function Home(){
       </div>
 
     
-
+     
       <div className={styles.external_container}>
       <div  className={styles.h2_div_home}>
         <h2 className={gStyles.h2}>PURCHASE SOME OF OUR HOTTEST ITEMS BEFORE THEY SELL OUT!</h2>
+        
       </div>
-        <FetchProducts />
+      <FetchProducts />
       </div>
     </div>
   )
