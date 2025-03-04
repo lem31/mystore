@@ -15,7 +15,7 @@ const DisplayProductSubtotal = ({ product }) => {
 
   return (
     <div>
-      <h2 className={styles.subtotal}> {subtotal}</h2>
+      <h2 className={styles.subtotal}> ${subtotal}</h2>
     </div>
   );
 };

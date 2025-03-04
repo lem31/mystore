@@ -54,7 +54,7 @@ const CartProductCard = () => {
                 
             
     
-                <p className={styles.product_price}>{product.price}</p>
+                <p className={styles.product_price}>${product.price}</p>
              
              
                
