@@ -159,7 +159,8 @@
 
 .your_product_title,
 .your_subtotal_title,
-.checkout_label {
+.checkout_label,
+.checkout_subtotal {
   font-family: var(--font-family-1);
   font-size: var(--font-size-small);
   color: var(--secondary-color);
@@ -168,6 +169,11 @@
 .your_subtotal_title {
   grid-column: 3;
   grid-row: 1;
+}
+
+.checkout_subtotal {
+  grid-column: 3;
+  text-align: center;
 }
 
 .product_title {
