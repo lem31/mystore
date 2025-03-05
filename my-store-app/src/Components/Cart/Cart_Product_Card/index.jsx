@@ -19,10 +19,10 @@ const CartProductCard = () => {
 <div className={styles.cart_card}>
 
     <div className={styles.cart_card_titles} >
-      <p className={styles.product_card_title}>Product</p>
-      <p className={styles.price_title}>Price</p>
-      <p className={styles.quantity_title}>Quantity</p>
-      <p className={styles.subtotal_title}>Subtotal</p>
+      <p className={`${styles.product_title_cart} ${styles.cart_title}`}>Product</p>
+      <p className={`${styles.price_title} ${styles.cart_title}`}>Price</p>
+      <p className={`${styles.quantity_title} ${styles.cart_title}`}>Quantity</p>
+      <p className={`${styles.subtotal_title} ${styles.cart_title}`}>Subtotal</p>
     </div> 
       {cart.length > 0 ? (
        

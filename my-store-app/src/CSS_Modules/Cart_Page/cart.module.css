@@ -123,17 +123,17 @@
   justify-content: center;
 }
 
-.subtotal {
+.subtotal,
+.product_card_title,
+.cart_title {
   color: var(--secondary-color);
   font-size: var(--font-size-small);
 }
 
-.product_card_title {
-  color: var(--secondary-color);
-  font-size: var(--font-size-small);
+.product_title_cart {
   grid-column: 3;
-  text-align: center;
-  width: 10px;
+  text-align: end;
+  width: 120px;
 }
 
 .price_title {
