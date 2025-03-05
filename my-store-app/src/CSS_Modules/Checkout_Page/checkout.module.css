@@ -24,7 +24,7 @@
   width: 420px;
   border: 1px solid var(--tertiary-color);
   background-color: rgba(0, 0, 0, 0.822);
-  border-radius: 8px;
+  border-radius: 32px;
   padding-left: 12px;
   padding-right: 12px;
 }
@@ -40,15 +40,11 @@
 }
 
 .checkout_input {
-  width: 380px;
+  width: 400px;
   padding: 8px;
 }
 
 .checkout_label {
-  font-size: var(--font-size-small);
-  color: var(--secondary-color);
-  font-family: var(--font-family-1);
-
   border-bottom: 1px solid var(--tertiary-color);
 }
 
@@ -60,7 +56,8 @@
 }
 
 .row_div,
-.option_one_row_div {
+.option_one_row_div,
+.payment_option_row {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -158,20 +155,25 @@
 .your_product_title {
   grid-column: 2;
   grid-row: 1;
+}
 
+.your_product_title,
+.your_subtotal_title,
+.checkout_label {
+  font-family: var(--font-family-1);
+  font-size: var(--font-size-small);
   color: var(--secondary-color);
 }
 
 .your_subtotal_title {
   grid-column: 3;
   grid-row: 1;
-  color: var(--secondary-color);
 }
 
 .product_title {
-  color: var(--secondary-color);
   font-size: var(--font-size-small);
   font-family: var(--font-family-2);
+  color: var(--tertiary-color);
 }
 
 .your_products_in_cart_div {
@@ -200,7 +202,7 @@
   height: 100px;
   object-fit: cover;
   margin: auto;
-  border-radius: 38px;
+  border-radius: 32px;
   grid-column: 1;
 }
 
@@ -253,9 +255,8 @@
     display: flex;
     flex-direction: column;
     gap: 8px;
-    width: 300px;
+    width: 250px;
     border: 1px solid var(--tertiary-color);
-    border-radius: 8px;
   }
 
   .card_img {
@@ -271,11 +272,57 @@
     width: 100%;
   }
 
-  .option_one_row_div {
+  .row_div {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 16px;
     width: 100%;
+  }
+
+  .checkout_card_no,
+  .checkout_name_on_card {
+    width: 250px;
+    padding: 8px;
+  }
+
+  .checkout_label {
+    width: 200px;
+  }
+
+  .payment_options_ul {
+    padding: 0;
+  }
+
+  .option_one_row_div {
+    display: flex;
+    flex-direction: row;
+    align-items: left;
+    justify-content: left;
+  }
+
+  .small_screen_layout_imgs {
+    display: flex;
+    flex-direction: row;
+
+    width: 200px;
+  }
+  .card_img_row_div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: left;
+    gap: 16px;
+    width: 100%;
+  }
+
+  .checkout_input {
+    width: 230px;
+    padding: 8px;
+  }
+
+  .checkout_card_no,
+  .checkout_name_on_card {
+    width: 280px;
   }
 }

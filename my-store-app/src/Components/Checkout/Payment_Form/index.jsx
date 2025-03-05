@@ -70,17 +70,19 @@ function PaymentForm() {
        
        
         <h2 className={gStyles.h2}>Payment</h2>
-        <ul >
+        <ul className={checkoutStyles.payment_options_ul}>
    
           <li >
-          <div className={checkoutStyles.row_div}>
+          <div className={checkoutStyles.card_img_row_div}>
+          
           <label htmlFor="option1"> 
           <div className={checkoutStyles.option_one_row_div}>
+         
             <input type="radio" id="option1" name="payment-options" value="option1"/> 
           
+         
            
-           
-              <img src={CreditCard} alt="Option 1"/>
+              <img className={checkoutStyles.card_img} src={CreditCard} alt="Option 1"/>
 
               <p className={checkoutStyles.card_payment_p}>Card Payments</p>
              
@@ -90,6 +92,7 @@ function PaymentForm() {
               <img className={checkoutStyles.card_img} src={Visa} alt="Option1"/>
               <img className={checkoutStyles.card_img} src={Mæstro} alt="Option1"/>
               </div>
+            
               </div>
            
            
@@ -118,7 +121,7 @@ function PaymentForm() {
           </div>
           </div>
           <li>
-          <div className={`${checkoutStyles.row_div} ${checkoutStyles.klarna_div}`}>
+          <div className={`${checkoutStyles.payment_option_row} ${checkoutStyles.klarna_div}`}>
             <input type="radio" id="option2" name="payment-options" value="option2"/>
             <label htmlFor="option2"> 
             <div className={checkoutStyles.img_p_div}>
@@ -130,7 +133,7 @@ function PaymentForm() {
           </li>
 
           <li>
-            <div className={`${checkoutStyles.row_div} ${checkoutStyles.vipps_div}`}>
+            <div className={`${checkoutStyles.payment_option_row} ${checkoutStyles.vipps_div}`}>
             <input type="radio" id="option3" name="payment-options" value="option3"/>
             <label htmlFor="option3"> 
               <img className={checkoutStyles.vipps_img} src={Vipps} alt="Option 3"/>
