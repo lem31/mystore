@@ -1,12 +1,17 @@
 import React from 'react';
 import checkoutSuccessStyles from '../../../CSS_Modules/Checkout_Success/checkout_success.module.css'
 import gStyles from '../../../CSS_Modules/Global_Styles/global_styles.module.css';
-import DisplayRelatedProducts from '../../../Components/Checkout_Success/index.jsx';
+import { useNavigate } from 'react-router-dom';
+import { useCallback} from 'react';
 
 
 function CheckoutSuccess(){
   const orderNumber = Math.floor(Math.random() * 1000000);
-
+    const navigate = useNavigate();
+ const handleClick = useCallback(() => {
+    navigate({pathname: '/'});
+  
+  }, [navigate]);
   
   
  
@@ -19,11 +24,10 @@ function CheckoutSuccess(){
     </h1>
     <p className={checkoutSuccessStyles.p}>Your Order Number Is: {orderNumber}</p>
     <p className={checkoutSuccessStyles.p}>We'll Email You An Order Confirmation With Details and Tracking Information</p>
-    <button className={gStyles.button}>CONTINUE SHOPPING</button>
+    <button className={gStyles.button} onClick={handleClick}>CONTINUE SHOPPING</button>
    
-    </div>
-<DisplayRelatedProducts/>
-    </div>
+  </div>
+</div>
 
   )}
 
