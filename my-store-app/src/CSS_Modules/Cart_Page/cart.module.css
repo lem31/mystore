@@ -77,7 +77,8 @@
 }
 
 .product_price,
-.product_title {
+.product_title,
+.product_quantity {
   color: var(--secondary-color);
   font-size: var(--font-size-small);
 }
@@ -234,6 +235,7 @@
 
   .title_small {
     color: var(--secondary-color);
+    font-size: var(--font-size-small);
     border-bottom: 1px solid var(--tertiary-color);
     width: 100%;
     display: flex;
@@ -317,6 +319,7 @@
   .title_small {
     color: var(--secondary-color);
     border-bottom: 1px solid var(--tertiary-color);
+    font-size: var(--font-size-small);
     width: 100%;
     display: flex;
   }
