@@ -3,6 +3,7 @@ import useMyStore from '../../Store';
 import DisplayProductSubtotal from '../../Cart/Product_Subtotal';
 import styles from '../../../CSS_Modules/Cart_Page/cart.module.css';
 import checkoutStyles from '../../../CSS_Modules/Checkout_Page/checkout.module.css';
+import gStyles from '../../../CSS_Modules/Global_Styles/global_styles.module.css';
 
 const YourOrder = () => {
   const cart = useMyStore((state) => state.cart);
@@ -11,11 +12,15 @@ const YourOrder = () => {
     <>
       <div className={checkoutStyles.outer_cart_box}>
         <div className={checkoutStyles.your_cart_card}>
+        <div className={checkoutStyles.your_order_title_div}>
+              <h2 className={gStyles.h2}>Your Order</h2>
+            </div>
        <div className={checkoutStyles.titles_and_products_div}>
           <div className={checkoutStyles.your_order_border_bottom}>
             
+          
           <div className={checkoutStyles.your_order_titles}>
-            
+           
             <p className={checkoutStyles.your_product_title}>Product</p>
             <p className={checkoutStyles.your_subtotal_title}>Subtotal</p>
           </div>
@@ -41,7 +46,9 @@ const YourOrder = () => {
                       <p className={checkoutStyles.product_title}>{product.title}</p>
                       </div>
                    
+                   <div className={checkoutStyles.your_subtotal_div}>
                    <DisplayProductSubtotal product={product} />
+                   </div>
             
              
                    

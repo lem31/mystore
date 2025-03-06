@@ -6,7 +6,7 @@ import YourOrder from '../../../Components/Checkout/Your_Order/index';
 function CheckoutPage() {
   return (
     <div className={styles.container_checkout}>
-      <h1 className={gStyles.h1}>CHECKOUT</h1>
+      <h1 className={`${gStyles.h1} ${styles.checkout_title}`}>CHECKOUT</h1>
        <div className={styles.inner_container_checkout}>
       
       <PaymentForm/>

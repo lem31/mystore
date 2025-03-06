@@ -8,12 +8,22 @@
   margin-bottom: 40px;
 }
 
+.your_order_titles_mobile {
+  display: none;
+}
+
 .inner_container_checkout {
   display: flex;
   flex-direction: row;
-
+  max-width: 1200px;
   justify-items: center;
-  gap: 20px;
+  gap: 8px;
+}
+
+.checkout_title {
+  background-color: rgba(0, 0, 0, 0.822);
+  margin-top: 40px;
+  margin-bottom: 16px;
 }
 
 .payment_form {
@@ -21,7 +31,7 @@
   flex-direction: column;
   align-content: center;
   gap: 8px;
-  width: 420px;
+  width: 400px;
   border: 1px solid var(--tertiary-color);
   background-color: rgba(0, 0, 0, 0.822);
   border-radius: 32px;
@@ -40,7 +50,7 @@
 }
 
 .checkout_input {
-  width: 400px;
+  width: 380px;
   padding: 8px;
 }
 
@@ -129,14 +139,14 @@
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   color: var(--secondary-color);
-  width: 340px;
+  width: 320px;
   margin-top: 8px;
   justify-items: center;
   align-items: center;
 }
 
 .your_order_border_bottom {
-  width: 340px;
+  width: 320px;
   border-bottom: 1px solid var(--tertiary-color);
 }
 
@@ -147,8 +157,10 @@
   border: 1px solid var(--tertiary-color);
   border-radius: 32px;
   width: 100%;
-  width: 340px;
+  width: 320px;
   height: auto;
+  padding-left: 8px;
+  padding-right: 8px;
   padding-bottom: 16px;
 }
 
@@ -329,7 +341,7 @@
 
   .checkout_card_no,
   .checkout_name_on_card {
-    width: 280px;
+    width: 230px;
   }
 
   .your_cart_card {
@@ -401,5 +413,11 @@
     display: flex;
     flex-direction: row;
     border: none;
+  }
+  .button_div {
+    width: 250px;
+  }
+  .card_payment_form_div {
+    max-width: 250px;
   }
 }
