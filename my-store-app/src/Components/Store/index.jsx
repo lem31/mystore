@@ -5,6 +5,7 @@ import {persist} from 'zustand/middleware';
   const useMyStore = create(persist((set, get) => ({
     products: [],
     cart: [],
+   
     setProducts: (products) => set({  products }),
     addProductToCart: (product) => set((state)=> {
       const itemInCart = state.cart.find((item)=> item.id === product.id);
@@ -44,7 +45,16 @@ specificProductTotal: (product) => {
   const itemInCart = state.cart.find((item) => item.id === product.id);
   return itemInCart ? (itemInCart.price * itemInCart.quantity).toFixed(2) : '0.00';
 },
-  }),{
+
+
+findRelatedProducts: () => {
+  const state = get();
+  return state.products.filter((product) => {
+    return state.cart.some((cartItem) => product.category === cartItem.category && product.id !== cartItem.id);
+  });
+},
+}),
+  {
     name: 'my-store-cart',
     getStorage: () => localStorage,
   }));
