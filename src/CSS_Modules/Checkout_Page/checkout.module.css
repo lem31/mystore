@@ -1,7 +1,7 @@
 .container_checkout {
   display: flex;
   flex-direction: column;
-  align-items: center;
+
   max-width: 100vw;
   height: auto;
   margin-top: 40px;
@@ -15,8 +15,8 @@
 .inner_container_checkout {
   display: flex;
   flex-direction: row;
-  max-width: 1200px;
-  justify-items: center;
+
+  width: 1200px;
   gap: 8px;
 }
 
@@ -156,7 +156,7 @@
   border: 1px solid var(--tertiary-color);
   border-radius: 32px;
   width: 100%;
-  width: 320px;
+  width: 400px;
   height: auto;
   padding-left: 8px;
   padding-right: 8px;

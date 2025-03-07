@@ -7,7 +7,7 @@ import gStyles from '../../../CSS_Modules/Global_Styles/global_styles.module.css
 
 const YourOrder = () => {
   const cart = useMyStore((state) => state.cart);
-  const cartTotal = Number(useMyStore((state) => state.cartTotal())) || 0;
+  const cartTotal = Number(useMyStore(state => state.cartTotal)) || 0;
   return (
     <>
       <div className={checkoutStyles.outer_cart_box}>

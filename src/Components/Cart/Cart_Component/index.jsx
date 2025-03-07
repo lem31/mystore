@@ -4,6 +4,7 @@ import {useEffect} from 'react';
 import CartProductCard from '../Cart_Product_Card';
 import CartTotalBox from '../Cart_Total_Box/index';
 import styles from '../../../CSS_Modules/Cart_Page/cart.module.css';
+import ErrorBoundary from '../../Error_Boundary/index';
 
 
 
@@ -33,10 +34,10 @@ const Cart = () => {
 
      <CartProductCard />
    
-
+<ErrorBoundary>
      <CartTotalBox />
    
-
+     </ErrorBoundary>
 
 
     </div>
