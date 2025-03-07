@@ -46,10 +46,9 @@ setIsLoading(false);
     return <div>Error loading data</div>;
   }
 
-  const price = product?.price || 0;
-  const discountedPrice = product?.discountedPrice || 0;
-  const discount = price > discountedPrice ? ((price - discountedPrice)/price) * 100 : 0;
 
+  const discountedPrice = product?.discountedPrice || 0;
+  
  
   return(
     <div className={styles.outer_div} >
