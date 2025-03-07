@@ -290,6 +290,8 @@
     gap: 8px;
     width: 250px;
     border: 1px solid var(--tertiary-color);
+    padding-top: 8px;
+    padding-bottom: 8px;
   }
 
   .card_img {
@@ -363,7 +365,8 @@
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 300px;
+    width: 260px;
+    margin-bottom: 16px;
   }
 
   .your_products_in_cart_div {
