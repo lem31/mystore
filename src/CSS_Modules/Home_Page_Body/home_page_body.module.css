@@ -19,6 +19,10 @@
   height: auto;
 }
 
+.or_go_span {
+  color: var(--secondary-color);
+}
+
 .product_image_div {
   width: 182px;
 }

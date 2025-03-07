@@ -8,7 +8,7 @@ function Home(){
     <div className={styles.container}>
       <div className={styles.h1_div_home}>
         <div className={styles.h1_home_inner_box}>
-          <h1 className={gStyles.h1}>Check Out Our Latest Products Below!<br/><span>OR GO</span> STRAIGHT TO OUR SALE</h1>
+          <h1 className={gStyles.h1}>Check Out Our Latest Products Below!<br/><span className={styles.or_go_span}>OR GO</span> STRAIGHT TO OUR SALE</h1>
           <div className={styles.sale_button_div}>
             <button className={gStyles.button}>SALE</button>
           </div>
