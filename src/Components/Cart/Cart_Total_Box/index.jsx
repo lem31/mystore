@@ -7,7 +7,7 @@ const CartTotalBox = () => {
 
   
   const cartTotal = Number(useMyStore(state => state.cartTotal)) || 0;
-  console.log("Cart Total:", cartTotal); 
+ 
 
 
   return (  <>

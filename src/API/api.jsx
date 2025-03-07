@@ -22,7 +22,7 @@ function FetchProducts() {
         setIsLoading(true);
         const response = await fetch(url);
         const json = await response.json();
-        console.log("Fetched data:", json.data);
+      
         localStorage.setItem("products", JSON.stringify(json.data));
         setProducts(Array.isArray(json.data) ? json.data : []);
         setIsLoading(false);
