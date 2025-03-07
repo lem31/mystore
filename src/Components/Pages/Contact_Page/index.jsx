@@ -16,16 +16,16 @@ function Contact(){
       <div className={contactStyles.layout_div}>
      
 
-      <div>
-        <h2 className={gStyles.h2}>GET IN TOUCH</h2>
+      <div className={contactStyles.get_in_touch_div}>
+        <h2 className={`${gStyles.h2} ${contactStyles.h2_contact}`}>GET IN TOUCH</h2>
         <p className={contactStyles.contact_p}>Just contact our 24h customer support team with any questions you may have
           by email, phone or by sending us a message via our contact form, just press "Send".
         </p>
-        <img src={locationImg} alt="location" />
+        <img className={contactStyles.contact_image} src={locationImg} alt="location" />
         <p className={contactStyles.contact_p}>ADDRESS <br /> 44 Chester Road, London, UK.</p>
-        <img src={phoneImg} alt="phone" />
+        <img className={contactStyles.contact_image} src={phoneImg} alt="phone" />
         <p className={contactStyles.contact_p}>PHONE <br /> 45367897</p>
-        <img src={emailImg} alt="email" />
+        <img className={contactStyles.contact_image} src={emailImg} alt="email" />
         <p className={contactStyles.contact_p}>EMAIL  <br />Eg@Example.com</p>
       </div>
 

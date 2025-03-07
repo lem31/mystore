@@ -3,9 +3,26 @@
   flex-direction: row;
 }
 
-.contact-p {
-  font-size: var(--font-size-small);
+.contact_p {
+  font-size: var(--font-size-medium);
   font-family: var(--font-family-1);
-  color: var(--primary-color);
+  color: var(--secondary-color);
   text-align: left;
+}
+.get_in_touch_div {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: left;
+  width: 300px;
+  background-color: rgba(0, 0, 0, 0.811);
+}
+
+.h2_contact {
+  text-align: left;
+}
+
+.contact_image {
+  width: 36px;
+  height: 36px;
 }
