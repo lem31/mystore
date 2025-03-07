@@ -5,6 +5,7 @@ import React from 'react';
 import styles from '../CSS_Modules/Home_Page_Body/home_page_body.module.css';
 
 
+
 const url = "https://v2.api.noroff.dev/online-shop";
 
 function FetchProducts() {

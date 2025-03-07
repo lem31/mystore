@@ -1,4 +1,5 @@
 import React from 'react';
+import { useEffect, useState } from "react";
 import {useParams} from 'react-router-dom';
 import AddToCartButton from '../../Cart/Add_To_Cart_Btn';
 import DisplayDiscount from '../../Product/Display_Discount';
@@ -7,17 +8,49 @@ import styles from '../../../CSS_Modules/Product_Page/product_page.module.css';
 import gStyles from '../../../CSS_Modules/Global_Styles/global_styles.module.css';
 import ViewProductButton from "../../../Components/Product/View_Product_Btn";
 
-const products = JSON.parse(localStorage.getItem("products")) || [];
+
+
+const url = "https://v2.api.noroff.dev/online-shop";
 
 function Product(){
   const {id} = useParams();
-  const product = products.find((p) => p.id === id);
+  const [products, setProducts] = useState([]);
+  const [product, setProduct]= useState(null);
+  const [isLoading, setIsLoading] = useState(false);
+  
+    const [isError, setIsError] = useState(false);
+
+  useEffect(() => {
+   const fetchProducts = async () => {
+      try {
+        const response = await fetch(url)
+;
+const data = await response.json();
+setProducts(data.data);
+const foundProduct = data.data.find((p) => p.id === id);
+setProduct(foundProduct);
+setIsLoading(false);
+      } catch (error) {
+        setIsLoading(false);
+        setIsError(true);
+      }
+    }
+    fetchProducts();
+  }, [id]);
+        
+       
+  if (isLoading) {
+    return <div>Loading Products</div>;
+  }
+  if (isError) {
+    return <div>Error loading data</div>;
+  }
+
   const price = product?.price || 0;
   const discountedPrice = product?.discountedPrice || 0;
   const discount = price > discountedPrice ? ((price - discountedPrice)/price) * 100 : 0;
 
-  console.log('ID from URL:', id);
-   console.log('Product found:', product);
+ 
   return(
     <div className={styles.outer_div} >
       {product?(
