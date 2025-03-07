@@ -176,6 +176,8 @@
 .cart_total_inner {
   display: flex;
   flex-direction: row;
+  width: 120px;
+  justify-content: center;
   gap: 16px;
 }
 

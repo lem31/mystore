@@ -72,7 +72,7 @@ function PaymentForm() {
         <h2 className={gStyles.h2}>Payment</h2>
         <ul className={checkoutStyles.payment_options_ul}>
    
-          <li >
+          <li className={checkoutStyles.payment_option_li}>
           <div className={checkoutStyles.card_img_row_div}>
           
           <label htmlFor="option1"> 
@@ -120,7 +120,7 @@ function PaymentForm() {
           <button className={gStyles.button} type="submit">PAY</button>
           </div>
           </div>
-          <li>
+          <li className={checkoutStyles.payment_option_li}>
           <div className={`${checkoutStyles.payment_option_row} ${checkoutStyles.klarna_div}`}>
             <input type="radio" id="option2" name="payment-options" value="option2"/>
             <label htmlFor="option2"> 
@@ -132,7 +132,7 @@ function PaymentForm() {
             </div>
           </li>
 
-          <li>
+          <li className={checkoutStyles.payment_option_li}>
             <div className={`${checkoutStyles.payment_option_row} ${checkoutStyles.vipps_div}`}>
             <input type="radio" id="option3" name="payment-options" value="option3"/>
             <label htmlFor="option3"> 
