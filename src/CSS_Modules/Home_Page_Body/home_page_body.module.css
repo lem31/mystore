@@ -14,6 +14,7 @@
   border: 1px solid var(--tertiary-color);
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 16px;
   width: 180px;
   height: auto;
@@ -56,7 +57,7 @@
   font-weight: bold;
   width: 150px;
   height: 20px;
-  text-align: left;
+  text-align: center;
   text-wrap: nowrap;
 }
 
@@ -83,7 +84,7 @@
   font-size: var(--font-size-small);
   font-family: var(--font-family-1);
   font-weight: bold;
-  width: 50px;
+  width: auto;
   height: 20px;
   text-align: left;
   color: var(--tertiary-color);
@@ -146,6 +147,7 @@
 .price_div {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   width: 128px;
   height: auto;
   gap: 16px;
