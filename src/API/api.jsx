@@ -1,6 +1,6 @@
 
 import { useEffect, useState } from "react";
-import DisplayProducts from "../Components/Product/display_products/index";
+import DisplayProducts from "../Components/Product/Display_Products/index";
 import React from 'react';
 import styles from '../CSS_Modules/Home_Page_Body/home_page_body.module.css';
 
