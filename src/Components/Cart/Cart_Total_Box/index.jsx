@@ -5,7 +5,7 @@ import styles from '../../../CSS_Modules/Cart_Page/cart.module.css';
 
 const CartTotalBox = () => {
 
-  const cartTotal = Number(useMyStore((state) => state.cartTotal())) || 0;
+  const cartTotal = Number(useMyStore((state) => state.cartTotal)) || 0;
 
 
 
