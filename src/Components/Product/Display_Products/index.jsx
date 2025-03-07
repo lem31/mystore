@@ -15,7 +15,7 @@ return(
   <img className={styles.products_cards_image} src={product.image.url} alt={product.title} />
   </div>
 <div className={styles.product_info_div}>
-  <h2 className={styles.product_title}>{product.title}</h2>
+  <h2 className={styles.product_title}> {product.title}</h2>
 {/* <div>
   <p className={styles.product_description}>{product.description}</p>
   </div> */}
