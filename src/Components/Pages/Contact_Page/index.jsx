@@ -12,7 +12,7 @@ function Contact(){
   return(
     <div className={styles.container}>
     
-      <h1 className={gStyles.h1}>Contact US</h1>
+      <h1 className={`${gStyles.h1} ${contactStyles.h1_contact}`}>CONTACT US</h1>
       <div className={contactStyles.layout_div}>
      
 
