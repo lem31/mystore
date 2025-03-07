@@ -75,7 +75,8 @@
   color: white;
   position: absolute;
   margin-top: 10px;
-  width: 58px;
+  margin-left: 8px;
+  width: 48px;
   height: auto;
   font-size: var(--font-size-small);
   font-family: var(--font-family-1);
@@ -88,8 +89,8 @@
 .discount_div {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  width: 100px;
+  justify-content: start;
+  position: relative;
 }
 
 .product_price {
@@ -273,5 +274,21 @@
 
     font-weight: bold;
     width: 145px;
+  }
+
+  .product_discount {
+    position: absolute;
+    font-size: var(--font-size-tiny);
+    margin-left: 0;
+    margin-right: 10px;
+    width: 38px;
+    padding: 8px;
+  }
+
+  .discount_div {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    position: relative;
   }
 }
