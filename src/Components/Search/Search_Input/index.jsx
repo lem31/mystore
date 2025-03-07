@@ -10,7 +10,7 @@ return (
     </div>
     <label className={styles.search_label} htmlFor="search-input">Search</label>
   
-    <input className={styles.search_input} type="search" placeholder="What are you looking for?" aria-label="Search" value={searchPhrase} onChange={handleChange}/>
+    <input className={styles.search_input} type="search" id="search-input" placeholder="What are you looking for?" aria-label="Search" value={searchPhrase} onChange={handleChange}/>
 
   </div>
 )

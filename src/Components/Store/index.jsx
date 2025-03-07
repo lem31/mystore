@@ -6,6 +6,7 @@ import {persist} from 'zustand/middleware';
     products: [],
     cart: [],
    
+
     setProducts: (products) => set({  products }),
     addProductToCart: (product) => set((state)=> {
       const itemInCart = state.cart.find((item)=> item.id === product.id);
