@@ -5,7 +5,6 @@
   width: 100%;
   height: auto;
   gap: 8px;
-  background-color: transparent;
 }
 
 .h1_div_cart {
@@ -20,13 +19,12 @@
 .h1_cart {
   color: var(--tertiary-color);
   margin-bottom: 20px;
-  background-color: rgba(0, 0, 0, 0.66);
 }
 
 .cart_card {
   display: flex;
   flex-direction: column;
-  background-color: rgba(0, 0, 0, 0.822);
+
   border: 1px solid var(--tertiary-color);
   border-radius: 32px;
   width: 480px;
@@ -169,7 +167,7 @@
   width: 250px;
   height: 130px;
   border: 1px solid var(--tertiary-color);
-  background-color: rgba(0, 0, 0, 0.822);
+
   border-radius: 32px;
 }
 
@@ -208,7 +206,7 @@
   .cart_card {
     display: flex;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.822);
+
     border: 1px solid var(--tertiary-color);
     border-radius: 32px;
     justify-content: center;
@@ -290,7 +288,7 @@
   .cart_card {
     display: flex;
     flex-direction: row;
-    background-color: rgba(0, 0, 0, 0.822);
+
     border: 1px solid var(--tertiary-color);
     border-radius: 32px;
     justify-content: center;

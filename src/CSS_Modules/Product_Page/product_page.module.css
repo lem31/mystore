@@ -1,7 +1,7 @@
 .product_div {
   display: flex;
   flex-direction: row;
-  background-color: rgba(0, 0, 0, 0.715);
+
   border: 1px solid var(--tertiary-color);
   border-radius: 48px;
   max-width: 700px;
@@ -105,7 +105,6 @@
 
 .related_product_text {
   width: 152px;
-  background-color: rgba(0, 0, 0, 0.895);
 }
 
 .h2_product {
@@ -114,7 +113,7 @@
   font-family: var(--font-family-2);
   font-weight: bold;
   text-align: left;
-  background-color: rgba(0, 0, 0, 0.895);
+
   margin-bottom: 16px;
 }
 
@@ -198,7 +197,6 @@
 
   .related_product_text {
     width: 120px;
-    background-color: rgba(0, 0, 0, 0.895);
   }
 
   .product_price {
@@ -318,7 +316,7 @@
 
   .related_product_text {
     width: 120px;
-    background-color: rgba(0, 0, 0, 0.895);
+
     gap: 16px;
   }
 

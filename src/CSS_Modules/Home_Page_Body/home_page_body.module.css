@@ -10,7 +10,6 @@
 }
 
 .product_info_div {
-  background-color: rgba(0, 0, 0, 0.811);
   border: 1px solid var(--tertiary-color);
   display: flex;
   flex-direction: column;
@@ -62,7 +61,7 @@
 }
 
 .product_discount {
-  background-color: red;
+  background-color: var(--tertiary-color);
   color: white;
   position: absolute;
   margin-top: 10px;
@@ -112,7 +111,6 @@
 }
 
 .h1_home_inner_box {
-  background-color: rgba(0, 0, 0, 0.715);
   width: 500px;
   height: auto;
   border: 2px solid var(--tertiary-color);
@@ -236,5 +234,12 @@
 
   .individual_card_container {
     gap: 0;
+  }
+
+  .product_title {
+    text-wrap: wrap;
+    padding-bottom: 4px;
+    font-weight: bold;
+    width: 145px;
   }
 }
