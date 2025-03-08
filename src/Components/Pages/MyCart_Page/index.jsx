@@ -1,4 +1,4 @@
-import Cart from '../../../Components/Cart/Cart_Component';
+import Cart from '../../Cart/Cart_Component/index';
 import React from 'react';
 import styles from '../../../CSS_Modules/Home_Page_Body/home_page_body.module.css';
 

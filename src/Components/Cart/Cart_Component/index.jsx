@@ -2,9 +2,9 @@ import React from 'react';
 import useMyStore from '../../Store';
 import {useEffect} from 'react';
 import CartProductCard from '../Cart_Product_Card';
-import CartTotalBox from '../Cart_Total_Box/index';
+import CartTotalBox from '../Cart_Total_Box';
 import styles from '../../../CSS_Modules/Cart_Page/cart.module.css';
-import ErrorBoundary from '../../Error_Boundary/index';
+
 
 
 
@@ -14,14 +14,22 @@ const Cart = () => {
   const setProducts = useMyStore((state) => state.setProducts);
 
 
-
+  const url = "https://v2.api.noroff.dev/online-shop";
   useEffect(() => {
-    const products = JSON.parse(localStorage.getItem('products'));
-    if (products && Array.isArray(products)) {
-      setProducts(products);
-    }
+    const fetchProducts = async () => {
+      try {
+        const response = await fetch(url);
+        const products = await response.json();
+        if (products && Array.isArray(products)) {
+          setProducts(products);
+        }
+      } catch (error) {
+        console.error('Failed to fetch products:', error);
+      }
+    };
+
+    fetchProducts();
   }, [setProducts]);
-  
 
   return (
     <div className={styles.cart_page}> 
@@ -34,10 +42,10 @@ const Cart = () => {
 
      <CartProductCard />
    
-<ErrorBoundary>
+
      <CartTotalBox />
    
-     </ErrorBoundary>
+  
 
 
     </div>

@@ -18,6 +18,10 @@
   position: relative;
 }
 
+.product_items {
+  list-style: none;
+}
+
 .h1_cart {
   color: var(--tertiary-color);
   margin-bottom: 20px;
