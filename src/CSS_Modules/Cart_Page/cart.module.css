@@ -190,11 +190,17 @@
 .cart_total_h3 {
   color: var(--secondary-color);
   font-size: var(--font-size-small);
+  font-family: var(--font-family-1);
+}
+
+.cart_total_h3 {
+  font-family: var(--font-family-2);
 }
 
 .cart_empty_msg {
   color: var(--tertiary-color);
   font-size: var(--font-size-medium);
+  font-family: var(--font-family-1);
   text-align: center;
 }
 
