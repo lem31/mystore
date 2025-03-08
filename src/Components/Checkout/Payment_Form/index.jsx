@@ -100,7 +100,7 @@ function PaymentForm() {
             </div>
           </li>
         
-          
+        <div className={styles.card_payment_form_container}> 
 <div className={styles.card_payment_form_div}>
           <label className={checkoutStyles.checkout_label} htmlFor="card-number">Card Number</label>
           <input className={checkoutStyles.checkout_card_no} type="number" id="card-number" name="card-number" placeholder="Card Number"/>
@@ -120,6 +120,7 @@ function PaymentForm() {
           <button className={gStyles.button} type="submit">PAY</button>
           </div>
           </div>
+          </div> 
           <li className={checkoutStyles.payment_option_li}>
           <div className={`${checkoutStyles.payment_option_row} ${checkoutStyles.klarna_div}`}>
             <input type="radio" id="option2" name="payment-options" value="option2"/>

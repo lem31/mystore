@@ -1,6 +1,6 @@
 .cart_container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: center;
   align-content: center;
   align-items: center;
@@ -32,7 +32,7 @@
   flex-direction: column;
   border: 1px solid var(--tertiary-color);
   border-radius: 32px;
-  width: 480px;
+  max-width: 700px;
   height: auto;
   padding-right: 16px;
   padding-bottom: 16px;
@@ -45,7 +45,7 @@
 
   align-items: center;
 
-  max-width: 800px;
+  max-width: auto;
   height: auto;
   gap: 12px;
 }
@@ -99,6 +99,7 @@
   align-items: center;
   border: 1px solid var(--secondary-color);
   height: 20px;
+  width: 58px;
   grid-column: 5;
 }
 
