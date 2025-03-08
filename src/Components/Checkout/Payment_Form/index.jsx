@@ -136,8 +136,10 @@ function PaymentForm() {
             <div className={`${checkoutStyles.payment_option_row} ${checkoutStyles.vipps_div}`}>
             <input type="radio" id="option3" name="payment-options" value="option3"/>
             <label htmlFor="option3"> 
+            <div className={checkoutStyles.img_p_div}>
               <img className={checkoutStyles.vipps_img} src={Vipps} alt="Option 3"/>
-              <span>Vipps</span>
+              <p className= {checkoutStyles.vipps_p}>Vipps</p>
+              </div>
             </label>
             </div>
           </li>

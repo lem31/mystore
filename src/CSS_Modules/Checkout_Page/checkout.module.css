@@ -77,9 +77,12 @@
 .klarna_div,
 .vipps_div {
   margin-top: 20px;
+  display: flex;
+  flex-direction: row;
 }
 
-.klarna_p {
+.klarna_p,
+.vipps_p {
   font-size: var(--font-size-small);
   color: var(--secondary-color);
 }
