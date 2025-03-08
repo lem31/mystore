@@ -389,6 +389,7 @@
     flex-direction: row;
     border-bottom: 1px solid var(--tertiary-color);
     padding: 8px;
+    justify-content: center;
   }
 
   .your_order_titles {

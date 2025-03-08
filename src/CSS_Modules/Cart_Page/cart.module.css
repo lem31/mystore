@@ -362,4 +362,10 @@
     justify-content: flex-start;
     height: 200px;
   }
+
+  .cart_total_inner {
+    width: 262px;
+    justify-content: center;
+    padding-top: 4px;
+  }
 }
