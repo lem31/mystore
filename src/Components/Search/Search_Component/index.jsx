@@ -1,5 +1,6 @@
 
 import React, {useState, useCallback} from 'react';
+import useMyStore from '../../Store';
 import {useNavigate} from 'react-router-dom';
 import SearchInput from "../Search_Input";
 import SuggestionList from "../Suggestion_List";
@@ -9,7 +10,6 @@ import gStyles from "../../../CSS_Modules/Global_Styles/global_styles.module.css
 
 
 
-const products = JSON.parse(localStorage.getItem("products")) || [];
 
 
 
@@ -18,6 +18,8 @@ function Search(){
   const [suggestions, setSuggestions] = useState([]);
   const [showSuggestions, setShowSuggestions] = useState(true);
   const navigate = useNavigate();
+  const products = useMyStore((state)=>state.products);
+  console.log("Products:", products);
 
   const handleChange = useCallback((e) => {
     const userInput = e.target.value;
