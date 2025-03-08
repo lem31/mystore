@@ -64,7 +64,7 @@
   font-family: var(--font-family-2);
   color: var(--tertiary-color);
   font-weight: bold;
-  width: 220px;
+
   height: 20px;
   text-align: center;
   text-wrap: nowrap;
@@ -224,7 +224,6 @@
   .product_title {
     text-wrap: nowrap;
     font-weight: bold;
-    width: 200px;
   }
 }
 
@@ -273,22 +272,5 @@
     text-wrap: nowrap;
 
     font-weight: bold;
-    width: 145px;
-  }
-
-  .product_discount {
-    position: absolute;
-    font-size: var(--font-size-tiny);
-    margin-left: 0;
-    margin-right: 10px;
-    width: 38px;
-    padding: 8px;
-  }
-
-  .discount_div {
-    display: flex;
-    flex-direction: row;
-    justify-content: end;
-    position: relative;
   }
 }
