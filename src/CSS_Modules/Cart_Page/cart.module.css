@@ -30,7 +30,6 @@
 .cart_card {
   display: flex;
   flex-direction: column;
-
   border: 1px solid var(--tertiary-color);
   border-radius: 32px;
   width: 480px;
@@ -81,15 +80,17 @@
 }
 
 .product_price,
-.product_title,
 .product_quantity {
   color: var(--secondary-color);
   font-size: var(--font-size-small);
+  font-family: var(--font-family-1);
 }
 
 .product_title {
   text-align: center;
   color: var(--tertiary-color);
+  font-family: var(--font-family-2);
+  font-size: var(--font-size-small);
 }
 
 .add_remove {
