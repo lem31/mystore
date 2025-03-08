@@ -210,10 +210,6 @@
     font-size: var(--font-size-tiny);
   }
 
-  .related_product_price {
-    font-size: var(--font-size-tiny);
-  }
-
   .discounted_price {
     font-size: var(--font-size-tiny);
   }
