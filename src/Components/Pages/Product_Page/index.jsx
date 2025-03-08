@@ -40,10 +40,10 @@ setIsLoading(false);
         
        
   if (isLoading) {
-    return <div>Loading Products</div>;
+    return <div><p className={styles.loading_msg}>Loading Products... </p></div>;
   }
   if (isError) {
-    return <div>Error loading data</div>;
+    return <div><p className={styles.error_msg}>Error loading data</p></div>;
   }
 
 

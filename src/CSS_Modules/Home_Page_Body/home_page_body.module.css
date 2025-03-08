@@ -9,6 +9,14 @@
   height: auto;
 }
 
+.loading_msg,
+.error_msg {
+  font-size: var(--font-size-medium);
+  font-family: var(--font-family-1);
+  color: var(--tertiary-color);
+  text-align: center;
+}
+
 .product_info_div {
   display: flex;
   flex-direction: column;
@@ -270,7 +278,6 @@
 
   .product_title {
     text-wrap: nowrap;
-
     font-weight: bold;
   }
 

@@ -8,6 +8,14 @@
   padding: 8px;
 }
 
+.loading_msg,
+.error_msg {
+  font-size: var(--font-size-medium);
+  font-family: var(--font-family-1);
+  color: var(--secondary-color);
+  text-align: center;
+}
+
 .h1_product {
   text-align: center;
 }
