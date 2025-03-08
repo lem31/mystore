@@ -9,6 +9,10 @@
   max-width: 300px;
 }
 
+.contact_title {
+  margin-top: 40px;
+}
+
 .contact_p {
   font-size: var(--font-size-medium);
   font-family: var(--font-family-1);

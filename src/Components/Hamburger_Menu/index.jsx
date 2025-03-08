@@ -53,13 +53,13 @@ const HamburgerMenu = () => {
        
          <li>
           <div className={styles.link_div}>
-           <Link className={styles.link} onClick={closeMenu}  to="/Sale">Sale</Link>
+           <Link className={styles.link} onClick={closeMenu} >Sale</Link>
            </div>
      
          </li>
          <li>
           <div className={styles.link_div}>
-           <Link className={styles.link} onClick={closeMenu}  to="/About">About</Link>
+           <Link className={styles.link} onClick={closeMenu}  >About</Link>
            </div>
          </li>
          <li>
