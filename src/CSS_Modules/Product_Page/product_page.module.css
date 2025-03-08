@@ -306,4 +306,10 @@
     gap: 4px;
     width: 300px;
   }
+
+  .product_discount_mobile {
+    margin-top: 10px;
+    margin-left: -68px;
+    width: 48px;
+  }
 }
