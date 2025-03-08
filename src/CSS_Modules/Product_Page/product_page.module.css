@@ -210,10 +210,6 @@
     font-size: var(--font-size-tiny);
   }
 
-  .discounted_price {
-    font-size: var(--font-size-tiny);
-  }
-
   .related_product_img_div {
     width: 220px;
     height: 220px;
