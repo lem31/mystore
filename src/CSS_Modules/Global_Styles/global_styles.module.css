@@ -49,17 +49,15 @@
 
 body {
   margin: 0;
-  min-height: 100vh;
+  max-height: 100vh;
   display: flex;
   flex-direction: column;
-
+  overflow-x: hidden;
   background-color: rgba(6, 5, 5, 0.925);
 }
 html {
   margin: 0;
-  height: 100%;
-  z-index: -3;
-  position: relative;
+  max-height: 100vh;
 }
 
 /* Media Queries */
