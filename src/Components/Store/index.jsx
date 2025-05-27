@@ -74,7 +74,7 @@ const useMyStore = create(
       removeAllOfProductFromCart: (productId) =>
         set((state) => {
           const newCart = state.cart.filter(
-            (product) => product.id != productId
+            (product) => product.id !== productId
           );
           const newTotal = newCart.reduce(
             (total, product) => total + product.price * product.quantity,
