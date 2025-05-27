@@ -73,7 +73,7 @@
   transition: transform 0.2s ease-in-out;
 }
 .shopping:active {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 .shopping_button {
   background: none;
@@ -88,22 +88,14 @@
   cursor: pointer;
   position: relative;
   z-index: 1;
+  transition: transform 0.2s ease-in-out;
 }
 
 .shopping_button:active {
   border: none;
   outline: none;
   box-shadow: none;
-}
-
-.shopping_button {
-  transition: transform 0.2s ease-in-out;
-}
-
-.shopping_button:active {
   transform: scale(1.2);
-
-  background: none;
 }
 
 .bag {
@@ -121,7 +113,7 @@
   border-radius: 100%;
   width: 16px;
   height: 16px;
-  margin-top: 12px;
+  margin-top: 10px;
   z-index: 1000;
   justify-content: center;
   transition: transform 0.2s ease-in-out;
@@ -129,7 +121,7 @@
 }
 
 .span:active {
-  transform: scale(1.2);
+  transform: scale(1.5);
 }
 
 .div {
