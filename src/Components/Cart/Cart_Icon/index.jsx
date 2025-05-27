@@ -21,11 +21,11 @@ const CartIcon = () => {
   }, [navigate]);
 
   return (
-    <div
-      className={styles.div}
-      onClick={handleClick}
-    >
-      <button className={styles.shopping_button}>
+    <div className={styles.div}>
+      <button
+        className={styles.shopping_button}
+        onClick={handleClick}
+      >
         <img
           className={styles.shopping}
           src={CartImage}
