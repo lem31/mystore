@@ -1,3 +1,10 @@
+/**
+ * Contact page component displaying contact information and a contact form.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Contact page.
+ */
+
 import React from "react";
 import ContactForm from "../../Contact_Form";
 import styles from "../../../CSS_Modules/Home_Page_Body/home_page_body.module.css";

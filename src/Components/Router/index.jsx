@@ -1,3 +1,10 @@
+/**
+ * Router component that defines the main application routes using React Router.
+ *
+ * @component
+ * @returns {JSX.Element} The routing structure for the application, including nested routes for layout and pages.
+ */
+
 import { Routes, Route } from "react-router-dom";
 import Layout from "../Layout";
 import Home from "../Pages/Home_Page";

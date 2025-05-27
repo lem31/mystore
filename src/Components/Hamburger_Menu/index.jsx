@@ -1,3 +1,15 @@
+/**
+ * HamburgerMenu component renders a responsive hamburger menu for navigation.
+ *
+ * Features:
+ * - Toggles navigation menu visibility on button click.
+ * - Prevents background scrolling when menu is open.
+ * - Closes menu when a navigation link is clicked.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered hamburger menu component.
+ */
+
 import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";

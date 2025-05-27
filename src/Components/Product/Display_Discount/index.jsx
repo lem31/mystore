@@ -1,3 +1,14 @@
+/**
+ * Displays the discount percentage for a given product if a discount is available.
+ *
+ * @component
+ * @param {Object} props
+ * @param {Object} props.product - The product object containing price and discountedPrice.
+ * @param {number} props.product.price - The original price of the product.
+ * @param {number} props.product.discountedPrice - The discounted price of the product.
+ * @returns {JSX.Element} The discount percentage element, or nothing if no discount.
+ */
+
 import React from "react";
 import useMyStore from "../../Store";
 import { useLocation } from "react-router-dom";

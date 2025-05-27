@@ -1,5 +1,15 @@
-import React from "react";
+/**
+ * ContactForm component renders a contact form with validation using React Hook Form and Yup.
+ *
+ * @component
+ *
+ * @returns {JSX.Element} The rendered contact form component.
+ *
+ * @example
+ * <ContactForm />
+ */
 
+import React from "react";
 import { yupResolver } from "@hookform/resolvers/yup";
 import { useForm } from "react-hook-form";
 import * as yup from "yup";

@@ -1,3 +1,12 @@
+/**
+ * Button component to add more of a specific product to the cart.
+ *
+ * @component
+ * @param {Object} props
+ * @param {Object} props.product - The product object to add to the cart.
+ * @returns {JSX.Element} The rendered button to add more products.
+ */
+
 import React from "react";
 import useMyStore from "../../Store";
 import styles from "../../../CSS_Modules/Cart_Page/cart.module.css";

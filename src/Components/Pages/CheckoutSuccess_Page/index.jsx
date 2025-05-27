@@ -1,3 +1,12 @@
+/**
+ * CheckoutSuccess component displays a confirmation message after a successful purchase.
+ *
+ * Shows a randomly generated order number and provides a button to navigate back to the home page.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered CheckoutSuccess page.
+ */
+
 import React from "react";
 import checkoutSuccessStyles from "../../../CSS_Modules/Checkout_Success/checkout_success.module.css";
 import gStyles from "../../../CSS_Modules/Global_Styles/global_styles.module.css";

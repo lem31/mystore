@@ -1,3 +1,12 @@
+/**
+ * Cart component displays the user's shopping cart page.
+ *
+ * Renders the cart title, a list of cart product cards, and the cart total box.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered cart page.
+ */
+
 import React from "react";
 import useMyStore from "../../Store";
 import { useEffect } from "react";

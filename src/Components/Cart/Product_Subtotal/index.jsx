@@ -1,3 +1,12 @@
+/**
+ * DisplayProductSubtotal component displays the subtotal price for a specific product.
+ *
+ * @component
+ * @param {Object} props
+ * @param {Object} props.product - The product object for which the subtotal is calculated.
+ * @returns {JSX.Element} The rendered subtotal for the given product.
+ */
+
 import React, { useEffect, useState } from "react";
 import useMyStore from "../../Store";
 import { useLocation } from "react-router-dom";

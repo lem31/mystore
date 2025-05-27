@@ -1,3 +1,13 @@
+/**
+ * SearchInput component renders a styled search input field with an icon and label.
+ *
+ * @component
+ * @param {Object} props - Component props.
+ * @param {string} props.searchPhrase - The current value of the search input.
+ * @param {function} props.handleChange - Callback function to handle input changes.
+ * @returns {JSX.Element} The rendered search input component.
+ */
+
 import React from "react";
 import SearchIcon from "../../../Images/Search-Icon.png";
 import styles from "../../../CSS_Modules/Search/search.module.css";

@@ -1,3 +1,12 @@
+/**
+ * FetchProducts fetches product data from an API,
+ * manages loading and error states, stores the products in local storage and a global store,
+ * and renders a list of products using the DisplayProducts component.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered component displaying products, a loading message, or an error message.
+ */
+
 import { useEffect, useState } from "react";
 import useMyStore from "../Components/Store";
 import DisplayProducts from "../Components/Product/Display_Products/index";

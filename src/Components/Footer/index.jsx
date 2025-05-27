@@ -1,3 +1,11 @@
+/**
+ * Footer component displays the website's footer section.
+ * Includes copyright information and social media icons.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered footer component.
+ */
+
 import React from "react";
 import styles from "../../CSS_Modules/Footer/footer.module.css";
 import facebook from "../../Images/icons8-facebook-50.png";

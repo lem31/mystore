@@ -1,3 +1,11 @@
+/**
+ * YourOrder component displays the current user's cart items and their subtotals,
+ * along with the total price. If the cart is empty, it displays a message.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered YourOrder component.
+ */
+
 import React from "react";
 import useMyStore from "../../Store";
 import DisplayProductSubtotal from "../../Cart/Product_Subtotal";

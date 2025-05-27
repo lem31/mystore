@@ -1,3 +1,12 @@
+/**
+ * Home component displays the main landing page for the store.
+ *
+ * Renders a headline, a button to navigate to the sale section, and a list of products fetched from the API.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered Home page component.
+ */
+
 import React from "react";
 import FetchProducts from "../../../API/api";
 import styles from "../../../CSS_Modules/Home_Page_Body/home_page_body.module.css";

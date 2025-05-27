@@ -1,3 +1,17 @@
+/**
+ * Renders a list of product suggestions with clickable items.
+ *
+ * @component
+ * @param {Object[]} suggestions - Array of product suggestion objects.
+ * @param {Object} suggestions[].id - Unique identifier for the product.
+ * @param {Object} suggestions[].image - Image object for the product.
+ * @param {string} suggestions[].image.url - URL of the product image.
+ * @param {string} suggestions[].title - Title of the product.
+ * @param {number|string} suggestions[].price - Price of the product.
+ * @param {Function} handleSelect - Callback function triggered when a suggestion is selected.
+ * @returns {JSX.Element} The rendered suggestion list component.
+ */
+
 import React from "react";
 import styles from "../../../CSS_Modules/Search_Suggestion_Li/Search_Suggestion_Li.module.css";
 

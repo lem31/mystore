@@ -1,3 +1,12 @@
+/**
+ * PaymentForm component renders the checkout payment form, including billing details,
+ * additional information, and payment options (Card, Klarna, Vipps).
+ * On successful submission, it clears the cart and navigates to the checkout success page.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered payment form component.
+ */
+
 import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useCallback } from "react";

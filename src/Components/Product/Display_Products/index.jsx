@@ -1,3 +1,20 @@
+/**
+ * DisplayProducts component renders an individual product card with its image, title, price,
+ * discounted price, and a button to view more details. It also displays a discount badge if applicable.
+ *
+ * @component
+ * @param {Object} props
+ * @param {Object} props.product - The product object containing details to display.
+ * @param {number} props.product.id - The unique identifier for the product.
+ * @param {string} props.product.title - The title of the product.
+ * @param {string} props.product.description - The description of the product.
+ * @param {Object} props.product.image - The image object for the product.
+ * @param {string} props.product.image.url - The URL of the product image.
+ * @param {number} props.product.price - The original price of the product.
+ * @param {number} props.product.discountedPrice - The discounted price of the product.
+ * @returns {JSX.Element} The rendered product card component.
+ */
+
 import ViewProductButton from "../View_Product_Btn";
 import React from "react";
 import DisplayDiscount from "../Display_Discount";
@@ -18,9 +35,6 @@ const DisplayProducts = ({ product }) => {
       </div>
       <div className={styles.product_info_div}>
         <h2 className={styles.product_title}> {product.title}</h2>
-        {/* <div>
-  <p className={styles.product_description}>{product.description}</p>
-  </div> */}
         <div className={styles.price_div}>
           {product.price !== discountedPrice && (
             <p
