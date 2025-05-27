@@ -1,3 +1,14 @@
+/**
+ * CartProductCard component displays the list of products currently in the user's cart.
+ *
+ * It renders product details such as image, title, price, quantity, and subtotal.
+ * Users can add, remove, or remove all quantities of a product directly from this card.
+ * If the cart is empty, a message is shown instead.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered cart product card component.
+ */
+
 import React from "react";
 import useMyStore from "../../Store";
 import AddMoreProductsToCartButton from "../Add_More_Products";

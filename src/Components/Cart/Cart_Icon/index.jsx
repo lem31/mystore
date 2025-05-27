@@ -1,3 +1,11 @@
+/**
+ * CartIcon component displays a shopping cart icon with the current cart item count.
+ * Navigates to the cart page when clicked.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered cart icon component.
+ */
+
 import React from "react";
 import useMyStore from "../../Store";
 import CartImage from "../../../Images/icons8-shopping-bag-50.png";

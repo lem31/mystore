@@ -1,3 +1,10 @@
+/**
+ * CartTotalBox component displays the total price of items in the cart and a button to proceed to checkout.
+ *
+ * @component
+ * @returns {JSX.Element|null} The rendered cart total box if cart has items, otherwise null.
+ */
+
 import React from "react";
 import useMyStore from "../../Store";
 import ProceedToCheckoutButton from "../../Checkout/Proceed_To_Checkout";

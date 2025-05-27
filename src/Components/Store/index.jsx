@@ -1,3 +1,24 @@
+/**
+ * Zustand store for managing products and shopping cart state.
+ *
+ * @module useMyStore
+ *
+ * @property {Array<Object>} products - List of available products.
+ * @property {Array<Object>} cart - List of products in the cart with quantity.
+ * @property {number|string} cartTotal - Total price of items in the cart (as string with 2 decimals).
+ * @function setProducts - Sets the list of available products.
+ * @function addProductToCart - Adds a product to the cart or increases its quantity.
+ * @function removeProductFromCart - Removes one quantity of a product from the cart or removes it entirely if quantity is 1.
+ * @function removeAllOfProductFromCart - Removes all quantities of a specific product from the cart.
+ * @function clearCart - Empties the cart and resets the total.
+ * @function cartCount - Returns the total number of items in the cart.
+ * @function specificProductTotal - Returns the total price for a specific product in the cart.
+ * @function findRelatedProducts - Finds products related to those in the cart by category.
+ *
+ * @persisted
+ * @storage localStorage
+ */
+
 import { create } from "zustand";
 import { persist } from "zustand/middleware";
 

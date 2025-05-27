@@ -1,3 +1,12 @@
+/**
+ * AddToCartButton component renders a button to add a product to the cart.
+ *
+ * @component
+ * @param {Object} props
+ * @param {Object} props.product - The product object to add to the cart.
+ * @returns {JSX.Element} The rendered Add To Cart button.
+ */
+
 import React from "react";
 import useMyStore from "../../Store";
 

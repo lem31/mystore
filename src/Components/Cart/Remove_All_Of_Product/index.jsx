@@ -1,3 +1,12 @@
+/**
+ * Button component to remove all instances of a specific product from the cart.
+ *
+ * @component
+ * @param {Object} props
+ * @param {Object} props.product - The product object to remove from the cart.
+ * @returns {JSX.Element} The rendered button element.
+ */
+
 import React from "react";
 import useMyStore from "../../Store";
 import BinIcon from "../../../Images/icons8-bin-24.png";

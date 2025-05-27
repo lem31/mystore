@@ -1,3 +1,13 @@
+/**
+ * Header component for the application.
+ *
+ * Renders the main header section including the logo, navigation,
+ * hamburger menu, cart icon, and search component.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered header component.
+ */
+
 import CartIcon from "../Cart/Cart_Icon";
 import styles from "../../CSS_Modules/Header/header.module.css";
 import Nav from "../Nav";

@@ -1,3 +1,14 @@
+/**
+ * Search component for product lookup with suggestions.
+ *
+ * Renders a search input and displays product suggestions based on user input.
+ * Navigates to the selected product's detail page on selection.
+ *
+ * @component
+ *
+ * @returns {JSX.Element} The rendered Search component.
+ */
+
 import React, { useState, useCallback } from "react";
 import useMyStore from "../../Store";
 import { useNavigate } from "react-router-dom";

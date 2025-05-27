@@ -1,3 +1,12 @@
+/**
+ * Product component displays detailed information about a single product,
+ * including its image, description, price, discount, reviews, and related products.
+ * Fetches product data from an API based on the product ID from the URL.
+ *
+ * @component
+ * @returns {JSX.Element} The rendered product page.
+ */
+
 import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
