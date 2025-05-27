@@ -34,10 +34,6 @@ function ContactForm() {
     resolver: yupResolver(validation),
   });
 
-  function onSubmit(data) {
-    console.log(data);
-  }
-
   return (
     <form
       className={contactStyles.contact_form}
