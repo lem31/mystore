@@ -7,7 +7,6 @@
  * @returns {JSX.Element} The rendered Add To Cart button.
  */
 
-import React from "react";
 import useMyStore from "../../Store";
 
 import styles from "../../../CSS_Modules/Global_Styles/global_styles.module.css";

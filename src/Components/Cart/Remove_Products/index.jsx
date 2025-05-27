@@ -7,7 +7,6 @@
  * @returns {JSX.Element} The rendered button element.
  */
 
-import React from "react";
 import useMyStore from "../../Store/index";
 import styles from "../../../CSS_Modules/Cart_Page/cart.module.css";
 

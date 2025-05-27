@@ -6,8 +6,6 @@
  * @returns {JSX.Element} The rendered App component.
  */
 
-import { useState } from "react";
-import React from "react";
 import Router from "./Components/Router";
 
 function App() {

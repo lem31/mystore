@@ -7,7 +7,7 @@
  */
 
 import { useNavigate } from "react-router-dom";
-import React, { useCallback } from "react";
+import { useCallback } from "react";
 import styles from "../../../CSS_Modules/Global_Styles/global_styles.module.css";
 
 function ProceedToCheckoutButton() {

@@ -11,7 +11,6 @@
  * @returns {JSX.Element} Rendered list of product reviews.
  */
 
-import React from "react";
 import styles from "../../../CSS_Modules/Product_Page/product_page.module.css";
 const DisplayReviews = ({ product }) => {
   return (

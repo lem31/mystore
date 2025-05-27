@@ -9,8 +9,6 @@
  * @returns {JSX.Element} The discount percentage element, or nothing if no discount.
  */
 
-import React from "react";
-import useMyStore from "../../Store";
 import { useLocation } from "react-router-dom";
 import styles from "../../../CSS_Modules/Home_Page_Body/home_page_body.module.css";
 import productStyles from "../../../CSS_Modules/Product_Page/product_page.module.css";

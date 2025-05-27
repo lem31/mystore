@@ -6,7 +6,6 @@
  * @returns {JSX.Element} The rendered YourOrder component.
  */
 
-import React from "react";
 import useMyStore from "../../Store";
 import DisplayProductSubtotal from "../../Cart/Product_Subtotal";
 import styles from "../../../CSS_Modules/Cart_Page/cart.module.css";
