@@ -23,7 +23,6 @@ function Search() {
   const [showSuggestions, setShowSuggestions] = useState(true);
   const navigate = useNavigate();
   const products = useMyStore((state) => state.products);
-  console.log("Products:", products);
 
   const handleChange = useCallback(
     (e) => {
