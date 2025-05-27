@@ -64,7 +64,7 @@ function Product() {
   return (
     <div className={styles.outer_div}>
       {product ? (
-        <>
+        <div>
           <div className={styles.outer_product_div}>
             <div className={styles.product_div}>
               <DisplayDiscount product={product} />
@@ -99,11 +99,11 @@ function Product() {
               </div>
             </div>
           </div>
-        </>
+        </div>
       ) : (
-        <>
+        <div>
           <h1>Product not found</h1>
-        </>
+        </div>
       )}
 
       <div className={styles.product_title_layout}>

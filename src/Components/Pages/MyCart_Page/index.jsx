@@ -12,11 +12,9 @@ import styles from "../../../CSS_Modules/Home_Page_Body/home_page_body.module.cs
 
 function MyCart() {
   return (
-    <>
-      <div className={styles.container}>
-        <Cart />
-      </div>
-    </>
+    <div className={styles.container}>
+      <Cart />
+    </div>
   );
 }
 

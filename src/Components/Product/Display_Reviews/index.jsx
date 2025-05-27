@@ -15,7 +15,7 @@ import React from "react";
 import styles from "../../../CSS_Modules/Product_Page/product_page.module.css";
 const DisplayReviews = ({ product }) => {
   return (
-    <>
+    <div>
       {product.reviews.map((review, index) => (
         <div key={index}>
           <p className={styles.product_text}>{review.description}</p>
@@ -33,7 +33,7 @@ const DisplayReviews = ({ product }) => {
           <p className={styles.product_text}>{review.username}</p>
         </div>
       ))}
-    </>
+    </div>
   );
 };
 

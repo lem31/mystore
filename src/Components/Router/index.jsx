@@ -18,7 +18,7 @@ import styles from "../../CSS_Modules/Global_Styles/global_styles.module.css";
 
 function Router() {
   return (
-    <>
+    <div>
       <Routes className={styles.rooter}>
         <Route
           path="/"
@@ -51,7 +51,7 @@ function Router() {
           />
         </Route>
       </Routes>
-    </>
+    </div>
   );
 }
 

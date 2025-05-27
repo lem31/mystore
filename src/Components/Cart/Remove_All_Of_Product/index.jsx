@@ -18,7 +18,7 @@ const RemoveAllOfProductFromCartButton = ({ product }) => {
   );
 
   return (
-    <>
+    <div>
       <button
         className={styles.bin_button}
         onClick={() => removeAllOfProductFromCart(product.id)}
@@ -30,7 +30,7 @@ const RemoveAllOfProductFromCartButton = ({ product }) => {
           alt="Remove all"
         />
       </button>
-    </>
+    </div>
   );
 };
 

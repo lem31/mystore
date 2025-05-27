@@ -17,14 +17,14 @@ const RemoveProductsFromCartButton = ({ product }) => {
   );
 
   return (
-    <>
+    <div>
       <button
         className={styles.minus_button}
         onClick={() => removeProductFromCart(product.id)}
       >
         -
       </button>
-    </>
+    </div>
   );
 };
 
