@@ -31,8 +31,8 @@ const CartIcon = () => {
           src={CartImage}
           alt="Cart Icon"
         />{" "}
+        {cartCount > 0 && <span className={styles.span}>{cartCount}</span>}
       </button>
-      {cartCount > 0 && <span className={styles.span}>{cartCount}</span>}
     </div>
   );
 };

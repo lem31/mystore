@@ -22,7 +22,7 @@
   flex-direction: column;
   align-items: center;
   width: 220px;
-  height: 240px;
+  height: 280px;
   position: relative;
   padding-bottom: 16px;
   gap: 16px;
@@ -50,7 +50,7 @@
   display: flex;
   flex-direction: column;
   width: 220px;
-  height: 340px;
+  height: 350px;
   text-align: center;
   border: 1px solid var(--tertiary-color);
   border-radius: 48px;
@@ -114,6 +114,7 @@
 .view_product_button_div {
   display: flex;
   justify-content: center;
+  margin-bottom: 8px;
 }
 
 .h1_div_home {
@@ -196,7 +197,6 @@
   .product_cards_container {
     grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: 336px;
-
     gap: 20px;
   }
 
@@ -206,7 +206,7 @@
 
   .product_info_div {
     width: 220px;
-    height: 240px;
+    height: 250px;
     gap: 4px;
   }
   .products_cards_image {
@@ -225,7 +225,7 @@
 
   .individual_card_container {
     width: 220px;
-    height: 324px;
+    height: 334px;
     gap: 0;
   }
 
@@ -263,7 +263,7 @@
 
   .product_info_div {
     width: 280px;
-    height: 280px;
+    height: 290px;
   }
 
   .h2_div_home {
@@ -273,7 +273,7 @@
   .individual_card_container {
     gap: 0;
     width: 280px;
-    height: 400px;
+    height: 410px;
   }
 
   .product_title {
