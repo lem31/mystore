@@ -28,17 +28,13 @@ const validation = yup.object({
 function ContactForm() {
   const {
     register,
-    handleSubmit,
     formState: { errors },
   } = useForm({
     resolver: yupResolver(validation),
   });
 
   return (
-    <form
-      className={contactStyles.contact_form}
-      onSubmit={handleSubmit(onSubmit)}
-    >
+    <form className={contactStyles.contact_form}>
       <div className={contactStyles.label_input_div}>
         <label
           className={contactStyles.contact_label}
