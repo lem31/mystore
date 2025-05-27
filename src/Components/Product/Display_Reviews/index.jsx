@@ -13,16 +13,17 @@
 
 import styles from "../../../CSS_Modules/Product_Page/product_page.module.css";
 const DisplayReviews = ({ product }) => {
+  console.log("Product reviews:", product.reviews);
   return (
     <div>
-      {product.reviews.map((review, index) => (
-        <div key={index}>
+      {product.reviews.map((review) => (
+        <div key={review.id}>
           <p className={styles.product_text}>{review.description}</p>
           <p>
-            {Array.from({ length: review.rating }, (_, i) => (
+            {Array.from({ length: review.rating }, (_, index) => (
               <span
                 className={styles.stars}
-                key={i}
+                key={index}
               >
                 ★
               </span>
