@@ -11,6 +11,7 @@
   flex-direction: row;
   position: relative;
 }
+
 .search_form {
   display: flex;
   justify-content: center;

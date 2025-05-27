@@ -1,17 +1,12 @@
-import { useState } from 'react'
-import React from 'react';
-import Router from './Components/Router'
-
+import { useState } from "react";
+import React from "react";
+import Router from "./Components/Router";
 
 function App() {
- 
-
   return (
     <>
-
-  <Router/>
-
-     </>
+      <Router />
+    </>
   );
 }
 
