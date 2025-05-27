@@ -11,7 +11,6 @@
 import CartIcon from "../Cart/Cart_Icon";
 import styles from "../../CSS_Modules/Header/header.module.css";
 import Nav from "../Nav";
-import React from "react";
 import HamburgerMenu from "../Hamburger_Menu";
 import Search from "../Search/Search_Component/index";
 

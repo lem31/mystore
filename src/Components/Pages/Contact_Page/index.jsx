@@ -5,7 +5,6 @@
  * @returns {JSX.Element} The rendered Contact page.
  */
 
-import React from "react";
 import ContactForm from "../../Contact_Form";
 import styles from "../../../CSS_Modules/Home_Page_Body/home_page_body.module.css";
 import gStyles from "../../../CSS_Modules/Global_Styles/global_styles.module.css";

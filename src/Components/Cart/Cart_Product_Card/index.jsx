@@ -9,7 +9,6 @@
  * @returns {JSX.Element} The rendered cart product card component.
  */
 
-import React from "react";
 import useMyStore from "../../Store";
 import AddMoreProductsToCartButton from "../Add_More_Products";
 import RemoveProductsFromCartButton from "../Remove_Products";

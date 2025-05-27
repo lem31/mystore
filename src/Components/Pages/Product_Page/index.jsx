@@ -7,7 +7,6 @@
  * @returns {JSX.Element} The rendered product page.
  */
 
-import React from "react";
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import AddToCartButton from "../../Cart/Add_To_Cart_Btn";
@@ -24,7 +23,6 @@ function Product() {
   const [products, setProducts] = useState([]);
   const [product, setProduct] = useState(null);
   const [isLoading, setIsLoading] = useState(false);
-
   const [isError, setIsError] = useState(false);
 
   useEffect(() => {

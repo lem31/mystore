@@ -10,7 +10,6 @@
  * @returns {JSX.Element} The rendered hamburger menu component.
  */
 
-import React from "react";
 import { useState } from "react";
 import { useEffect } from "react";
 import menu from "../../Images/hamburger-menu-48.png";

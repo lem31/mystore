@@ -7,7 +7,6 @@
  * @returns {JSX.Element} The rendered button to add more products.
  */
 
-import React from "react";
 import useMyStore from "../../Store";
 import styles from "../../../CSS_Modules/Cart_Page/cart.module.css";
 const AddMoreProductsToCartButton = ({ product }) => {

@@ -7,7 +7,6 @@
  * @returns {JSX.Element} The rendered payment form component.
  */
 
-import React from "react";
 import { useNavigate } from "react-router-dom";
 import { useCallback } from "react";
 import useMyStore from "../../../Components/Store";

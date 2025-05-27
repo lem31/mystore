@@ -6,7 +6,6 @@
  * @returns {JSX.Element} The rendered cart icon component.
  */
 
-import React from "react";
 import useMyStore from "../../Store";
 import CartImage from "../../../Images/icons8-shopping-bag-50.png";
 import { useNavigate } from "react-router-dom";

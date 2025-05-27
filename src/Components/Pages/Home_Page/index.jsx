@@ -7,7 +7,6 @@
  * @returns {JSX.Element} The rendered Home page component.
  */
 
-import React from "react";
 import FetchProducts from "../../../API/api";
 import styles from "../../../CSS_Modules/Home_Page_Body/home_page_body.module.css";
 import gStyles from "../../..//CSS_Modules/Global_Styles/global_styles.module.css";

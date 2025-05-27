@@ -6,7 +6,6 @@
  * @returns {JSX.Element} The rendered checkout page.
  */
 
-import React from "react";
 import PaymentForm from "../../../Components/Checkout/Payment_Form";
 import styles from "../../../CSS_Modules/Checkout_Page/checkout.module.css";
 import gStyles from "../../../CSS_Modules/Global_Styles/global_styles.module.css";

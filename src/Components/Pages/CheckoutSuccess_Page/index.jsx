@@ -7,7 +7,6 @@
  * @returns {JSX.Element} The rendered CheckoutSuccess page.
  */
 
-import React from "react";
 import checkoutSuccessStyles from "../../../CSS_Modules/Checkout_Success/checkout_success.module.css";
 import gStyles from "../../../CSS_Modules/Global_Styles/global_styles.module.css";
 import { useNavigate } from "react-router-dom";

@@ -7,9 +7,8 @@
  * @returns {JSX.Element} The rendered subtotal for the given product.
  */
 
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import useMyStore from "../../Store";
-import { useLocation } from "react-router-dom";
 import styles from "../../../CSS_Modules/Cart_Page/cart.module.css";
 import checkoutStyles from "../../../CSS_Modules/Checkout_Page/checkout.module.css";
 

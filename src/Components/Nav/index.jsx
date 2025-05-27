@@ -5,7 +5,6 @@
  * @returns {JSX.Element} The navigation bar with links to Home, Sale, About, and Contact pages.
  */
 
-import React from "react";
 import styles from "../../CSS_Modules/Header/header.module.css";
 import { Link } from "react-router-dom";
 

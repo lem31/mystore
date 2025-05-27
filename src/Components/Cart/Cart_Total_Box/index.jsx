@@ -5,7 +5,6 @@
  * @returns {JSX.Element|null} The rendered cart total box if cart has items, otherwise null.
  */
 
-import React from "react";
 import useMyStore from "../../Store";
 import ProceedToCheckoutButton from "../../Checkout/Proceed_To_Checkout";
 import styles from "../../../CSS_Modules/Cart_Page/cart.module.css";

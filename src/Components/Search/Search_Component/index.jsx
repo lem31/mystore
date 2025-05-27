@@ -9,7 +9,7 @@
  * @returns {JSX.Element} The rendered Search component.
  */
 
-import React, { useState, useCallback } from "react";
+import { useState, useCallback } from "react";
 import useMyStore from "../../Store";
 import { useNavigate } from "react-router-dom";
 import SearchInput from "../Search_Input";

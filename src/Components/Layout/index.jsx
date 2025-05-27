@@ -6,7 +6,6 @@
  * @returns {JSX.Element} The layout structure with header, outlet, and footer.
  */
 
-import React from "react";
 import { Outlet } from "react-router-dom";
 import Header from "../Header";
 import Footer from "../Footer";

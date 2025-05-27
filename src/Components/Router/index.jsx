@@ -8,7 +8,6 @@
 import { Routes, Route } from "react-router-dom";
 import Layout from "../Layout";
 import Home from "../Pages/Home_Page";
-import Sale from "../Pages/Sale_Page";
 import Product from "../Pages/Product_Page";
 import MyCart from "../Pages/MyCart_Page";
 import CheckoutPage from "../Pages/Checkout_Page";

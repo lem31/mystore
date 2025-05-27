@@ -8,7 +8,6 @@
  * @returns {JSX.Element} The rendered search input component.
  */
 
-import React from "react";
 import SearchIcon from "../../../Images/Search-Icon.png";
 import styles from "../../../CSS_Modules/Search/search.module.css";
 
