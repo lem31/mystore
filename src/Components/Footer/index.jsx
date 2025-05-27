@@ -23,17 +23,17 @@ function Footer() {
             className={styles.footer_img}
             src={facebook}
             alt="Facebook"
-          ></img>
+          />
           <img
             className={styles.footer_img}
             src={instagram}
             alt="Instagram"
-          ></img>
+          />
           <img
             className={styles.footer_img}
             src={twitter}
             alt="Twitter"
-          ></img>
+          />
         </div>
       </footer>
     </div>
