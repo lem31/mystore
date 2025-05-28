@@ -80,6 +80,9 @@ html {
   .h2 {
     font-size: var(--font-size-small);
   }
+  .h3 {
+    font-size: var(--font-size-tiny);
+  }
 }
 
 @media (max-width: 486px) {
@@ -89,5 +92,8 @@ html {
 
   .h2 {
     font-size: var(--font-size-small);
+  }
+  .h3 {
+    font-size: var(--font-size-tiny);
   }
 }

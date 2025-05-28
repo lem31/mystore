@@ -1,5 +1,6 @@
 import favoriteStyles from "../../CSS_Modules/Favorites/index.module.css";
 import useMyStore from "../Store";
+import gStyles from "../../CSS_Modules/Global_Styles/global_styles.module.css";
 
 const FavoritesSidebar = ({ closeSidebar }) => {
   const { products, favorites, toggleFavorite } = useMyStore();
@@ -11,7 +12,7 @@ const FavoritesSidebar = ({ closeSidebar }) => {
       >
         ✖
       </button>
-      <h2>Favorite Products ❤️</h2>
+      <h2 className={gStyles.h2}>Your Favorite Products ❤️</h2>
       {favorites.length === 0 ? (
         <p>No favorites yet!</p>
       ) : (
