@@ -12,7 +12,9 @@ const FavoritesSidebar = ({ closeSidebar }) => {
       >
         ✖
       </button>
-      <h2 className={gStyles.h2}>Your Favorite Products ❤️</h2>
+      <h2 className={`${gStyles.h2} ${favoriteStyles.sideBarTitle}`}>
+        Your Favorite Products ❤️
+      </h2>
       {favorites.length === 0 ? (
         <p>No favorites yet!</p>
       ) : (
@@ -24,13 +26,17 @@ const FavoritesSidebar = ({ closeSidebar }) => {
               className={favoriteStyles.favoriteItem}
             >
               <img
+                className={favoriteStyles.productImage}
                 src={product.image.url}
                 alt={product.title}
                 width="50"
               />
-              <p>{product.title}</p>
-              <p>${product.discountedPrice.toFixed(2)}</p>
-              <button onClick={() => toggleFavorite(product.id)}>
+              <h3 className={gStyles.h3}>{product.title}</h3>
+
+              <button
+                className={`${gStyles.button} ${favoriteStyles.removeBtn}`}
+                onClick={() => toggleFavorite(product.id)}
+              >
                 Remove ❤️
               </button>
             </div>

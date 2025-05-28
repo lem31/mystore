@@ -25,3 +25,32 @@
   gap: 10px;
   margin: 10px 0;
 }
+
+.favorite_price {
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-1);
+  font-weight: bold;
+  width: auto;
+  height: 20px;
+  text-align: left;
+  color: var(--tertiary-color);
+}
+
+.productImage {
+  border-radius: 18px;
+  height: 56px;
+  width: 56px;
+  border: 2px solid var(--tertiary-color);
+}
+
+.removeBtn {
+  height: 30px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideBarTitle {
+  padding-bottom: 20px;
+}
