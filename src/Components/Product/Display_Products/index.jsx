@@ -18,14 +18,26 @@
 import ViewProductButton from "../View_Product_Btn";
 import DisplayDiscount from "../Display_Discount";
 import styles from "../../../CSS_Modules/Home_Page_Body/home_page_body.module.css";
+import FavoriteIcon from "@mui/icons-material/Favorite";
+import IconButton from "@mui/material/IconButton";
 
-const DisplayProducts = ({ product }) => {
+const DisplayProducts = ({ product, toggleFavorite, isFavorite }) => {
   const { discountedPrice } = product;
 
   return (
     <div className={styles.individual_card_container}>
       <DisplayDiscount product={product} />
+
       <div className={styles.product_image_div}>
+        <div className={styles.favorite_icon_div}>
+          <IconButton
+            className={styles.favorite_icon}
+            onClick={() => toggleFavorite(product.id)}
+            color={isFavorite ? "error" : "default"}
+          >
+            <FavoriteIcon className={styles.fav_icon_img} />
+          </IconButton>
+        </div>
         <img
           className={styles.products_cards_image}
           src={product.image.url}

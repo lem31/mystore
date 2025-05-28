@@ -17,6 +17,26 @@
   text-align: center;
 }
 
+.favorite_icon {
+  position: absolute;
+  cursor: pointer;
+
+  top: 0px;
+}
+
+.fav_icon_img {
+  width: 42px;
+  height: 42px;
+}
+
+.favorite_icon_div {
+  position: absolute;
+  width: 200px;
+  display: flex;
+
+  justify-content: flex-end;
+}
+
 .product_info_div {
   display: flex;
   flex-direction: column;
@@ -72,7 +92,6 @@
   font-family: var(--font-family-2);
   color: var(--tertiary-color);
   font-weight: bold;
-
   height: 20px;
   text-align: center;
   text-wrap: nowrap;
@@ -164,6 +183,7 @@
   min-height: 100vh;
   position: relative;
   padding-bottom: 40px;
+  padding-top: 160px;
 }
 
 .price_div {

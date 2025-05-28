@@ -74,9 +74,9 @@ function Product() {
                 />
               </div>
               <div className={styles.product_text_div}>
-                <h1 className={`${gStyles.h1} ${styles.h1_product}`}>
+                <h2 className={`${gStyles.h1} ${styles.h1_product}`}>
                   {product.title}
-                </h1>
+                </h2>
                 <p className={styles.product_text}>{product.description}</p>
                 <div className={styles.price_div}>
                   {product.price !== product.discountedPrice && (
