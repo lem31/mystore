@@ -17,10 +17,10 @@ const url = "https://v2.api.noroff.dev/online-shop";
 function FetchProducts() {
   const setStoreProducts = useMyStore((state) => state.setProducts);
   const [products, setProducts] = useState([]);
-
   const [isLoading, setIsLoading] = useState(false);
-
   const [isError, setIsError] = useState(false);
+  const toggleFavorite = useMyStore((state) => state.toggleFavorite);
+  const favorites = useMyStore((state) => state.favorites);
 
   useEffect(() => {
     async function getData() {
@@ -57,13 +57,17 @@ function FetchProducts() {
     );
   }
   return (
-    <div className={styles.product_cards_container}>
-      {products.map((product) => (
-        <DisplayProducts
-          key={product.id}
-          product={product}
-        />
-      ))}
+    <div>
+      <div className={styles.product_cards_container}>
+        {products.map((product) => (
+          <DisplayProducts
+            key={product.id}
+            product={product}
+            toggleFavorite={toggleFavorite}
+            isFavorite={favorites.includes(product.id)}
+          />
+        ))}
+      </div>
     </div>
   );
 }

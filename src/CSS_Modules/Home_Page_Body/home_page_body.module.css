@@ -17,6 +17,26 @@
   text-align: center;
 }
 
+.favorite_icon {
+  position: absolute;
+  cursor: pointer;
+
+  top: 0px;
+}
+
+.fav_icon_img {
+  width: 42px;
+  height: 42px;
+}
+
+.favorite_icon_div {
+  position: absolute;
+  width: 200px;
+  display: flex;
+
+  justify-content: flex-end;
+}
+
 .product_info_div {
   display: flex;
   flex-direction: column;

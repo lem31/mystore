@@ -26,6 +26,8 @@ const useMyStore = create(
   persist(
     (set, get) => ({
       products: [],
+
+      favorites: [],
       cart: [],
       cartTotal: 0,
 
@@ -98,6 +100,31 @@ const useMyStore = create(
         return itemInCart
           ? (itemInCart.price * itemInCart.quantity).toFixed(2)
           : "0.00";
+      },
+
+      toggleFavorite: (productId) =>
+        set((state) => {
+          const updatedFavorites = state.favorites.includes(productId)
+            ? state.favorites.filter((id) => id !== productId)
+            : [...state.favorites, productId];
+
+          localStorage.setItem("favorites", JSON.stringify(updatedFavorites));
+
+          return { favorites: updatedFavorites };
+        }),
+      clearFavorites: () => set({ favorites: [] }),
+
+      getFavoriteProducts: () => {
+        const state = get();
+        return state.products.filter((product) =>
+          state.favorites.includes(product.id)
+        );
+      },
+
+      loadFavorites: () => {
+        const savedFavorites =
+          JSON.parse(localStorage.getItem("favorites")) || [];
+        set({ favorites: savedFavorites });
       },
 
       findRelatedProducts: () => {

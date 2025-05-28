@@ -14,9 +14,9 @@ import Nav from "../Nav";
 import HamburgerMenu from "../Hamburger_Menu";
 import Search from "../Search/Search_Component/index";
 
-function Header() {
+function Header({ toggleSidebar }) {
   return (
-    <div>
+    <div className={styles.header_container}>
       <header className={styles.header}>
         <p className={styles.logo}>
           <span className={styles.logo_easy}>Easy</span>{" "}
@@ -28,7 +28,12 @@ function Header() {
           <CartIcon />
         </div>
       </header>
-
+      <button
+        onClick={toggleSidebar}
+        style={{ fontSize: "20px", cursor: "pointer" }}
+      >
+        ❤️ Favorites
+      </button>
       <Search />
     </div>
   );
