@@ -184,6 +184,7 @@
   min-height: 100vh;
   position: relative;
   padding-bottom: 40px;
+  padding-top: 160px;
 }
 
 .price_div {
