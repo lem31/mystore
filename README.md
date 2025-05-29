@@ -96,8 +96,4 @@ Products are fetched from:
 This project is licensed under MIT.
 
 **Video Demo**
-<video width="600" controls>
-
-  <source src="../mystore/src/Videos/Screen Recording 2025-05-29 at 11.12.09.mov" type="video/mp4">
-  Your browser does not support the video tag.
-</video>
+![My Store Brief Video Demo](../mystore/src/Videos/ScreenRecording2025-05-29at11.12.09-ezgif.com-video-to-gif-converter.gif)
