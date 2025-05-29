@@ -14,6 +14,7 @@ import styles from "../../CSS_Modules/Layout/layout.module.css";
 import FavoritesSidebar from "../Favorites/";
 import useMyStore from "../Store";
 import { useEffect } from "react";
+import ScrollToTop from "../ScrollToTop";
 
 function Layout() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
@@ -35,6 +36,7 @@ function Layout() {
           closeSidebar={toggleSidebar}
         />
       )}
+      <ScrollToTop />
 
       <Outlet />
 
