@@ -65,18 +65,6 @@ Styled with MUI for a modern look
 🚀 **Optimized Performance:**
 Built using Vite for fast loading
 
-**Project Structure**
-
-my-store-app/
-│── src/ # Main source code
-│ ├── Components/ # Reusable components (Product, Cart, Sidebar)
-│ ├── Pages/ # App pages (Home, Checkout, Product Details)
-│ ├── Store/ # Zustand global state management
-│ ├── CSS_Modules/ # CSS modules for styling
-│── public/ # Static assets
-│── package.json # Project dependencies & scripts
-│── README.md # Project documentation
-
 **API Integration**
 
 Products are fetched from:
