@@ -96,4 +96,4 @@ Products are fetched from:
 This project is licensed under MIT.
 
 **Video Demo**
-<img src="./src/Videos/ScreenRecording2025-05-29at11.12.09-ezgif.com-video-to-gif-converter.gif" width="300">
+<img src="./src/Videos/ScreenRecording2025-05-29at11.12.09-ezgif.com-video-to-gif-converter.gif" width="600">
