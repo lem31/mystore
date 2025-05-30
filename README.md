@@ -14,12 +14,12 @@ My Store App is an e-commerce web application built using React and Vite. It ena
 
 <table>
 <tr>
-<th align='center' > ✨ <h2 style = 'font-size: 8px'><strong>Frontend </strong> </h2> </th>
-<th align='center' > 🎨<h2 style = 'font-size: 8px'> <strong> UI Components </strong></h2> </th>
-<th align='center' > 🗂️ <h2 style = 'font-size: 8px'> <strong>State Management</strong> </h2> </th>
-<th align='center' > 🛣️<h2 style = 'font-size: 8px'> <strong> Routing </strong> </h2> </th>
-<th align='center' > 📝<h2 style = 'font-size: 8px'> <strong> Form Validation </strong> </h2> </th>
-<th align='center' > 🛠️<h2 style = 'font-size: 8px'> <strong> Development Tools</strong></h2></th>
+<th align='center' > ✨ <span style = 'font-size: 8px'><strong>Frontend </strong> </span> </th>
+<th align='center' > 🎨<span style = 'font-size: 8px'> <strong> UI Components </strong></span> </th>
+<th align='center' > 🗂️ <span style = 'font-size: 8px'> <strong>State Management</strong> </span> </th>
+<th align='center' > 🛣️<span style = 'font-size: 8px'> <strong> Routing </strong> </span> </th>
+<th align='center' > 📝<span style = 'font-size: 8px'> <strong> Form Validation </strong> </span> </th>
+<th align='center' > 🛠️<span style = 'font-size: 8px'> <strong> Development Tools</strong></span></th>
 </tr>
 <tr>
     <td>React, Vite</td>
