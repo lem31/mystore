@@ -1,21 +1,29 @@
-My Store App 🛍️
+**My Store App 🛍️**
 
 **Video Demo**
 
 <img src="./src/Videos/ScreenRecording2025-05-29at11.12.09-ezgif.com-video-to-gif-converter.gif" width="600">
 
-**Overview**
+**Overview** <br>
+
 My Store App is an e-commerce web application built using React and Vite. It enables users to browse products, add items to their cart, favorite products, checkout and pay. Users are also able to view a product page dedicated to individual products, which provides them with more details about the product and a list of related products beneath. The app uses Zustand for state management, MUI for UI components, and integrates form validation with Yup and React Hook Form.
 
-**Tech Stack**
-✨ **Frontend:** React, Vite
-🎨 **UI Components:** Material-UI (MUI), Emotion
-🗂️ **State Management:** Zustand
-🛣️ **Routing:** React Router
-📝 **Form Validation:** Yup, React Hook Form
-🛠️ **Development Tools:** ESLint, Vite, GitHub Actions
+**Tech Stack** <br>
 
-**Design**
+✨ **Frontend:** <br>
+React, Vite <br>
+🎨 **UI Components:** <br>
+Material-UI (MUI), Emotion <br>
+🗂️ **State Management:** <br>
+Zustand <br>
+🛣️ **Routing:**
+React Router <br>
+📝 **Form Validation:**
+Yup, React Hook Form <br>
+🛠️ **Development Tools:**
+ESLint, Vite, GitHub Actions <br>
+
+**Design** <br>
 
 ✅ Prototype: Created in Figma for desktop and mobile:
 
@@ -51,18 +59,19 @@ To run a preview of the built app, run:
 
 npm run preview
 
-**Features**
-🛒 **Product Listing:**
-Browse products fetched from an API Product Listing: Browse products fetched from an API
-🛍️ **Shopping Cart:**
-Add/remove items with dynamic price calculation
-❤️ **Favorites Sidebar:**
-Save favorite items persistently
-💳 **Secure Checkout & Pay:**
-Process orders with form validation
-🎨 **Responsive Design:**
-Styled with MUI for a modern look
-🚀 **Optimized Performance:**
+**Features** <br>
+
+🛒 **API Product Listing:** <br>
+Browse products fetched from an API <br>
+🛍️ **Shopping Cart:** <br>
+Add/remove items with dynamic price calculation <br>
+❤️ **Favorites Sidebar:** <br>
+Save favorite items persistently <br>
+💳 **Secure Checkout & Pay:** <br>
+Process orders with form validation <br>
+🎨 **Responsive Design:** <br>
+Styled with MUI for a modern look <br>
+🚀 **Optimized Performance:** <br>
 Built using Vite for fast loading
 
 **API Integration**
