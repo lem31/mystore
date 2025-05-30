@@ -14,12 +14,12 @@ My Store App is an e-commerce web application built using React and Vite. It ena
 
 <table>
 <tr>
-<th> ✨ <strong> ✨ Frontend: </strong> </th>
-<th> <strong> 🎨 UI Components: </strong> </th>
-<th> <strong> 🗂️ State Management: </strong> </th>
-<th> <strong> 🛣️ Routing: </strong> </th>
-<th> <strong>  📝 Form Validation: </strong> </th>
-<th> <strong>🛠️ **Development Tools:</strong></th>
+<th> ✨ <strong> ✨ Frontend </strong> </th>
+<th> <strong> 🎨 UI Components </strong> </th>
+<th> <strong> 🗂️ State Management</strong> </th>
+<th> <strong> 🛣️ Routing </strong> </th>
+<th> <strong>  📝 Form Validation </strong> </th>
+<th> <strong>🛠️ **Development Tools</strong></th>
 </tr>
 <tr>
     <td>React, Vite</td>
@@ -71,15 +71,15 @@ npm run preview
 
 <table>
 <tr>
-<th> ✨ <strong> 🛒 API Product Listing: </strong> </th>
-<th> <strong> 🛍️ Shopping Cart: </strong> </th>
+<th> ✨ <strong> 🛒 API Product Listing </strong> </th>
+<th> <strong> 🛍️ Shopping Cart </strong> </th>
 <th> <strong> ❤️ Favorites Sidebar: </strong> </th>
-<th> <strong> 💳 Secure Checkout & Pay: </strong> </th>
-<th> <strong>  🎨 Responsive Design: </strong> </th>
-<th> <strong>🚀 Optimized Performance:</strong></th>
+<th> <strong> 💳 Secure Checkout & Pay</strong> </th>
+<th> <strong>  🎨 Responsive Design </strong> </th>
+<th> <strong>🚀 Optimized Performance</strong></th>
 </tr>
 <tr>
-    <td>Browse products fetched from an APIe</td>
+    <td>Browse products fetched from an API</td>
     <td>Add/remove items with dynamic price calculation</td>
     <td>Save favorite items persistently</td>
     <td>Process orders with form validation</td>
@@ -87,19 +87,6 @@ npm run preview
     <td>Built using Vite for fast loading</td>
   </tr>
   </table>
-
-🛒 **API Product Listing:** <br>
-Browse products fetched from an API <br>
-🛍️ **Shopping Cart:** <br>
-Add/remove items with dynamic price calculation <br>
-❤️ **Favorites Sidebar:** <br>
-Save favorite items persistently <br>
-💳 **Secure Checkout & Pay:** <br>
-Process orders with form validation <br>
-🎨 **Responsive Design:** <br>
-Styled with MUI for a modern look <br>
-🚀 **Optimized Performance:** <br>
-Built using Vite for fast loading
 
 **API Integration**
 
