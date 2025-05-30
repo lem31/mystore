@@ -14,12 +14,12 @@ My Store App is an e-commerce web application built using React and Vite. It ena
 
 <table>
 <tr>
-<th> ✨ <strong> ✨ Frontend </strong> </th>
-<th> <strong> 🎨 UI Components </strong> </th>
-<th> <strong> 🗂️ State Management</strong> </th>
-<th> <strong> 🛣️ Routing </strong> </th>
-<th> <strong>  📝 Form Validation </strong> </th>
-<th> <strong>🛠️ **Development Tools</strong></th>
+<th> ✨ <strong>✨ Frontend </strong> </th>
+<th> <strong>🎨 UI Components </strong> </th>
+<th> <strong>🗂️ State Management</strong> </th>
+<th> <strong>🛣️ Routing </strong> </th>
+<th> <strong>📝 Form Validation </strong> </th>
+<th> <strong>🛠️ Development Tools</strong></th>
 </tr>
 <tr>
     <td>React, Vite</td>
@@ -71,11 +71,11 @@ npm run preview
 
 <table>
 <tr>
-<th> ✨ <strong> 🛒 API Product Listing </strong> </th>
-<th> <strong> 🛍️ Shopping Cart </strong> </th>
-<th> <strong> ❤️ Favorites Sidebar: </strong> </th>
+<th> <strong>🛒 API Product Listing </strong> </th>
+<th> <strong>🛍️ Shopping Cart </strong> </th>
+<th> <strong>❤️ Favorites Sidebar </strong> </th>
 <th> <strong> 💳 Secure Checkout & Pay</strong> </th>
-<th> <strong>  🎨 Responsive Design </strong> </th>
+<th> <strong>🎨 Responsive Design </strong> </th>
 <th> <strong>🚀 Optimized Performance</strong></th>
 </tr>
 <tr>
