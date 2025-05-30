@@ -14,12 +14,12 @@ My Store App is an e-commerce web application built using React and Vite. It ena
 
 <table>
 <tr>
-<th align='center' > ✨ <span style="font-size:12px;"><strong>Frontend </strong> </span> </th>
-<th align='center' > 🎨<span style="font-size:12px;"> <strong> UI Components </strong></span> </th>
-<th align='center' > 🗂️ <span style="font-size:12px;"> <strong>State Management</strong> </span> </th>
-<th align='center' > 🛣️<span style="font-size:12px;"> <strong> Routing </strong> </span> </th>
-<th align='center' > 📝<span style="font-size:12px;"> <strong> Form Validation </strong> </span> </th>
-<th align='center' > 🛠️<span style="font-size:12px;"> <strong> Development Tools</strong></span></th>
+<th align='center' > ✨<strong><small>Frontend </small> </strong>  </th>
+<th align='center' > 🎨 <strong><small> UI Components </small> </strong> </th>
+<th align='center' > 🗂️  <strong><small>State Management</small></strong>  </th>
+<th align='center' > 🛣️ <strong> <small>Routing</small> </strong>  </th>
+<th align='center' > 📝 <strong> <small>Form Validation</small> </strong>  </th>
+<th align='center' > 🛠️ <strong> <small>Development Tools</small></strong></th>
 </tr>
 <tr>
     <td>React, Vite</td>
