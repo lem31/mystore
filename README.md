@@ -1,4 +1,6 @@
-<center> **My Store App 🛍️** </center>
+<div align="center"> **My Store App 🛍️**
+
+</div>
 
 **Video Demo**
 
