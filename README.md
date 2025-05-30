@@ -12,7 +12,25 @@ My Store App is an e-commerce web application built using React and Vite. It ena
 
 <h2> <strong> Tech Stack </strong> </h2>
 
-✨ **Frontend:** <br>
+<table>
+<tr>
+<th> ✨ <strong> ✨ Frontend: </strong> </th>
+<th> <strong> 🎨 UI Components: </strong> </th>
+<th> <strong> 🗂️ State Management: </strong> </th>
+<th> <strong> 🛣️ Routing: </strong> </th>
+<th> <strong>  📝 Form Validation: </strong> </th>
+<th> <strong>🛠️ **Development Tools:</strong></th>
+</tr>
+<tr>
+    <td>React, Vite</td>
+    <td>Material-UI (MUI), Emotion</td>
+    <td>Zustand</td>
+    <td>React Router</td>
+    <td>Yup, React Hook Form</td>
+    <td>ESLint, Vite, GitHub Actions</td>
+  </tr>
+
+✨ **Frontend:**
 React, Vite <br>
 🎨 **UI Components:** <br>
 Material-UI (MUI), Emotion <br>
