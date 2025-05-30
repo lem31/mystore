@@ -14,7 +14,7 @@ My Store App is an e-commerce web application built using React and Vite. It ena
 
 <table>
 <tr>
-<th> ✨ <strong>✨ Frontend </strong> </th>
+<th align='center' style = 'font-size: 14px'> ✨ <strong>✨ Frontend </strong> </th>
 <th> <strong>🎨 UI Components </strong> </th>
 <th> <strong>🗂️ State Management</strong> </th>
 <th> <strong>🛣️ Routing </strong> </th>
@@ -70,7 +70,7 @@ npm run preview
 <h2> <strong>Features </strong> </h2> <br>
 
 <table>
-<tr align='left'>
+<tr>
 <th> <strong>🛒 API Product Listing </strong> </th>
 <th> <strong>🛍️ Shopping Cart </strong> </th>
 <th> <strong>❤️ Favorites Sidebar </strong> </th>
