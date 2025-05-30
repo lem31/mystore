@@ -10,27 +10,6 @@
 
 My Store App is an e-commerce web application built using React and Vite. It enables users to browse products, add items to their cart, favorite products, checkout and pay. Users are also able to view a product page dedicated to individual products, which provides them with more details about the product and a list of related products beneath. The app uses Zustand for state management, MUI for UI components, and integrates form validation with Yup and React Hook Form.
 
-<h2> <strong> Tech Stack </strong> </h2>
-
-<table>
-<tr>
-<th align='center' > ✨<strong><sub>Frontend </sub> </strong>  </th>
-<th align='center' > 🎨 <strong><sub> UI Components </sub> </strong> </th>
-<th align='center' > 🗂️  <strong><sub>State Management</sub></strong>  </th>
-<th align='center' > 🛣️ <strong> <sub>Routing</sub> </strong>  </th>
-<th align='center' > 📝 <strong> <sub>Form Validation</sub> </strong>  </th>
-<th align='center' > 🛠️ <strong> <sub>Development Tools</sub></strong></th>
-</tr>
-<tr>
-    <td>React, Vite</td>
-    <td>Material-UI (MUI), Emotion</td>
-    <td>Zustand</td>
-    <td>React Router</td>
-    <td>Yup, React Hook Form</td>
-    <td>ESLint, Vite, GitHub Actions</td>
-  </tr>
-  </table>
-
 <h2> <strong> Design </strong> </h2> <br>
 
 ✅ Prototype: Created in Figma for desktop and mobile:
@@ -71,12 +50,12 @@ npm run preview
 
 <table>
 <tr>
-<th> <strong>🛒 <h4> API Product Listing </h4></strong> </th>
-<th> <strong>🛍️ <sub>  Shopping Cart </sub> </strong> </th>
-<th> <strong>❤️ <sub> Favorites Sidebar </sub> </strong> </th>
-<th> <strong> 💳<sub> Secure Checkout & Pay</sub></strong> </th>
-<th> <strong>🎨<sub> Responsive Design</sub></strong> </th>
-<th> <strong>🚀<sub> Optimized Performance</sub></strong></th>
+<th> <strong> <h4> 🛒 API Product Listing </h4></strong> </th>
+<th> <strong> <h4> 🛍️ Shopping Cart </h4> </strong> </th>
+<th> <strong> <h4> ❤️ Favorites Sidebar </h4> </strong> </th>
+<th> <strong> <h4> 💳 Secure Checkout & Pay</h4></strong> </th>
+<th> <strong><h4> 🎨Responsive Design</h4></strong> </th>
+<th> <strong><h4> 🚀 Optimized Performance</h4></strong></th>
 </tr>
 <tr>
     <td>Browse products fetched from an API</td>
@@ -93,6 +72,27 @@ npm run preview
 Products are fetched from:
 
 🔗 API URL: https://v2.api.noroff.dev/online-shop
+
+<h2> <strong> Tech Stack </strong> </h2>
+
+<table>
+<tr>
+<th align='center' > ✨<strong><h4>Frontend </h4> </strong>  </th>
+<th align='center' > 🎨 <strong><h4> UI Components </h4> </strong> </th>
+<th align='center' > 🗂️  <strong><h4>State Management</h4></strong>  </th>
+<th align='center' > 🛣️ <strong> <h4>Routing</h4> </strong>  </th>
+<th align='center' > 📝 <strong> <h4>Form Validation</h4> </strong>  </th>
+<th align='center' > 🛠️ <strong> <h4>Development Tools</h4></strong></th>
+</tr>
+<tr>
+    <td>React, Vite</td>
+    <td>Material-UI (MUI), Emotion</td>
+    <td>Zustand</td>
+    <td>React Router</td>
+    <td>Yup, React Hook Form</td>
+    <td>ESLint, Vite, GitHub Actions</td>
+  </tr>
+  </table>
 
 **How to contribute**
 
