@@ -1,0 +1,56 @@
+.sidebar {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 300px;
+  height: 100vh;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  overflow-y: auto;
+  z-index: 4;
+  background-color: rgba(6, 5, 5, 0.925);
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  color: var(--secondary-color);
+}
+
+.favoriteItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0;
+}
+
+.favorite_price {
+  font-size: var(--font-size-small);
+  font-family: var(--font-family-1);
+  font-weight: bold;
+  width: auto;
+  height: 20px;
+  text-align: left;
+  color: var(--tertiary-color);
+}
+
+.productImage {
+  border-radius: 18px;
+  height: 56px;
+  width: 56px;
+  border: 2px solid var(--tertiary-color);
+}
+
+.removeBtn {
+  height: 30px;
+  width: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sideBarTitle {
+  padding-bottom: 20px;
+}

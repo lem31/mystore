@@ -10,6 +10,7 @@
 
 .outer_div {
   min-height: 100vh;
+  padding-top: 160px;
 }
 
 .loading_msg,
@@ -88,7 +89,7 @@
   flex-direction: column;
   width: 100%;
   width: 220px;
-  height: 328px;
+  height: 338px;
   align-items: center;
   justify-items: center;
   border: 1px solid var(--tertiary-color);
@@ -208,7 +209,7 @@
 
   .related_products_inner_div {
     width: 220px;
-    height: 320px;
+    height: 350px;
   }
 
   .related_product_text {
@@ -270,7 +271,7 @@
     align-content: center;
     justify-items: center;
     width: 300px;
-    height: 400px;
+    height: 420px;
   }
 
   .related_product_img_div {
