@@ -14,12 +14,12 @@ My Store App is an e-commerce web application built using React and Vite. It ena
 
 <table>
 <tr>
-<th align='center' style = 'font-size: 14px'> ✨ <strong>✨ Frontend </strong> </th>
-<th align='center' style = 'font-size: 14px'> <strong>🎨 UI Components </strong> </th>
-<th align='center' style = 'font-size: 14px'> <strong>🗂️ State Management</strong> </th>
-<th align='center' style = 'font-size: 14px'> <strong>🛣️ Routing </strong> </th>
-<th align='center' style = 'font-size: 14px'> <strong>📝 Form Validation </strong> </th>
-<th align='center' style = 'font-size: 14px'> <strong>🛠️ Development Tools</strong></th>
+<th align='center' style = 'font-size: 12px'> ✨ <strong>✨ Frontend </strong> </th>
+<th align='center' style = 'font-size: 12px'> <strong>🎨 UI Components </strong> </th>
+<th align='center' style = 'font-size: 12px'> <strong>🗂️ State Management</strong> </th>
+<th align='center' style = 'font-size: 12px'> <strong>🛣️ Routing </strong> </th>
+<th align='center' style = 'font-size: 12px'> <strong>📝 Form Validation </strong> </th>
+<th align='center' style = 'font-size: 12px'> <strong>🛠️ Development Tools</strong></th>
 </tr>
 <tr>
     <td>React, Vite</td>
