@@ -50,12 +50,12 @@ npm run preview
 
 <table>
 <tr>
-<th> <strong> <h4> 🛒 API Product Listing </h4></strong> </th>
-<th> <strong> <h4> 🛍️ Shopping Cart </h4> </strong> </th>
-<th> <strong> <h4> ❤️ Favorites Sidebar </h4> </strong> </th>
-<th> <strong> <h4> 💳 Secure Checkout & Pay</h4></strong> </th>
-<th> <strong><h4> 🎨Responsive Design</h4></strong> </th>
-<th> <strong><h4> 🚀 Optimized Performance</h4></strong></th>
+<th> <strong> 🛒 <h4> API Product Listing </h4></strong> </th>
+<th> <strong> 🛍️<h4>  Shopping Cart </h4> </strong> </th>
+<th> <strong> ❤️<h4>  Favorites Sidebar </h4> </strong> </th>
+<th> <strong> 💳<h4>  Secure Checkout & Pay</h4></strong> </th>
+<th> <strong>🎨<h4> Responsive Design</h4></strong> </th>
+<th> <strong>🚀 <h4> Optimized Performance</h4></strong></th>
 </tr>
 <tr>
     <td>Browse products fetched from an API</td>
