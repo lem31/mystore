@@ -10,7 +10,7 @@
 
 My Store App is an e-commerce web application built using React and Vite. It enables users to browse products, add items to their cart, favorite products, checkout and pay. Users are also able to view a product page dedicated to individual products, which provides them with more details about the product and a list of related products beneath. The app uses Zustand for state management, MUI for UI components, and integrates form validation with Yup and React Hook Form.
 
-**Tech Stack** <br>
+<h2> <strong>Tech Stack </strong>> </h2>
 
 ✨ **Frontend:** <br>
 React, Vite <br>
@@ -25,43 +25,43 @@ Yup, React Hook Form <br>
 🛠️ **Development Tools:**
 ESLint, Vite, GitHub Actions <br>
 
-**Design** <br>
+<h2> <strong> Design </strong> </h2> <br>
 
 ✅ Prototype: Created in Figma for desktop and mobile:
 
 [Visit the design page](https://www.figma.com/design/DUTVlbY10PKQkLFLsX4amx/E-commerce-store?node-id=0-1&t=bME8PMQSrX5I6Qgb-1)
 
-**Installation**
+<h3> <strong> Installation </strong> </h3>
 
-Install Dependencies by running:
+**Install Dependencies by running:**
 
 npm install
 
-**Running the Development Server**
+<h3> <strong> Running the Development Server </strong> </h3>
 
-Start the app locally by running:
+**Start the app locally by running:**
 
 npm run dev
 
-**Build for Production**
+<h3> <strong> Build for Production </strong> </h3>
 
-Run the following:
+**Run the following:**
 
 npm run build
 
-**Lint the Code**
+<h3> <strong> Lint the Code </strong> </h3>
 
-To check for linting issues, run:
+**To check for linting issues, run:**
 
 npm run lint
 
-**Preview Production Build**
+<h3> <strong> Preview Production Build</strong> </h3>
 
-To run a preview of the built app, run:
+**To run a preview of the built app, run:**
 
 npm run preview
 
-**Features** <br>
+<h2> <strong>Features </strong> </h2> <br>
 
 🛒 **API Product Listing:** <br>
 Browse products fetched from an API <br>
