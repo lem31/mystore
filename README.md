@@ -71,7 +71,7 @@ npm run preview
 
 <table>
 <tr>
-<th> <strong>🛒 <sub> API Product Listing </sub></strong> </th>
+<th> <strong>🛒 <sub> ####API Product Listing </sub></strong> </th>
 <th> <strong>🛍️ <sub>  Shopping Cart </sub> </strong> </th>
 <th> <strong>❤️ <sub> Favorites Sidebar </sub> </strong> </th>
 <th> <strong> 💳<sub> Secure Checkout & Pay</sub></strong> </th>
