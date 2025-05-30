@@ -67,12 +67,6 @@ npm run preview
   </tr>
   </table>
 
-**API Integration**
-
-Products are fetched from:
-
-🔗 API URL: https://v2.api.noroff.dev/online-shop
-
 <h2> <strong> Tech Stack </strong> </h2>
 
 <table>
@@ -93,6 +87,12 @@ Products are fetched from:
     <td>ESLint, Vite, GitHub Actions</td>
   </tr>
   </table>
+
+**API Integration**
+
+Products are fetched from:
+
+🔗 API URL: https://v2.api.noroff.dev/online-shop
 
 **How to contribute**
 
