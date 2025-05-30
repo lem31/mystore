@@ -1,4 +1,4 @@
-<div align="center"> <strong> My Store App 🛍️ </strong> <br> <br>
+<div align="center"> <strong> My Store App 🛍️ (H1) </strong> <br> <br>
 
 </div>
 
