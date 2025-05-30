@@ -1,4 +1,4 @@
-**My Store App 🛍️**
+<center> **My Store App 🛍️** </center>
 
 **Video Demo**
 
