@@ -35,7 +35,7 @@ My Store App is an e-commerce web application built using React and Vite. It ena
 
 ✅ Prototype: Created in Figma for desktop and mobile:
 
-[Visit the design page](https://www.figma.com/design/DUTVlbY10PKQkLFLsX4amx/E-commerce-store?node-id=0-1&t=bME8PMQSrX5I6Qgb-1)
+[Visit the design page](https://www.figma.com/design/DUTVlbY10PKQkLFLsX4amx/E-commerce-store?node-id=0-1&t=bME8PMQSrX5I6Qgb-1) <br>
 
 <h3> <strong> Installation </strong> </h3>
 
@@ -68,6 +68,25 @@ npm run lint
 npm run preview
 
 <h2> <strong>Features </strong> </h2> <br>
+
+<table>
+<tr>
+<th> ✨ <strong> 🛒 API Product Listing: </strong> </th>
+<th> <strong> 🛍️ Shopping Cart: </strong> </th>
+<th> <strong> ❤️ Favorites Sidebar: </strong> </th>
+<th> <strong> 💳 Secure Checkout & Pay: </strong> </th>
+<th> <strong>  🎨 Responsive Design: </strong> </th>
+<th> <strong>🚀 Optimized Performance:</strong></th>
+</tr>
+<tr>
+    <td>Browse products fetched from an APIe</td>
+    <td>Add/remove items with dynamic price calculation</td>
+    <td>Save favorite items persistently</td>
+    <td>Process orders with form validation</td>
+    <td>Styled with MUI for a modern look</td>
+    <td>Built using Vite for fast loading</td>
+  </tr>
+  </table>
 
 🛒 **API Product Listing:** <br>
 Browse products fetched from an API <br>
