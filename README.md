@@ -2,11 +2,11 @@
 
 </div>
 
-**Video Demo**
+<h2> <strong>Video Demo </strong></h2>
 
 <img src="./src/Videos/ScreenRecording2025-05-29at11.12.09-ezgif.com-video-to-gif-converter.gif" width="600">
 
-**Overview** <br>
+<h2> <strong> Overview </strong> </h2> <br>
 
 My Store App is an e-commerce web application built using React and Vite. It enables users to browse products, add items to their cart, favorite products, checkout and pay. Users are also able to view a product page dedicated to individual products, which provides them with more details about the product and a list of related products beneath. The app uses Zustand for state management, MUI for UI components, and integrates form validation with Yup and React Hook Form.
 
