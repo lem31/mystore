@@ -70,7 +70,7 @@ npm run preview
 <h2> <strong>Features </strong> </h2> <br>
 
 <table>
-<tr>
+<tr align='left'>
 <th> <strong>🛒 API Product Listing </strong> </th>
 <th> <strong>🛍️ Shopping Cart </strong> </th>
 <th> <strong>❤️ Favorites Sidebar </strong> </th>
