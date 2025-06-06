@@ -84,7 +84,7 @@ npm run preview
     <td>Zustand</td>
     <td>React Router</td>
     <td>Yup, React Hook Form</td>
-    <td>ESLint, Vite, GitHub Actions</td>
+    <td>ESLint, Vite</td>
   </tr>
   </table>
 
