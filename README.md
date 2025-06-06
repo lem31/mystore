@@ -80,7 +80,7 @@ npm run preview
 </tr>
 <tr>
     <td>React, Vite</td>
-    <td>Material-UI (MUI), Emotion</td>
+    <td>Material-UI (MUI), Emotion, Font Awesome</td>
     <td>Zustand</td>
     <td>React Router</td>
     <td>Yup, React Hook Form</td>
