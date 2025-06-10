@@ -7,4 +7,7 @@ export default defineConfig({
   resolve: {
     extensions: [".js", ".jsx"],
   },
+  optimizeDeps: {
+    include: ["@mui/material", "@mui/system", "@mui/icons-material"],
+  },
 });
