@@ -277,7 +277,7 @@
 
   .product_cards_container {
     grid-template-columns: 1fr;
-    gap: 12px;
+    gap: 2px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -295,14 +295,14 @@
 
   .product_info_div {
     width: 200px;
-    flex-wrap: wrap;
-    height: 200px;
+
+    height: auto;
   }
 
   .individual_card_container {
     gap: 0;
     width: 200px;
-    height: 100%;
+    height: auto;
   }
 
   .product_title {
