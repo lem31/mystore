@@ -262,9 +262,17 @@
     width: 280px;
   }
 
+  .price_div {
+    width: 150px;
+    height: auto;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+
   .product_cards_container {
     grid-template-columns: 1fr;
-
     gap: 4px;
     align-items: center;
     justify-content: center;
@@ -283,6 +291,7 @@
 
   .product_info_div {
     width: 200px;
+    flex-wrap: wrap;
     height: 200px;
   }
 
@@ -293,7 +302,9 @@
   }
 
   .product_title {
-    text-wrap: nowrap;
+    text-wrap: wrap;
+    width: 200px;
+    height: auto;
     font-weight: bold;
   }
 
