@@ -271,9 +271,13 @@
     gap: 4px;
   }
 
+  .discount_div {
+    width: 100%;
+  }
+
   .product_cards_container {
     grid-template-columns: 1fr;
-    gap: 4px;
+    gap: 12px;
     align-items: center;
     justify-content: center;
     width: 100%;
@@ -298,7 +302,7 @@
   .individual_card_container {
     gap: 0;
     width: 200px;
-    height: 350px;
+    height: 100%;
   }
 
   .product_title {
@@ -313,8 +317,8 @@
     color: white;
     position: absolute;
     margin-top: 10px;
-    margin-left: 8px;
-    width: 48px;
+    margin-left: 8%;
+    width: auto;
     height: auto;
     font-size: var(--font-size-small);
     font-family: var(--font-family-1);
