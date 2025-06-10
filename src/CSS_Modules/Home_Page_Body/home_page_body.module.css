@@ -31,7 +31,7 @@
 
 .favorite_icon_div {
   position: absolute;
-  width: 200px;
+  width: 180px;
   display: flex;
 
   justify-content: flex-end;
@@ -139,11 +139,12 @@
 .h1_div_home {
   display: flex;
   justify-content: center;
-  justify-content: center;
+
   align-items: center;
-  flex-direction: column;
-  width: 320px;
-  height: 316px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  height: 100%;
   margin-top: 40px;
   z-index: 2;
 }
@@ -167,11 +168,14 @@
 .h2_div_home {
   display: flex;
   align-items: center;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  max-width: 300px;
+  height: 100%;
+  margin-bottom: 20px;
   position: relative;
   z-index: 2;
-  width: 600px;
-  margin-bottom: 16px;
 }
 
 .container {
@@ -234,10 +238,6 @@
     height: 220px;
   }
 
-  .h2_div_home {
-    width: 320px;
-  }
-
   .product_image_div {
     width: 220px;
     height: 220px;
@@ -264,36 +264,32 @@
 
   .product_cards_container {
     grid-template-columns: 1fr;
-    grid-auto-rows: 416px;
-    gap: 16px;
+
+    gap: 4px;
     align-items: center;
     justify-content: center;
-    width: 280px;
+    width: 100%;
   }
 
   .products_cards_image {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
   }
 
   .product_image_div {
-    width: 280px;
-    height: 280px;
+    width: 200px;
+    height: 200px;
   }
 
   .product_info_div {
-    width: 280px;
-    height: 290px;
-  }
-
-  .h2_div_home {
-    width: 320px;
+    width: 200px;
+    height: 200px;
   }
 
   .individual_card_container {
     gap: 0;
-    width: 280px;
-    height: 410px;
+    width: 200px;
+    height: 350px;
   }
 
   .product_title {
