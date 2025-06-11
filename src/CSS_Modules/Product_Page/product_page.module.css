@@ -239,9 +239,18 @@
 }
 
 @media (max-width: 486px) {
+  .outer_product_div {
+    width: 100%;
+
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
   .product_img_div {
-    width: 150px;
-    height: 150px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
   .product_img {
     width: 150px;
@@ -290,12 +299,22 @@
     font-size: var(--font-size-small);
   }
 
+  .discount_div_pPage {
+    width: 100%;
+    justify-content: flex-start;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+  }
+
   .product_div {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-end;
     width: 100%;
     height: 100%;
+    margin-right: 40px;
+    margin-left: 40px;
   }
 
   .product_title {
@@ -315,7 +334,7 @@
 
   .product_discount_mobile {
     margin-top: 10px;
-    margin-left: -6px;
+
     width: 48px;
   }
 }
