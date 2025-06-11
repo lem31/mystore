@@ -71,7 +71,7 @@ function Search() {
           />
 
           <button
-            className={gStyles.button}
+            className={`${gStyles.button} ${styles.search_button}`}
             onSubmit={handleSubmit}
             type="submit"
             aria-label="Submit search"

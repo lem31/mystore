@@ -52,6 +52,11 @@
   color: var(--secondary-color);
 }
 
+.search_button {
+  width: 100%;
+  max-width: 100px;
+}
+
 .search_label {
   display: none;
 }
@@ -97,7 +102,12 @@
 
 @media (max-width: 425px) {
   .search_form {
-    width: 226px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
   }
 
   .search_input {
