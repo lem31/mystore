@@ -21,7 +21,9 @@ const DisplayDiscount = ({ product }) => {
   const location = useLocation();
   const isProductPage = location.pathname.includes("/product");
   return (
-    <div className={styles.discount_div}>
+    <div
+      className={`${styles.discount_div} ${productStyles.discount_div_pPage}`}
+    >
       {discount > 0 && (
         <p
           className={`${styles.product_discount} ${isProductPage ? productStyles.product_discount_mobile : ""}`}
